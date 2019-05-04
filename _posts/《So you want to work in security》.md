@@ -1,6 +1,6 @@
 ---
 layout: post
-title: 《So you want to work in security?》
+title:  2019/2/18 学习笔记
 date:   2019-2-18 20:05:00 +0800
 categories: 文章
 tag: interview
