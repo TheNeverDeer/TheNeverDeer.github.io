@@ -21,10 +21,13 @@ html {
 
 body.index {
   color: var(--girl-text);
-  background:
-    radial-gradient(ellipse 80% 50% at 10% 0%, rgba(255, 214, 224, 0.55), transparent 55%),
-    radial-gradient(ellipse 60% 40% at 90% 10%, rgba(243, 224, 240, 0.5), transparent 50%),
-    linear-gradient(180deg, var(--girl-blush) 0%, var(--girl-cream) 40%, #fff 100%);
+  background-color: var(--girl-blush);
+  background-image:
+    linear-gradient(180deg, rgba(255, 245, 248, 0.55) 0%, rgba(255, 250, 251, 0.45) 50%, rgba(255, 255, 255, 0.4) 100%),
+    url("../images/12bubu.png");
+  background-position: center center;
+  background-size: cover;
+  background-repeat: no-repeat;
   background-attachment: fixed;
   font-family: "Nunito", "ZCOOL XiaoWei", "PingFang SC", "Microsoft YaHei", sans-serif;
 }
@@ -282,6 +285,29 @@ code,
   border-color: #d45f7c !important;
 }
 
+/* 鼠标跟随爱心 / 星点 */
+.cursor-sparkle {
+  position: fixed;
+  z-index: 9999;
+  pointer-events: none;
+  user-select: none;
+  line-height: 1;
+  transform: translate(-50%, -50%);
+  animation: sparkle-fly 0.9s ease-out forwards;
+  text-shadow: 0 0 6px rgba(255, 214, 224, 0.8);
+}
+
+@keyframes sparkle-fly {
+  0% {
+    opacity: 1;
+    transform: translate(-50%, -50%) scale(1) rotate(0deg);
+  }
+  100% {
+    opacity: 0;
+    transform: translate(calc(-50% + var(--dx, 0px)), calc(-50% + var(--dy, -30px))) scale(0.3) rotate(var(--rot, 20deg));
+  }
+}
+
 @media (prefers-reduced-motion: reduce) {
   .docs-header::before,
   .docs-header h1,
@@ -289,5 +315,9 @@ code,
   .breadcrumb {
     animation: none;
     transition: none;
+  }
+
+  .cursor-sparkle {
+    display: none;
   }
 }
