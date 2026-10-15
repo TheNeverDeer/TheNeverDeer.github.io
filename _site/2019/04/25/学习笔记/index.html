@@ -1,0 +1,299 @@
+<!DOCTYPE html>
+<html>
+
+  <head>
+	<meta charset="utf-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>2019/4/25 《图解密码技术》第二章 - TheNeverDeer</title>
+
+	<link rel="shortcut icon" href="/styles/images/favicon.jpg">
+	<link rel="icon" href="/styles/images/favicon.jpg">
+
+	<link rel="preconnect" href="https://fonts.googleapis.com">
+	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+	<link href="https://fonts.googleapis.com/css2?family=Ma+Shan+Zheng&family=Nunito:wght@400;600;700&family=ZCOOL+XiaoWei&display=swap" rel="stylesheet">
+	<link rel="stylesheet" href="/styles/css/index.css">
+	<link rel="stylesheet" href="/styles/css/theme-girly.css">
+	<link rel="stylesheet" href="/styles/css/fontawesome/css/font-awesome.min.css">
+	<link rel="stylesheet" href="/styles/css/syntax.css">
+	<link rel="canonical" href="/2019/04/25/%E5%AD%A6%E4%B9%A0%E7%AC%94%E8%AE%B0/">
+	<link rel="alternate" type="application/rss+xml" title="TheNeverDeer" href="/feed.xml">
+	
+	<meta name="keywords" content="2019/4/25 《图解密码技术》第二章, TheNeverDeer, 康志华;个人博客;学而不思则罔;思而不学则殆;生命不止;折腾不休">
+	<meta name="description" content="康志华;个人博客;学而不思则罔;思而不学则殆;生命不止;折腾不休">
+
+	<script src="/styles/js/jquery.min.js"></script>
+	<!--[if lt IE 9]>
+    	<script src="http://html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+  	<![endif]-->
+  	<script>
+		var _hmt = _hmt || [];
+		(function() {
+		  var hm = document.createElement("script");
+		  hm.src = "//hm.baidu.com/hm.js?";
+		  var s = document.getElementsByTagName("script")[0]; 
+		  s.parentNode.insertBefore(hm, s);
+		})();
+	</script>
+  	<style type="text/css">
+	  	.docs-content{
+	  		margin-bottom: 10px;
+	  	}
+  	</style>
+</head>
+
+  <body class="index">
+
+    <header class="navbar navbar-inverse navbar-fixed-top docs-nav" role="banner">
+  <div class="container">
+    <div class="navbar-header">
+      <button class="navbar-toggle" type="button" data-toggle="collapse" data-target=".bs-navbar-collapse">
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+      </button>
+      <a href="/" class="navbar-brand">Luzi</a>
+    </div>
+    <nav class="collapse navbar-collapse bs-navbar-collapse" role="navigation">
+      <ul class="nav navbar-nav">    
+        <li>
+          <a href="/">主页</a>
+        </li>
+        <li>
+          <a href="/categories/">类型</a>
+        </li>
+        <li>
+          <a href="/tag">标签</a>
+        </li>
+      </ul>
+      <ul class="nav navbar-nav navbar-right">
+        <!--<li>
+            <a><span id="busuanzi_container_site_pv">本站总访问量<span id="busuanzi_value_site_pv"></span>次</span></a>-->
+        </li>
+        <li class="dropdown">
+          <a href="#" class="dropdown-toggle" data-toggle="dropdown">关于<b class="caret"></b></a>
+          <ul class="dropdown-menu">
+            <li><a rel="nofollow" target="_blank" href="https://github.com/TheNeverDeer/">Github</a></li>
+            <!--<li><a rel="nofollow" target="_blank" href="">关于作者</a></li>-->
+            <li><a rel="nofollow" href="/books">我的书单</a></li>
+            <!--<li><a rel="nofollow" href="http://www.hifreud.com/domains/">域名管理</a></li> -->
+           <!-- <li><a rel="nofollow" href="/reference">推荐博客</a></li> -->
+           <!-- <li><a href="/feed.xml">RSS订阅</a></li> -->
+            <li class="divider"></li>
+            <li><a rel="nofollow" target="_blank" href="https://github.com/TheNeverDeer/TheNeverDeer.github.io">本项目</a></li>
+          </ul>
+        </li>
+      </ul>
+    </nav>
+  </div>
+</header>
+    <div class="docs-header" id="content">
+  <div class="container">
+  	
+  		<!--
+		    <h1>2019/4/25 《图解密码技术》第二章</h1>
+		    <p>Post on Apr 25, 2019 by <a href="/about">LuLu</a></p>
+		-->
+		    <h1>It's our wits that make us men.</h1>
+    
+  </div>
+</div>
+    
+      
+<div class="banner">
+  <div class="container">
+  	
+    	<a href="/categories/#文章-ref">文章</a>	/
+    	<a href="/tag/#interview-ref">interview</a>
+    
+  </div>
+</div>
+
+    
+
+    <div class="container docs-container">
+  <div class="row">
+    <div class="col-md-3">
+      <div class="sidebar hidden-print" role="complementary">
+        <div id="navigation">
+  <h1>目录</h1>
+  <ul class="nav sidenav">
+  </ul>
+  <div style="height: 200px;width: 200px;">
+    <script type="text/javascript" src="//rf.revolvermaps.com/0/0/8.js?i=&amp;m=0&amp;c=ff0000&amp;cr1=ffffff&amp;f=arial&amp;l=33" async="async"> 
+    </script>
+  </div>
+</div>
+
+ 
+      </div>
+    </div>
+    <div class="col-md-9" role="main">
+      <div class="panel docs-content">
+        <div class="wrapper">
+            <header class="post-header">
+              <h1 class="post-title">2019/4/25 《图解密码技术》第二章</h1>
+              <!--
+                <p class="post-meta">Apr 25, 2019</p>
+              -->
+              <div class="meta">Posted on <span class="postdate">Apr 25, 2019</span> By <a target="_blank" href="http://localhost:4000">LuLu</a></div>
+              <br />
+            </header>
+            <article class="post-content">
+              <ul id="markdown-toc">
+  <li><a href="#图解密码技术第二章" id="markdown-toc-图解密码技术第二章">图解密码技术(第二章)</a>    <ul>
+      <li><a href="#22恺撒密码" id="markdown-toc-22恺撒密码">2.2恺撒密码</a>        <ul>
+          <li><a href="#小测验1-破译恺撒密码" id="markdown-toc-小测验1-破译恺撒密码">小测验1 破译恺撒密码</a></li>
+        </ul>
+      </li>
+      <li><a href="#23简单替换密码" id="markdown-toc-23简单替换密码">2.3简单替换密码</a>        <ul>
+          <li><a href="#密钥空间" id="markdown-toc-密钥空间">密钥空间</a></li>
+          <li><a href="#用频率分析来破解密码" id="markdown-toc-用频率分析来破解密码">用频率分析来破解密码</a></li>
+          <li><a href="#小测验2-简单替换密码的改良" id="markdown-toc-小测验2-简单替换密码的改良">小测验2 简单替换密码的改良</a></li>
+        </ul>
+      </li>
+    </ul>
+  </li>
+</ul>
+<h1 id="图解密码技术第二章">图解密码技术(第二章)</h1>
+
+<ul>
+  <li>恺撒密码 Caesar cipher，暴力破解brute-force attack(穷举搜索 exhaustive search)</li>
+  <li>简单替换密码 simple substitute cipher，密钥空间keyspace</li>
+</ul>
+
+<h2 id="22恺撒密码">2.2恺撒密码</h2>
+
+<p>恺撒密码是通过将明文中所使用的字母表按照一定的字数“平移”进行加密的</p>
+
+<ul>
+  <li>算法：将字母表中的字母平移</li>
+  <li>密钥：平移的字母数量</li>
+  <li>暴力破解：通过0-25密钥的尝试来破解密码</li>
+</ul>
+
+<h3 id="小测验1-破译恺撒密码">小测验1 破译恺撒密码</h3>
+
+<p>密文：PELCGBTENCUL</p>
+
+<p>答：I want to use brute-force attack to cryptanalysis Caesar cipher.And I will use key by zero to twenty-five.</p>
+
+<p>I use key zero to cryptanalysis,then we can get the text:pelcgbtencul</p>
+
+<p>I use key one to cryptanalysis,then we can get the text:odkbfasdmbtk</p>
+
+<p>I use key two to cryptanalysis,then we can get the text:ncjaezrclasj</p>
+
+<p>I use key three to cryptanalysis,then we can get the text:mbizdyqbkzri</p>
+
+<p>I use key four to cryptanalysis,then we can get the text:lahycxpajyqh</p>
+
+<p>I use key five to cryptanalysis,then we can get the text:kzgxbwozixpg</p>
+
+<p>I use key six to cryptanalysis,then we can get the text:jyfwavnyhwof</p>
+
+<p>I use key seven to cryptanalysis,then we can get the text:ixevzumxgvne</p>
+
+<p>I use key eight to cryptanalysis,then we can get the text:hwduytlwfumd</p>
+
+<p>I use key nine to cryptanalysis,then we can get the text:gvctxskvetlc</p>
+
+<p>I use key ten to cryptanalysis,then we can get the text:fubswrjudskb</p>
+
+<p>I use key eleven to cryptanalysis,then we can get the text:etarvqitcrja</p>
+
+<p>I use key twelve to cryptanalysis,then we can get the text:dszquphsbqiz</p>
+
+<p>I use key thirteen to cryptanalysis,then we can get the text:cryptography</p>
+
+<p>I use key fourteen to cryptanalysis,then we can get the text:bqxosnfqzogx</p>
+
+<p>I use key fifteen to cryptanalysis,then we can get the text:pwnrmepynfw</p>
+
+<p>I use key sixteen to cryptanalysis,then we can get the text:zovmqldoxmev</p>
+
+<p>I use key seventeen to cryptanalysis,then we can get the text:ynulpkcnwldu</p>
+
+<p>I use key eighteen to cryptanalysis,then we can get the text:xmtkojbmvkct</p>
+
+<p>I use key nineteen to cryptanalysis,then we can get the text:wlsjnialujbs</p>
+
+<p>I use key twenty to cryptanalysis,then we can get the text:vkrimhzktiar</p>
+
+<p>I use key twenty-one to cryptanalysis,then we can get the text:ujqhlgyjshzq</p>
+
+<p>I use key twenty-two to cryptanalysis,then we can get the text:tipgkfxirgyp</p>
+
+<p>I use key twenty-three to cryptanalysis,then we can get the text:shofjewhqfxo</p>
+
+<p>I use key twenty-four to cryptanalysis,then we can get the text:rgneidvgpewn</p>
+
+<p>I use key twenty-five to cryptanalysis,then we can get the text:qfmdhcufodvm</p>
+
+<h2 id="23简单替换密码">2.3简单替换密码</h2>
+
+<p>简单替换密码：将明文中所使用的字母表替换为另一套字母表的密码(恺撒密码也是简单替换密码的一种)</p>
+
+<h3 id="密钥空间">密钥空间</h3>
+
+<ul>
+  <li>密钥空间：一种密码能够使用的所有密钥集合
+    <ul>
+      <li>密钥空间越大，暴力破解就越困难。简单替换密码很难通过暴力破解来破译。</li>
+    </ul>
+  </li>
+</ul>
+
+<h3 id="用频率分析来破解密码">用频率分析来破解密码</h3>
+
+<ul>
+  <li>简单替换密码使用暴力破解很难破译，但是使用频率分析的密码破译方法，就能够破译简单替换密码</li>
+  <li>频率分析利用了铭文中的字母的出现频率与密文中的字母的出现频率一致这一特性</li>
+  <li>破译过程：
+    <ul>
+      <li>统计这段密文中每个字母出现的频率。</li>
+      <li>《金甲虫》中英文字母按照出现频率排序结果：e,t,a,o,i,n,s,h,r,d,l,u,c,m,f,w,g,y,p,b,v,k,j,q,z，一般来说英语文章中出现最多的字母是e，基本没错。且一般英语文章中the出现的最多，也可以查看以e结尾的三个字母组合。</li>
+      <li>然后再一点点去尝试，用比较熟悉的单词。</li>
+    </ul>
+  </li>
+  <li>破解过程的总结：
+    <ul>
+      <li>除了高频字母之外，低频字母也能成为线索</li>
+      <li>搞清开头和结尾能够成为线索，搞清单词之间的分隔也能成为线索</li>
+      <li>密文越长越容易破译</li>
+      <li>同一个字母连续出现能够成为线索（因为某个字母对应的另一个字母是确定的）</li>
+      <li>破译速度回越来越快</li>
+    </ul>
+  </li>
+</ul>
+
+<h3 id="小测验2-简单替换密码的改良">小测验2 简单替换密码的改良</h3>
+
+<p>答:Wrong. If Alice’s idea runs,cracking it will be easy. When you try to break the code，the possibilities for each letter went from 26 to 25.</p>
+
+
+            </article>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+    
+    <footer class="footer" role="contentinfo">
+	<div class="container">
+		<p class="copyright">Copyright &copy; 2014-2026 <a href=""><code>LuLu</code></a>.</p>
+		<p>Powered by <a href="http://jekyllrb.com">Jekyll</a>, themed from <a href="http://lesscss.cn/">Less</a>, refactored by <a href="http://www.hifreud.com/">Freud Kang</a></p>
+	</div>
+</footer>
+
+<script src="/styles/js/jquery.min.js"></script>
+<script src="/styles/js/bootstrap.min.js"></script>
+<script src="/styles/js/holder.min.js"></script>
+<script src="/styles/js/lessismore.js"></script>
+<script src="/styles/js/application.js"></script>
+<script async src="//busuanzi.ibruce.info/busuanzi/2.3/busuanzi.pure.mini.js"></script>
+
+  </body>
+</html>

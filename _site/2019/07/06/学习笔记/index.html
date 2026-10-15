@@ -1,0 +1,312 @@
+<!DOCTYPE html>
+<html>
+
+  <head>
+	<meta charset="utf-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>2019/7/6 python入门-if - TheNeverDeer</title>
+
+	<link rel="shortcut icon" href="/styles/images/favicon.jpg">
+	<link rel="icon" href="/styles/images/favicon.jpg">
+
+	<link rel="preconnect" href="https://fonts.googleapis.com">
+	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+	<link href="https://fonts.googleapis.com/css2?family=Ma+Shan+Zheng&family=Nunito:wght@400;600;700&family=ZCOOL+XiaoWei&display=swap" rel="stylesheet">
+	<link rel="stylesheet" href="/styles/css/index.css">
+	<link rel="stylesheet" href="/styles/css/theme-girly.css">
+	<link rel="stylesheet" href="/styles/css/fontawesome/css/font-awesome.min.css">
+	<link rel="stylesheet" href="/styles/css/syntax.css">
+	<link rel="canonical" href="/2019/07/06/%E5%AD%A6%E4%B9%A0%E7%AC%94%E8%AE%B0/">
+	<link rel="alternate" type="application/rss+xml" title="TheNeverDeer" href="/feed.xml">
+	
+	<meta name="keywords" content="2019/7/6 python入门-if, TheNeverDeer, 康志华;个人博客;学而不思则罔;思而不学则殆;生命不止;折腾不休">
+	<meta name="description" content="康志华;个人博客;学而不思则罔;思而不学则殆;生命不止;折腾不休">
+
+	<script src="/styles/js/jquery.min.js"></script>
+	<!--[if lt IE 9]>
+    	<script src="http://html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+  	<![endif]-->
+  	<script>
+		var _hmt = _hmt || [];
+		(function() {
+		  var hm = document.createElement("script");
+		  hm.src = "//hm.baidu.com/hm.js?";
+		  var s = document.getElementsByTagName("script")[0]; 
+		  s.parentNode.insertBefore(hm, s);
+		})();
+	</script>
+  	<style type="text/css">
+	  	.docs-content{
+	  		margin-bottom: 10px;
+	  	}
+  	</style>
+</head>
+
+  <body class="index">
+
+    <header class="navbar navbar-inverse navbar-fixed-top docs-nav" role="banner">
+  <div class="container">
+    <div class="navbar-header">
+      <button class="navbar-toggle" type="button" data-toggle="collapse" data-target=".bs-navbar-collapse">
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+      </button>
+      <a href="/" class="navbar-brand">Luzi</a>
+    </div>
+    <nav class="collapse navbar-collapse bs-navbar-collapse" role="navigation">
+      <ul class="nav navbar-nav">    
+        <li>
+          <a href="/">主页</a>
+        </li>
+        <li>
+          <a href="/categories/">类型</a>
+        </li>
+        <li>
+          <a href="/tag">标签</a>
+        </li>
+      </ul>
+      <ul class="nav navbar-nav navbar-right">
+        <!--<li>
+            <a><span id="busuanzi_container_site_pv">本站总访问量<span id="busuanzi_value_site_pv"></span>次</span></a>-->
+        </li>
+        <li class="dropdown">
+          <a href="#" class="dropdown-toggle" data-toggle="dropdown">关于<b class="caret"></b></a>
+          <ul class="dropdown-menu">
+            <li><a rel="nofollow" target="_blank" href="https://github.com/TheNeverDeer/">Github</a></li>
+            <!--<li><a rel="nofollow" target="_blank" href="">关于作者</a></li>-->
+            <li><a rel="nofollow" href="/books">我的书单</a></li>
+            <!--<li><a rel="nofollow" href="http://www.hifreud.com/domains/">域名管理</a></li> -->
+           <!-- <li><a rel="nofollow" href="/reference">推荐博客</a></li> -->
+           <!-- <li><a href="/feed.xml">RSS订阅</a></li> -->
+            <li class="divider"></li>
+            <li><a rel="nofollow" target="_blank" href="https://github.com/TheNeverDeer/TheNeverDeer.github.io">本项目</a></li>
+          </ul>
+        </li>
+      </ul>
+    </nav>
+  </div>
+</header>
+    <div class="docs-header" id="content">
+  <div class="container">
+  	
+  		<!--
+		    <h1>2019/7/6 python入门-if</h1>
+		    <p>Post on Jul 06, 2019 by <a href="/about">LuLu</a></p>
+		-->
+		    <h1>It's our wits that make us men.</h1>
+    
+  </div>
+</div>
+    
+      
+<div class="banner">
+  <div class="container">
+  	
+    	<a href="/categories/#文章-ref">文章</a>	/
+    	<a href="/tag/#interview-ref">interview</a>
+    
+  </div>
+</div>
+
+    
+
+    <div class="container docs-container">
+  <div class="row">
+    <div class="col-md-3">
+      <div class="sidebar hidden-print" role="complementary">
+        <div id="navigation">
+  <h1>目录</h1>
+  <ul class="nav sidenav">
+  </ul>
+  <div style="height: 200px;width: 200px;">
+    <script type="text/javascript" src="//rf.revolvermaps.com/0/0/8.js?i=&amp;m=0&amp;c=ff0000&amp;cr1=ffffff&amp;f=arial&amp;l=33" async="async"> 
+    </script>
+  </div>
+</div>
+
+ 
+      </div>
+    </div>
+    <div class="col-md-9" role="main">
+      <div class="panel docs-content">
+        <div class="wrapper">
+            <header class="post-header">
+              <h1 class="post-title">2019/7/6 python入门-if</h1>
+              <!--
+                <p class="post-meta">Jul 6, 2019</p>
+              -->
+              <div class="meta">Posted on <span class="postdate">Jul 06, 2019</span> By <a target="_blank" href="http://localhost:4000">LuLu</a></div>
+              <br />
+            </header>
+            <article class="post-content">
+              <ul id="markdown-toc">
+  <li><a href="#python入门-if" id="markdown-toc-python入门-if">python入门-if</a>    <ul>
+      <li><a href="#if" id="markdown-toc-if">if</a>        <ul>
+          <li><a href="#if简单测试" id="markdown-toc-if简单测试">if简单测试</a></li>
+          <li><a href="#使用列表的一部分切片" id="markdown-toc-使用列表的一部分切片">使用列表的一部分——切片</a></li>
+        </ul>
+      </li>
+      <li><a href="#元组" id="markdown-toc-元组">元组</a></li>
+    </ul>
+  </li>
+</ul>
+<h1 id="python入门-if">python入门-if</h1>
+
+<h3 id="if">if</h3>
+
+<h4 id="if简单测试">if简单测试</h4>
+
+<div class="language-python highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="n">spots</span><span class="o">=</span><span class="p">[</span><span class="sh">'</span><span class="s">qd</span><span class="sh">'</span><span class="p">,</span><span class="sh">'</span><span class="s">cd</span><span class="sh">'</span><span class="p">,</span><span class="sh">'</span><span class="s">xm</span><span class="sh">'</span><span class="p">,</span><span class="sh">'</span><span class="s">wh</span><span class="sh">'</span><span class="p">,</span><span class="sh">'</span><span class="s">bj</span><span class="sh">'</span><span class="p">]</span>
+<span class="k">for</span> <span class="n">spot</span> <span class="ow">in</span> <span class="n">spots</span><span class="p">:</span>
+	<span class="k">if</span> <span class="n">spot</span><span class="o">==</span><span class="sh">'</span><span class="s">qd</span><span class="sh">'</span><span class="p">:</span>
+		<span class="nf">print</span><span class="p">(</span><span class="n">spot</span><span class="p">.</span><span class="nf">upper</span><span class="p">())</span>
+	<span class="k">else</span><span class="p">:</span>
+		<span class="nf">print</span><span class="p">(</span><span class="n">spot</span><span class="p">.</span><span class="nf">title</span><span class="p">())</span>
+</code></pre></div></div>
+
+<ul>
+  <li>简单例子，if后面不加括号，但是if和else后面都有冒号</li>
+</ul>
+
+<div class="language-python highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="n">car</span><span class="o">=</span><span class="sh">'</span><span class="s">Audi</span><span class="sh">'</span>
+<span class="n">car</span><span class="p">.</span><span class="nf">lower</span><span class="p">()</span><span class="o">==</span><span class="sh">'</span><span class="s">audi</span><span class="sh">'</span>
+</code></pre></div></div>
+
+<ul>
+  <li>python区分大小写，但可以用lower方法，比较时都当成小写，lower方法也不会改变原来的值</li>
+</ul>
+
+<div class="language-python highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="n">requested_toppings</span><span class="o">=</span><span class="sh">'</span><span class="s">mushrooms</span><span class="sh">'</span>
+<span class="k">if</span> <span class="n">requested_toppings</span> <span class="o">!=</span><span class="sh">'</span><span class="s">anchovies</span><span class="sh">'</span><span class="p">:</span>
+	<span class="nf">print</span><span class="p">(</span><span class="sh">"</span><span class="s">Hold the anchovies</span><span class="sh">"</span><span class="p">)</span>
+</code></pre></div></div>
+
+<ul>
+  <li>不相等比较</li>
+</ul>
+
+<div class="language-python highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="n">age_0</span><span class="o">=</span><span class="mi">20</span><span class="err">，</span><span class="n">age_1</span><span class="o">=</span><span class="mi">18</span>
+<span class="p">(</span><span class="n">age_0</span><span class="o">&lt;</span><span class="mi">21</span><span class="p">)</span><span class="ow">and</span><span class="p">(</span><span class="n">age_1</span><span class="o">&gt;</span><span class="mi">17</span><span class="p">)</span>
+<span class="p">(</span><span class="n">age_0</span><span class="o">&lt;</span><span class="mi">21</span><span class="p">)</span><span class="ow">or</span><span class="p">(</span><span class="n">age_1</span><span class="o">&gt;</span><span class="mi">17</span><span class="p">)</span>
+<span class="n">spots</span><span class="o">=</span><span class="p">[</span><span class="sh">'</span><span class="s">qd</span><span class="sh">'</span><span class="p">,</span><span class="sh">'</span><span class="s">cd</span><span class="sh">'</span><span class="p">,</span><span class="sh">'</span><span class="s">xm</span><span class="sh">'</span><span class="p">,</span><span class="sh">'</span><span class="s">wh</span><span class="sh">'</span><span class="p">,</span><span class="sh">'</span><span class="s">bj</span><span class="sh">'</span><span class="p">]</span>
+<span class="sh">'</span><span class="s">qd</span><span class="sh">'</span> <span class="ow">in</span> <span class="n">spots</span>  <span class="c1">##会返回true
+</span><span class="sh">'</span><span class="s">qd</span><span class="sh">'</span> <span class="ow">not</span> <span class="ow">in</span> <span class="n">spots</span>  <span class="c1">##会返回flase
+</span></code></pre></div></div>
+
+<ul>
+  <li>and检查多个条件，or检查多个条件,in检查特定值是否在里面，not in 检查特定值不在里面</li>
+</ul>
+
+<div class="language-python highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="n">squares</span><span class="o">=</span><span class="p">[]</span>
+<span class="k">for</span> <span class="n">value</span> <span class="ow">in</span> <span class="nf">range</span><span class="p">(</span><span class="mi">1</span><span class="p">,</span><span class="mi">11</span><span class="p">):</span>
+	<span class="n">square</span><span class="o">=</span><span class="n">value</span><span class="o">**</span><span class="mi">3</span>
+	<span class="n">squares</span><span class="p">.</span><span class="nf">append</span><span class="p">(</span><span class="n">square</span><span class="p">)</span>
+<span class="nf">print</span><span class="p">(</span><span class="n">squares</span><span class="p">)</span>
+
+</code></pre></div></div>
+
+<ul>
+  <li>1-10的立方 value**3</li>
+</ul>
+
+<h4 id="使用列表的一部分切片">使用列表的一部分——切片</h4>
+
+<div class="language-python highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="n">players</span><span class="o">=</span><span class="p">[</span><span class="sh">'</span><span class="s">charles</span><span class="sh">'</span><span class="p">,</span><span class="sh">'</span><span class="s">martina</span><span class="sh">'</span><span class="p">,</span><span class="sh">'</span><span class="s">michael</span><span class="sh">'</span><span class="p">,</span><span class="sh">'</span><span class="s">florence</span><span class="sh">'</span><span class="p">,</span><span class="sh">'</span><span class="s">eli</span><span class="sh">'</span><span class="p">]</span>
+<span class="nf">print</span><span class="p">(</span><span class="n">players</span><span class="p">[</span><span class="mi">0</span><span class="p">:</span><span class="mi">3</span><span class="p">])</span>
+</code></pre></div></div>
+
+<ul>
+  <li>用方括号，加指定索引，第一个元素到索引前三个，没有索引自动从第一个开始[：4]，末尾也是，最后三名[-3: ]</li>
+</ul>
+
+<div class="language-python highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="n">players</span><span class="o">=</span><span class="p">[</span><span class="sh">'</span><span class="s">charles</span><span class="sh">'</span><span class="p">,</span><span class="sh">'</span><span class="s">martina</span><span class="sh">'</span><span class="p">,</span><span class="sh">'</span><span class="s">michael</span><span class="sh">'</span><span class="p">,</span><span class="sh">'</span><span class="s">florence</span><span class="sh">'</span><span class="p">,</span><span class="sh">'</span><span class="s">eli</span><span class="sh">'</span><span class="p">]</span>
+<span class="k">for</span> <span class="n">player</span> <span class="ow">in</span> <span class="n">players</span><span class="p">[:</span><span class="mi">3</span><span class="p">]:</span>
+	<span class="nf">print</span><span class="p">(</span><span class="n">player</span><span class="p">.</span><span class="nf">title</span><span class="p">())</span>
+</code></pre></div></div>
+
+<ul>
+  <li>for遍历切片，以上代码遍历前三个</li>
+</ul>
+
+<div class="language-python highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="n">my_foods</span><span class="o">=</span><span class="p">[</span><span class="sh">'</span><span class="s">charles</span><span class="sh">'</span><span class="p">,</span><span class="sh">'</span><span class="s">martina</span><span class="sh">'</span><span class="p">,</span><span class="sh">'</span><span class="s">michael</span><span class="sh">'</span><span class="p">,</span><span class="sh">'</span><span class="s">florence</span><span class="sh">'</span><span class="p">,</span><span class="sh">'</span><span class="s">eli</span><span class="sh">'</span><span class="p">]</span>
+<span class="n">friend_foods</span><span class="o">=</span><span class="n">my_foods</span><span class="p">[</span> <span class="p">:</span> <span class="p">]</span>
+</code></pre></div></div>
+
+<ul>
+  <li>复制列表， 赋值列表比直接赋值给它意义更大，更加方便</li>
+</ul>
+
+<div class="language-python highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="n">my_foods</span><span class="o">=</span><span class="p">[</span><span class="sh">'</span><span class="s">charles</span><span class="sh">'</span><span class="p">,</span><span class="sh">'</span><span class="s">martina</span><span class="sh">'</span><span class="p">,</span><span class="sh">'</span><span class="s">michael</span><span class="sh">'</span><span class="p">,</span><span class="sh">'</span><span class="s">florence</span><span class="sh">'</span><span class="p">,</span><span class="sh">'</span><span class="s">eli</span><span class="sh">'</span><span class="p">]</span>
+<span class="n">friend_foods</span><span class="o">=</span><span class="n">my_foods</span><span class="p">[</span> <span class="p">:</span> <span class="p">]</span>
+<span class="n">my_foods</span><span class="p">.</span><span class="nf">append</span><span class="p">(</span><span class="sh">'</span><span class="s">hi</span><span class="sh">'</span><span class="p">)</span>
+<span class="n">friend_foods</span><span class="p">.</span><span class="nf">append</span><span class="p">(</span><span class="sh">'</span><span class="s">hello</span><span class="sh">'</span><span class="p">)</span>
+<span class="k">for</span> <span class="n">my_food</span> <span class="ow">in</span> <span class="n">my_foods</span><span class="p">:</span>
+	<span class="nf">print</span><span class="p">(</span><span class="n">my_food</span><span class="p">)</span>
+<span class="k">for</span> <span class="n">friend_food</span> <span class="ow">in</span> <span class="n">friend_foods</span><span class="p">:</span>
+	<span class="nf">print</span><span class="p">(</span><span class="n">friend_food</span><span class="p">)</span>
+</code></pre></div></div>
+
+<ul>
+  <li>复制列表可以各自添加</li>
+</ul>
+
+<h3 id="元组">元组</h3>
+
+<p>适用于存储在程序运行期间可能变化的数据集，不可变的（不能修改的）列表称为元组</p>
+
+<div class="language-python highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="n">dimensions</span><span class="o">=</span><span class="p">(</span><span class="mi">200</span><span class="p">,</span><span class="mi">50</span><span class="p">)</span>
+<span class="nf">print</span><span class="p">(</span><span class="n">dimensions</span><span class="p">[</span><span class="mi">0</span><span class="p">])</span>
+<span class="nf">print</span><span class="p">(</span><span class="n">dimensions</span><span class="p">[</span><span class="mi">1</span><span class="p">])</span>
+</code></pre></div></div>
+
+<ul>
+  <li>定义元组需要用到括号，调用用方括号，元组中的值不能修改</li>
+</ul>
+
+<div class="language-python highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="n">dimensions</span><span class="o">=</span><span class="p">(</span><span class="mi">200</span><span class="p">,</span><span class="mi">50</span><span class="p">)</span>
+<span class="k">for</span> <span class="n">dimension</span> <span class="ow">in</span> <span class="n">dimensions</span><span class="p">:</span>
+	<span class="nf">print</span><span class="p">(</span><span class="n">dimension</span><span class="p">)</span>
+</code></pre></div></div>
+
+<ul>
+  <li>for循环遍历元组</li>
+</ul>
+
+<div class="language-python highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="n">dimensions</span><span class="o">=</span><span class="p">(</span><span class="mi">200</span><span class="p">,</span><span class="mi">50</span><span class="p">)</span>
+<span class="k">for</span> <span class="n">dimension</span> <span class="ow">in</span> <span class="n">dimensions</span><span class="p">:</span>
+	<span class="nf">print</span><span class="p">(</span><span class="n">dimension</span><span class="p">)</span>
+<span class="n">dimensions</span><span class="o">=</span><span class="p">(</span><span class="mi">200</span><span class="p">,</span><span class="mi">60</span><span class="p">)</span>
+<span class="k">for</span> <span class="n">dimension</span> <span class="ow">in</span> <span class="n">dimensions</span><span class="p">:</span>
+	<span class="nf">print</span><span class="p">(</span><span class="n">dimension</span><span class="p">)</span>
+</code></pre></div></div>
+
+<ul>
+  <li>修改元组，给元组变量赋值</li>
+</ul>
+
+            </article>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+    
+    <footer class="footer" role="contentinfo">
+	<div class="container">
+		<p class="copyright">Copyright &copy; 2014-2026 <a href=""><code>LuLu</code></a>.</p>
+		<p>Powered by <a href="http://jekyllrb.com">Jekyll</a>, themed from <a href="http://lesscss.cn/">Less</a>, refactored by <a href="http://www.hifreud.com/">Freud Kang</a></p>
+	</div>
+</footer>
+
+<script src="/styles/js/jquery.min.js"></script>
+<script src="/styles/js/bootstrap.min.js"></script>
+<script src="/styles/js/holder.min.js"></script>
+<script src="/styles/js/lessismore.js"></script>
+<script src="/styles/js/application.js"></script>
+<script async src="//busuanzi.ibruce.info/busuanzi/2.3/busuanzi.pure.mini.js"></script>
+
+  </body>
+</html>

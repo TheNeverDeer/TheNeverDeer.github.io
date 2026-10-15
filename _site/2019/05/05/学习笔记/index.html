@@ -1,0 +1,227 @@
+<!DOCTYPE html>
+<html>
+
+  <head>
+	<meta charset="utf-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>2019/5/5 《图解密码技术》第四章 - TheNeverDeer</title>
+
+	<link rel="shortcut icon" href="/styles/images/favicon.jpg">
+	<link rel="icon" href="/styles/images/favicon.jpg">
+
+	<link rel="preconnect" href="https://fonts.googleapis.com">
+	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+	<link href="https://fonts.googleapis.com/css2?family=Ma+Shan+Zheng&family=Nunito:wght@400;600;700&family=ZCOOL+XiaoWei&display=swap" rel="stylesheet">
+	<link rel="stylesheet" href="/styles/css/index.css">
+	<link rel="stylesheet" href="/styles/css/theme-girly.css">
+	<link rel="stylesheet" href="/styles/css/fontawesome/css/font-awesome.min.css">
+	<link rel="stylesheet" href="/styles/css/syntax.css">
+	<link rel="canonical" href="/2019/05/05/%E5%AD%A6%E4%B9%A0%E7%AC%94%E8%AE%B0/">
+	<link rel="alternate" type="application/rss+xml" title="TheNeverDeer" href="/feed.xml">
+	
+	<meta name="keywords" content="2019/5/5 《图解密码技术》第四章, TheNeverDeer, 康志华;个人博客;学而不思则罔;思而不学则殆;生命不止;折腾不休">
+	<meta name="description" content="康志华;个人博客;学而不思则罔;思而不学则殆;生命不止;折腾不休">
+
+	<script src="/styles/js/jquery.min.js"></script>
+	<!--[if lt IE 9]>
+    	<script src="http://html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+  	<![endif]-->
+  	<script>
+		var _hmt = _hmt || [];
+		(function() {
+		  var hm = document.createElement("script");
+		  hm.src = "//hm.baidu.com/hm.js?";
+		  var s = document.getElementsByTagName("script")[0]; 
+		  s.parentNode.insertBefore(hm, s);
+		})();
+	</script>
+  	<style type="text/css">
+	  	.docs-content{
+	  		margin-bottom: 10px;
+	  	}
+  	</style>
+</head>
+
+  <body class="index">
+
+    <header class="navbar navbar-inverse navbar-fixed-top docs-nav" role="banner">
+  <div class="container">
+    <div class="navbar-header">
+      <button class="navbar-toggle" type="button" data-toggle="collapse" data-target=".bs-navbar-collapse">
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+      </button>
+      <a href="/" class="navbar-brand">Luzi</a>
+    </div>
+    <nav class="collapse navbar-collapse bs-navbar-collapse" role="navigation">
+      <ul class="nav navbar-nav">    
+        <li>
+          <a href="/">主页</a>
+        </li>
+        <li>
+          <a href="/categories/">类型</a>
+        </li>
+        <li>
+          <a href="/tag">标签</a>
+        </li>
+      </ul>
+      <ul class="nav navbar-nav navbar-right">
+        <!--<li>
+            <a><span id="busuanzi_container_site_pv">本站总访问量<span id="busuanzi_value_site_pv"></span>次</span></a>-->
+        </li>
+        <li class="dropdown">
+          <a href="#" class="dropdown-toggle" data-toggle="dropdown">关于<b class="caret"></b></a>
+          <ul class="dropdown-menu">
+            <li><a rel="nofollow" target="_blank" href="https://github.com/TheNeverDeer/">Github</a></li>
+            <!--<li><a rel="nofollow" target="_blank" href="">关于作者</a></li>-->
+            <li><a rel="nofollow" href="/books">我的书单</a></li>
+            <!--<li><a rel="nofollow" href="http://www.hifreud.com/domains/">域名管理</a></li> -->
+           <!-- <li><a rel="nofollow" href="/reference">推荐博客</a></li> -->
+           <!-- <li><a href="/feed.xml">RSS订阅</a></li> -->
+            <li class="divider"></li>
+            <li><a rel="nofollow" target="_blank" href="https://github.com/TheNeverDeer/TheNeverDeer.github.io">本项目</a></li>
+          </ul>
+        </li>
+      </ul>
+    </nav>
+  </div>
+</header>
+    <div class="docs-header" id="content">
+  <div class="container">
+  	
+  		<!--
+		    <h1>2019/5/5 《图解密码技术》第四章</h1>
+		    <p>Post on May 05, 2019 by <a href="/about">LuLu</a></p>
+		-->
+		    <h1>It's our wits that make us men.</h1>
+    
+  </div>
+</div>
+    
+      
+<div class="banner">
+  <div class="container">
+  	
+    	<a href="/categories/#文章-ref">文章</a>	/
+    	<a href="/tag/#interview-ref">interview</a>
+    
+  </div>
+</div>
+
+    
+
+    <div class="container docs-container">
+  <div class="row">
+    <div class="col-md-3">
+      <div class="sidebar hidden-print" role="complementary">
+        <div id="navigation">
+  <h1>目录</h1>
+  <ul class="nav sidenav">
+  </ul>
+  <div style="height: 200px;width: 200px;">
+    <script type="text/javascript" src="//rf.revolvermaps.com/0/0/8.js?i=&amp;m=0&amp;c=ff0000&amp;cr1=ffffff&amp;f=arial&amp;l=33" async="async"> 
+    </script>
+  </div>
+</div>
+
+ 
+      </div>
+    </div>
+    <div class="col-md-9" role="main">
+      <div class="panel docs-content">
+        <div class="wrapper">
+            <header class="post-header">
+              <h1 class="post-title">2019/5/5 《图解密码技术》第四章</h1>
+              <!--
+                <p class="post-meta">May 5, 2019</p>
+              -->
+              <div class="meta">Posted on <span class="postdate">May 05, 2019</span> By <a target="_blank" href="http://localhost:4000">LuLu</a></div>
+              <br />
+            </header>
+            <article class="post-content">
+              <ul id="markdown-toc">
+  <li><a href="#图解密码技术第四章" id="markdown-toc-图解密码技术第四章">图解密码技术(第四章)</a>    <ul>
+      <li><a href="#cfb模式" id="markdown-toc-cfb模式">CFB模式</a>        <ul>
+          <li><a href="#什么是cfb模式" id="markdown-toc-什么是cfb模式">什么是CFB模式</a></li>
+          <li><a href="#cfb模式与流密码" id="markdown-toc-cfb模式与流密码">CFB模式与流密码</a></li>
+          <li><a href="#cfb模式的解密" id="markdown-toc-cfb模式的解密">CFB模式的解密</a></li>
+          <li><a href="#对cfb模式的攻击" id="markdown-toc-对cfb模式的攻击">对CFB模式的攻击</a></li>
+        </ul>
+      </li>
+    </ul>
+  </li>
+</ul>
+<h1 id="图解密码技术第四章">图解密码技术(第四章)</h1>
+
+<ul>
+  <li>密钥流 key stream ，重放攻击 replay attack</li>
+</ul>
+
+<p><img src="https://wx2.sinaimg.cn/mw690/0066mMjily1g2q6xe3ckrj30gn0c0gov.jpg" alt="img" /></p>
+
+<h2 id="cfb模式">CFB模式</h2>
+
+<h3 id="什么是cfb模式">什么是CFB模式</h3>
+
+<p>CFB模式：Cipher FeedBack 模式，密文反馈模式。</p>
+
+<p>在此模式中，前一个密文分组会被送回到密码算法的输入端。反馈：返回到输入端的意思。</p>
+
+<p><img src="https://wx4.sinaimg.cn/mw690/0066mMjily1g2q70skjyej30gj0dhgo7.jpg" alt="img" /></p>
+
+<p>ECB模式与CBC模式都是将明文分组加密，而CFB模式，明文分组没有通过密码算法直接加密。</p>
+
+<p>CBC模式中，明文到密文要经过加密和XOR，而CFB只需要经过XOR。</p>
+
+<h3 id="cfb模式与流密码">CFB模式与流密码</h3>
+
+<ul>
+  <li>
+    <p>CFB模式的结构和一次性密码本非常类似。都是通过XOR来进行加密的。</p>
+
+    <p>因为密码算法的输出是通过计算得到的，并不是真正的随机数，所以不具备理论上不可破译的性质。</p>
+  </li>
+  <li>CFB模式中由密码算法所生成的比特序列称为密钥流，密码算法相当于用来生成密钥流的伪随机数生成器，初始化向量相当于伪随机数生成器的“种子”。</li>
+  <li>CFB模式中，明文数据被逐比特加密，因此可以看作是一种使用分组密码来实现流密码的方式。</li>
+</ul>
+
+<h3 id="cfb模式的解密">CFB模式的解密</h3>
+
+<p>依然需要注意分组密码算法是加密操作，因为密钥流是通过加密生成的。</p>
+
+<h3 id="对cfb模式的攻击">对CFB模式的攻击</h3>
+
+<ul>
+  <li>对CFB模式可以采取重放攻击。</li>
+</ul>
+
+<p>Mallory将Alice发送给Bob的四个密文分组的后三个截取，第二天Alice给Bob发四个分组的时候，用昨天的替换掉后三个。</p>
+
+<p>Bob解密时，第一个正常解密，第二个出错，第三个和第四个是以前的明文内容，而Bob不能确定第二个出错是通信错误爱是被攻击。</p>
+
+            </article>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+    
+    <footer class="footer" role="contentinfo">
+	<div class="container">
+		<p class="copyright">Copyright &copy; 2014-2026 <a href=""><code>LuLu</code></a>.</p>
+		<p>Powered by <a href="http://jekyllrb.com">Jekyll</a>, themed from <a href="http://lesscss.cn/">Less</a>, refactored by <a href="http://www.hifreud.com/">Freud Kang</a></p>
+	</div>
+</footer>
+
+<script src="/styles/js/jquery.min.js"></script>
+<script src="/styles/js/bootstrap.min.js"></script>
+<script src="/styles/js/holder.min.js"></script>
+<script src="/styles/js/lessismore.js"></script>
+<script src="/styles/js/application.js"></script>
+<script async src="//busuanzi.ibruce.info/busuanzi/2.3/busuanzi.pure.mini.js"></script>
+
+  </body>
+</html>

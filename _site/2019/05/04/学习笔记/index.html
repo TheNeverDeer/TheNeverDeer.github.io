@@ -1,0 +1,277 @@
+<!DOCTYPE html>
+<html>
+
+  <head>
+	<meta charset="utf-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>2019/5/4 《图解密码技术》第四章 - TheNeverDeer</title>
+
+	<link rel="shortcut icon" href="/styles/images/favicon.jpg">
+	<link rel="icon" href="/styles/images/favicon.jpg">
+
+	<link rel="preconnect" href="https://fonts.googleapis.com">
+	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+	<link href="https://fonts.googleapis.com/css2?family=Ma+Shan+Zheng&family=Nunito:wght@400;600;700&family=ZCOOL+XiaoWei&display=swap" rel="stylesheet">
+	<link rel="stylesheet" href="/styles/css/index.css">
+	<link rel="stylesheet" href="/styles/css/theme-girly.css">
+	<link rel="stylesheet" href="/styles/css/fontawesome/css/font-awesome.min.css">
+	<link rel="stylesheet" href="/styles/css/syntax.css">
+	<link rel="canonical" href="/2019/05/04/%E5%AD%A6%E4%B9%A0%E7%AC%94%E8%AE%B0/">
+	<link rel="alternate" type="application/rss+xml" title="TheNeverDeer" href="/feed.xml">
+	
+	<meta name="keywords" content="2019/5/4 《图解密码技术》第四章, TheNeverDeer, 康志华;个人博客;学而不思则罔;思而不学则殆;生命不止;折腾不休">
+	<meta name="description" content="康志华;个人博客;学而不思则罔;思而不学则殆;生命不止;折腾不休">
+
+	<script src="/styles/js/jquery.min.js"></script>
+	<!--[if lt IE 9]>
+    	<script src="http://html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+  	<![endif]-->
+  	<script>
+		var _hmt = _hmt || [];
+		(function() {
+		  var hm = document.createElement("script");
+		  hm.src = "//hm.baidu.com/hm.js?";
+		  var s = document.getElementsByTagName("script")[0]; 
+		  s.parentNode.insertBefore(hm, s);
+		})();
+	</script>
+  	<style type="text/css">
+	  	.docs-content{
+	  		margin-bottom: 10px;
+	  	}
+  	</style>
+</head>
+
+  <body class="index">
+
+    <header class="navbar navbar-inverse navbar-fixed-top docs-nav" role="banner">
+  <div class="container">
+    <div class="navbar-header">
+      <button class="navbar-toggle" type="button" data-toggle="collapse" data-target=".bs-navbar-collapse">
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+      </button>
+      <a href="/" class="navbar-brand">Luzi</a>
+    </div>
+    <nav class="collapse navbar-collapse bs-navbar-collapse" role="navigation">
+      <ul class="nav navbar-nav">    
+        <li>
+          <a href="/">主页</a>
+        </li>
+        <li>
+          <a href="/categories/">类型</a>
+        </li>
+        <li>
+          <a href="/tag">标签</a>
+        </li>
+      </ul>
+      <ul class="nav navbar-nav navbar-right">
+        <!--<li>
+            <a><span id="busuanzi_container_site_pv">本站总访问量<span id="busuanzi_value_site_pv"></span>次</span></a>-->
+        </li>
+        <li class="dropdown">
+          <a href="#" class="dropdown-toggle" data-toggle="dropdown">关于<b class="caret"></b></a>
+          <ul class="dropdown-menu">
+            <li><a rel="nofollow" target="_blank" href="https://github.com/TheNeverDeer/">Github</a></li>
+            <!--<li><a rel="nofollow" target="_blank" href="">关于作者</a></li>-->
+            <li><a rel="nofollow" href="/books">我的书单</a></li>
+            <!--<li><a rel="nofollow" href="http://www.hifreud.com/domains/">域名管理</a></li> -->
+           <!-- <li><a rel="nofollow" href="/reference">推荐博客</a></li> -->
+           <!-- <li><a href="/feed.xml">RSS订阅</a></li> -->
+            <li class="divider"></li>
+            <li><a rel="nofollow" target="_blank" href="https://github.com/TheNeverDeer/TheNeverDeer.github.io">本项目</a></li>
+          </ul>
+        </li>
+      </ul>
+    </nav>
+  </div>
+</header>
+    <div class="docs-header" id="content">
+  <div class="container">
+  	
+  		<!--
+		    <h1>2019/5/4 《图解密码技术》第四章</h1>
+		    <p>Post on May 04, 2019 by <a href="/about">LuLu</a></p>
+		-->
+		    <h1>It's our wits that make us men.</h1>
+    
+  </div>
+</div>
+    
+      
+<div class="banner">
+  <div class="container">
+  	
+    	<a href="/categories/#文章-ref">文章</a>	/
+    	<a href="/tag/#interview-ref">interview</a>
+    
+  </div>
+</div>
+
+    
+
+    <div class="container docs-container">
+  <div class="row">
+    <div class="col-md-3">
+      <div class="sidebar hidden-print" role="complementary">
+        <div id="navigation">
+  <h1>目录</h1>
+  <ul class="nav sidenav">
+  </ul>
+  <div style="height: 200px;width: 200px;">
+    <script type="text/javascript" src="//rf.revolvermaps.com/0/0/8.js?i=&amp;m=0&amp;c=ff0000&amp;cr1=ffffff&amp;f=arial&amp;l=33" async="async"> 
+    </script>
+  </div>
+</div>
+
+ 
+      </div>
+    </div>
+    <div class="col-md-9" role="main">
+      <div class="panel docs-content">
+        <div class="wrapper">
+            <header class="post-header">
+              <h1 class="post-title">2019/5/4 《图解密码技术》第四章</h1>
+              <!--
+                <p class="post-meta">May 4, 2019</p>
+              -->
+              <div class="meta">Posted on <span class="postdate">May 04, 2019</span> By <a target="_blank" href="http://localhost:4000">LuLu</a></div>
+              <br />
+            </header>
+            <article class="post-content">
+              <ul id="markdown-toc">
+  <li><a href="#图解密码技术第四章" id="markdown-toc-图解密码技术第四章">图解密码技术(第四章)</a>    <ul>
+      <li><a href="#ecb模式" id="markdown-toc-ecb模式">ECB模式</a>        <ul>
+          <li><a href="#什么是ecb模式" id="markdown-toc-什么是ecb模式">什么是ECB模式</a></li>
+          <li><a href="#ecb特点" id="markdown-toc-ecb特点">ECB特点</a></li>
+          <li><a href="#对ecb模式的攻击" id="markdown-toc-对ecb模式的攻击">对ECB模式的攻击</a></li>
+        </ul>
+      </li>
+      <li><a href="#cbc模式" id="markdown-toc-cbc模式">CBC模式</a>        <ul>
+          <li><a href="#什么是cbc模式" id="markdown-toc-什么是cbc模式">什么是CBC模式</a></li>
+          <li><a href="#初始化向量" id="markdown-toc-初始化向量">初始化向量</a></li>
+          <li><a href="#cbc模式的特点" id="markdown-toc-cbc模式的特点">CBC模式的特点</a></li>
+          <li><a href="#对cbc模式的攻击" id="markdown-toc-对cbc模式的攻击">对CBC模式的攻击</a></li>
+          <li><a href="#填充提示攻击" id="markdown-toc-填充提示攻击">填充提示攻击</a></li>
+          <li><a href="#对初始化向量进行攻击" id="markdown-toc-对初始化向量进行攻击">对初始化向量进行攻击</a></li>
+          <li><a href="#cbc模式的应用实例" id="markdown-toc-cbc模式的应用实例">CBC模式的应用实例</a></li>
+        </ul>
+      </li>
+    </ul>
+  </li>
+</ul>
+<h1 id="图解密码技术第四章">图解密码技术(第四章)</h1>
+
+<ul>
+  <li>填充 padding</li>
+  <li>初始化向量 Initialization Vector</li>
+  <li>填充提示攻击 Padding Oracle Attack</li>
+</ul>
+
+<h2 id="ecb模式">ECB模式</h2>
+
+<p>将明文分组直接加密的方式就是ECB模式。</p>
+
+<h3 id="什么是ecb模式">什么是ECB模式</h3>
+
+<p>Electronic CodeBook模式：电子密码本模式</p>
+
+<p>明文分组加密之后的结果直接成为密文分组。</p>
+
+<p>党组后一个明文分组内容小于分组长度时，需要用一些特定的数据进行填充。</p>
+
+<p><img src="https://wx4.sinaimg.cn/mw690/0066mMjily1g2p9fgf078j30f30ftwh5.jpg" alt="img" /></p>
+
+<h3 id="ecb特点">ECB特点</h3>
+
+<p>ECB是最简单的一种模式。相同的明文分组对应的密文分组是一样的，存在一定风险。</p>
+
+<h3 id="对ecb模式的攻击">对ECB模式的攻击</h3>
+
+<p>对每个明文分组进行独立的加密解密，是一个很大的弱点。</p>
+
+<p>一大弱点：可以在不破译密文的情况下操纵明文</p>
+
+<p>主动攻击者可以做的，不仅仅是替换，还可以删除，复制。</p>
+
+<p>消息验证码可以检测出对密文的篡改。</p>
+
+<h2 id="cbc模式">CBC模式</h2>
+
+<h3 id="什么是cbc模式">什么是CBC模式</h3>
+
+<p>Cipher Block Chaining模式：密文分组链接模式</p>
+
+<p>首先将明文分组与前一个密文分组进行XOR运算，在进行加密。</p>
+
+<p><img src="https://wx3.sinaimg.cn/mw690/0066mMjily1g2p9toi2l0j30hl0eg0vp.jpg" alt="img" /></p>
+
+<p>ECB模式只进行了加密，而CBC模式在加密前进行了一次XOR。</p>
+
+<h3 id="初始化向量">初始化向量</h3>
+
+<p>加密第一个明文分组，由于没有前一个密文分组，要事先准备一个长度为一个分组长度的比特序列，被称为初始化向量，简记IV。</p>
+
+<h3 id="cbc模式的特点">CBC模式的特点</h3>
+
+<p>损坏(密文分组长度没变)：CBC模式中密文分组损坏时，会影响两个明文分组。</p>
+
+<p>缺失(密文分组长度改变)：即使只有1比特缺失，那此后的分组发生错位，全都无法解密。</p>
+
+<h3 id="对cbc模式的攻击">对CBC模式的攻击</h3>
+
+<p>如果Mallory的目的是为了通过修改密文来操纵明文，则他可以通过对初始化向量进行比特反转(0变1,1变0)对明文分组进行比特反转攻击</p>
+
+<p><img src="https://wx2.sinaimg.cn/mw690/0066mMjily1g2pabccfjzj30gm0algng.jpg" alt="img" /></p>
+
+<p>可以对初始化向量进行攻击，但是对密文分组也进行同样攻击就很困难。如果密文分组1进行了反转，则明文分组1就不是简单发生反转变化了，无法达到期望的反转效果。</p>
+
+<p>消息验证码，可以判断数据有没有被篡改。</p>
+
+<h3 id="填充提示攻击">填充提示攻击</h3>
+
+<p>填充提示攻击是一种利用分组密码中的填充部分来进行攻击的方法。该攻击适用于所有需要分组填充的模式。</p>
+
+<p>在这个攻击中，攻击者回重复发送一段密文，每次发送都对填充的密文进行少许修改，通过无法解密时返回的一个错误消息，来获得一部分的明文相关信息。</p>
+
+<p>防御这种攻击，需要对密文进行认证。</p>
+
+<h3 id="对初始化向量进行攻击">对初始化向量进行攻击</h3>
+
+<p>IV必须使用不可预测的随机数，但是SSL/TLS的TLS1.0的版本中，没有使用不可预测数，而是使用了上一次CBC加密的最后一个分组。容易被攻击。</p>
+
+<h3 id="cbc模式的应用实例">CBC模式的应用实例</h3>
+
+<p>确保互联网安全的通信协议之一SSL/TLS就是使用CBC模式来确保通信的机密性。</p>
+
+<p>如：使用CBC模式的三重DES的3DES_EDE_CBC</p>
+
+<p>​       使用CBC模式的256比特的AES的AES_256_CBC</p>
+
+
+            </article>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+    
+    <footer class="footer" role="contentinfo">
+	<div class="container">
+		<p class="copyright">Copyright &copy; 2014-2026 <a href=""><code>LuLu</code></a>.</p>
+		<p>Powered by <a href="http://jekyllrb.com">Jekyll</a>, themed from <a href="http://lesscss.cn/">Less</a>, refactored by <a href="http://www.hifreud.com/">Freud Kang</a></p>
+	</div>
+</footer>
+
+<script src="/styles/js/jquery.min.js"></script>
+<script src="/styles/js/bootstrap.min.js"></script>
+<script src="/styles/js/holder.min.js"></script>
+<script src="/styles/js/lessismore.js"></script>
+<script src="/styles/js/application.js"></script>
+<script async src="//busuanzi.ibruce.info/busuanzi/2.3/busuanzi.pure.mini.js"></script>
+
+  </body>
+</html>

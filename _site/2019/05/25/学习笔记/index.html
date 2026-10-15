@@ -1,0 +1,322 @@
+<!DOCTYPE html>
+<html>
+
+  <head>
+	<meta charset="utf-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>2019/5/25 《图解密码技术》第十章 - TheNeverDeer</title>
+
+	<link rel="shortcut icon" href="/styles/images/favicon.jpg">
+	<link rel="icon" href="/styles/images/favicon.jpg">
+
+	<link rel="preconnect" href="https://fonts.googleapis.com">
+	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+	<link href="https://fonts.googleapis.com/css2?family=Ma+Shan+Zheng&family=Nunito:wght@400;600;700&family=ZCOOL+XiaoWei&display=swap" rel="stylesheet">
+	<link rel="stylesheet" href="/styles/css/index.css">
+	<link rel="stylesheet" href="/styles/css/theme-girly.css">
+	<link rel="stylesheet" href="/styles/css/fontawesome/css/font-awesome.min.css">
+	<link rel="stylesheet" href="/styles/css/syntax.css">
+	<link rel="canonical" href="/2019/05/25/%E5%AD%A6%E4%B9%A0%E7%AC%94%E8%AE%B0/">
+	<link rel="alternate" type="application/rss+xml" title="TheNeverDeer" href="/feed.xml">
+	
+	<meta name="keywords" content="2019/5/25 《图解密码技术》第十章, TheNeverDeer, 康志华;个人博客;学而不思则罔;思而不学则殆;生命不止;折腾不休">
+	<meta name="description" content="康志华;个人博客;学而不思则罔;思而不学则殆;生命不止;折腾不休">
+
+	<script src="/styles/js/jquery.min.js"></script>
+	<!--[if lt IE 9]>
+    	<script src="http://html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+  	<![endif]-->
+  	<script>
+		var _hmt = _hmt || [];
+		(function() {
+		  var hm = document.createElement("script");
+		  hm.src = "//hm.baidu.com/hm.js?";
+		  var s = document.getElementsByTagName("script")[0]; 
+		  s.parentNode.insertBefore(hm, s);
+		})();
+	</script>
+  	<style type="text/css">
+	  	.docs-content{
+	  		margin-bottom: 10px;
+	  	}
+  	</style>
+</head>
+
+  <body class="index">
+
+    <header class="navbar navbar-inverse navbar-fixed-top docs-nav" role="banner">
+  <div class="container">
+    <div class="navbar-header">
+      <button class="navbar-toggle" type="button" data-toggle="collapse" data-target=".bs-navbar-collapse">
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+      </button>
+      <a href="/" class="navbar-brand">Luzi</a>
+    </div>
+    <nav class="collapse navbar-collapse bs-navbar-collapse" role="navigation">
+      <ul class="nav navbar-nav">    
+        <li>
+          <a href="/">主页</a>
+        </li>
+        <li>
+          <a href="/categories/">类型</a>
+        </li>
+        <li>
+          <a href="/tag">标签</a>
+        </li>
+      </ul>
+      <ul class="nav navbar-nav navbar-right">
+        <!--<li>
+            <a><span id="busuanzi_container_site_pv">本站总访问量<span id="busuanzi_value_site_pv"></span>次</span></a>-->
+        </li>
+        <li class="dropdown">
+          <a href="#" class="dropdown-toggle" data-toggle="dropdown">关于<b class="caret"></b></a>
+          <ul class="dropdown-menu">
+            <li><a rel="nofollow" target="_blank" href="https://github.com/TheNeverDeer/">Github</a></li>
+            <!--<li><a rel="nofollow" target="_blank" href="">关于作者</a></li>-->
+            <li><a rel="nofollow" href="/books">我的书单</a></li>
+            <!--<li><a rel="nofollow" href="http://www.hifreud.com/domains/">域名管理</a></li> -->
+           <!-- <li><a rel="nofollow" href="/reference">推荐博客</a></li> -->
+           <!-- <li><a href="/feed.xml">RSS订阅</a></li> -->
+            <li class="divider"></li>
+            <li><a rel="nofollow" target="_blank" href="https://github.com/TheNeverDeer/TheNeverDeer.github.io">本项目</a></li>
+          </ul>
+        </li>
+      </ul>
+    </nav>
+  </div>
+</header>
+    <div class="docs-header" id="content">
+  <div class="container">
+  	
+  		<!--
+		    <h1>2019/5/25 《图解密码技术》第十章</h1>
+		    <p>Post on May 25, 2019 by <a href="/about">LuLu</a></p>
+		-->
+		    <h1>It's our wits that make us men.</h1>
+    
+  </div>
+</div>
+    
+      
+<div class="banner">
+  <div class="container">
+  	
+    	<a href="/categories/#文章-ref">文章</a>	/
+    	<a href="/tag/#interview-ref">interview</a>
+    
+  </div>
+</div>
+
+    
+
+    <div class="container docs-container">
+  <div class="row">
+    <div class="col-md-3">
+      <div class="sidebar hidden-print" role="complementary">
+        <div id="navigation">
+  <h1>目录</h1>
+  <ul class="nav sidenav">
+  </ul>
+  <div style="height: 200px;width: 200px;">
+    <script type="text/javascript" src="//rf.revolvermaps.com/0/0/8.js?i=&amp;m=0&amp;c=ff0000&amp;cr1=ffffff&amp;f=arial&amp;l=33" async="async"> 
+    </script>
+  </div>
+</div>
+
+ 
+      </div>
+    </div>
+    <div class="col-md-9" role="main">
+      <div class="panel docs-content">
+        <div class="wrapper">
+            <header class="post-header">
+              <h1 class="post-title">2019/5/25 《图解密码技术》第十章</h1>
+              <!--
+                <p class="post-meta">May 25, 2019</p>
+              -->
+              <div class="meta">Posted on <span class="postdate">May 25, 2019</span> By <a target="_blank" href="http://localhost:4000">LuLu</a></div>
+              <br />
+            </header>
+            <article class="post-content">
+              <ul id="markdown-toc">
+  <li><a href="#图解密码技术第十章" id="markdown-toc-图解密码技术第十章">《图解密码技术》第十章</a>    <ul>
+      <li><a href="#证书" id="markdown-toc-证书">证书</a>        <ul>
+          <li><a href="#证书的应用场景" id="markdown-toc-证书的应用场景">证书的应用场景</a></li>
+          <li><a href="#实际生成一张证书" id="markdown-toc-实际生成一张证书">实际生成一张证书</a></li>
+        </ul>
+      </li>
+      <li><a href="#公钥基础设施pki" id="markdown-toc-公钥基础设施pki">公钥基础设施PKI</a>        <ul>
+          <li><a href="#pki的组成要素" id="markdown-toc-pki的组成要素">PKI的组成要素</a></li>
+          <li><a href="#认证机构的工作" id="markdown-toc-认证机构的工作">认证机构的工作</a></li>
+          <li><a href="#证书的层级结构" id="markdown-toc-证书的层级结构">证书的层级结构</a></li>
+          <li><a href="#各种各样的pki" id="markdown-toc-各种各样的pki">各种各样的PKI</a></li>
+        </ul>
+      </li>
+      <li><a href="#对证书的攻击" id="markdown-toc-对证书的攻击">对证书的攻击</a>        <ul>
+          <li><a href="#在公钥注册前进行攻击" id="markdown-toc-在公钥注册前进行攻击">在公钥注册前进行攻击</a></li>
+          <li><a href="#注册相似人名进行攻击" id="markdown-toc-注册相似人名进行攻击">注册相似人名进行攻击</a></li>
+          <li><a href="#窃取认证机构的私钥进行攻击" id="markdown-toc-窃取认证机构的私钥进行攻击">窃取认证机构的私钥进行攻击</a></li>
+          <li><a href="#攻击者伪装成认证机构进行攻击" id="markdown-toc-攻击者伪装成认证机构进行攻击">攻击者伪装成认证机构进行攻击</a></li>
+          <li><a href="#钻crl的空子进行攻击1" id="markdown-toc-钻crl的空子进行攻击1">钻CRL的空子进行攻击(1)</a></li>
+          <li><a href="#钻crl的空子进行攻击2" id="markdown-toc-钻crl的空子进行攻击2">钻CRL的空子进行攻击(2)</a></li>
+        </ul>
+      </li>
+      <li><a href="#关于证书的qa" id="markdown-toc-关于证书的qa">关于证书的Q&amp;A</a></li>
+    </ul>
+  </li>
+</ul>
+<h1 id="图解密码技术第十章">《图解密码技术》第十章</h1>
+
+<ul>
+  <li>公钥证书(简称证书)：public-key certificate， PKC，认证机构：certification authority、certifying authority，CA，认证业务准则：certification practice statement，CPS</li>
+  <li>公钥基础设施PKI：public-key infrastructure，实体：entitiy，注册机构RA：registration authority，仓库：repository</li>
+  <li>作废：revoke，证书作废清单CRL： certificate revocation list</li>
+</ul>
+
+<h2 id="证书">证书</h2>
+
+<h3 id="证书的应用场景">证书的应用场景</h3>
+
+<p><img src="https://wx4.sinaimg.cn/mw690/0066mMjily1g3f2up6t5cj30hb08rglx.jpg" alt="img" /></p>
+
+<h3 id="实际生成一张证书">实际生成一张证书</h3>
+
+<p>证书的规范X.509_规范</p>
+
+<h2 id="公钥基础设施pki">公钥基础设施PKI</h2>
+
+<p>PKI：public-key infrastructure，是为了能够更有效的运用公钥而指定的一系列规范和规格的总称</p>
+
+<p>PKCS、RFC、X.509、API也都是PKI的一种</p>
+
+<h3 id="pki的组成要素">PKI的组成要素</h3>
+
+<ul>
+  <li>用户——使用PKI的人
+    <ul>
+      <li>希望使用PKI注册自己的公钥的人</li>
+      <li>希望使用已注册公钥的人</li>
+    </ul>
+  </li>
+  <li>认证机构——颁发证书的人</li>
+  <li>仓库(证书目录)——保存证书的数据库</li>
+</ul>
+
+<h3 id="认证机构的工作">认证机构的工作</h3>
+
+<ul>
+  <li>生成密钥对：用户或者认证机构来生成</li>
+  <li>注册证书：认证机构根据CPS对用户身份进行认证，生成证书时，需要使用认证机构的私钥进行数字签名</li>
+  <li>作废证书与CRL：当私钥丢失、被盗以及无使用权限，内容变更都需要作废，认证机构需要制作证书作废清单，PKI用户需要从认证机构获取最新CRL，查询自己验证签名的公钥证书是否已经作废</li>
+</ul>
+
+<h3 id="证书的层级结构">证书的层级结构</h3>
+
+<p>一个认证机构来验证另一个认证机构的公钥，这样的关系可以迭代好几层，认证机构的终点称为根CA，对自己的公钥进行数字签名的行为称为自签名</p>
+
+<h3 id="各种各样的pki">各种各样的PKI</h3>
+
+<p>世界上已经有无数个认证机构了，认证机构只要对公钥进行数字签名就可以了</p>
+
+<h2 id="对证书的攻击">对证书的攻击</h2>
+
+<p>针对数字签名的攻击方法对证书都有效，主要看针对PKI的攻击</p>
+
+<h3 id="在公钥注册前进行攻击">在公钥注册前进行攻击</h3>
+
+<p>在Bob准备注册公钥前，攻击者已经将Bob的公钥换成了自己的</p>
+
+<ul>
+  <li>为了防止，可以用认证机构的公钥对Bob的公钥进行加密，此外，认证身份时，可以将公钥的指纹并发送给Bob</li>
+</ul>
+
+<h3 id="注册相似人名进行攻击">注册相似人名进行攻击</h3>
+
+<p>BOB和Bob</p>
+
+<ul>
+  <li>为了防止，认证机构必须确认证书中所包含的信息是否真的是其持有者的个人信息</li>
+</ul>
+
+<h3 id="窃取认证机构的私钥进行攻击">窃取认证机构的私钥进行攻击</h3>
+
+<p>认证机构必须花费大量的钱来防止自己的私钥被窃取</p>
+
+<p>如果私钥泄露，就要通过CRL通知用户</p>
+
+<h3 id="攻击者伪装成认证机构进行攻击">攻击者伪装成认证机构进行攻击</h3>
+
+<p>如果认证机构本身不可信，即使证书合法，公钥也不能使用</p>
+
+<h3 id="钻crl的空子进行攻击1">钻CRL的空子进行攻击(1)</h3>
+
+<p>利用CRL发布的时间差来发动攻击</p>
+
+<p>被盗取之后，CRL发布之前，</p>
+
+<ul>
+  <li>公钥丢失之前尽快通知认证机构</li>
+  <li>尽快发布CRL</li>
+  <li>及时更新CRL</li>
+  <li>使用公钥前，再次确认公钥是否失效</li>
+</ul>
+
+<h3 id="钻crl的空子进行攻击2">钻CRL的空子进行攻击(2)</h3>
+
+<p>通过钻CRL的空子，实现否认</p>
+
+<p>为了快速确认证书是否已经失效，设计了一种OCSP的协议</p>
+
+<h2 id="关于证书的qa">关于证书的Q&amp;A</h2>
+
+<ul>
+  <li>
+    <p>为什么需要证书？</p>
+
+    <p>降低遭受中间人攻击的风险</p>
+
+    <ul>
+      <li>如果能够取得可信的公钥，则不需要认证机构</li>
+      <li>当持有可信的认证机构公钥，并相信认证机构所进行的身份确认的情况下，则可以信任该认证机构颁发的证书以及通过该途径取得的公钥</li>
+    </ul>
+  </li>
+  <li>
+    <p>通过自己的方法进行认证是否更安全</p>
+
+    <p>犯了隐蔽式安全的错误，全世界的安全专家也在为这些公开的技术寻找漏洞</p>
+  </li>
+  <li>
+    <p>为什么要相信认证机构</p>
+
+    <p>我们之所以信任某个认证机构，是因为我们基于多个可信的情报源所作出的判断</p>
+  </li>
+</ul>
+
+
+            </article>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+    
+    <footer class="footer" role="contentinfo">
+	<div class="container">
+		<p class="copyright">Copyright &copy; 2014-2026 <a href=""><code>LuLu</code></a>.</p>
+		<p>Powered by <a href="http://jekyllrb.com">Jekyll</a>, themed from <a href="http://lesscss.cn/">Less</a>, refactored by <a href="http://www.hifreud.com/">Freud Kang</a></p>
+	</div>
+</footer>
+
+<script src="/styles/js/jquery.min.js"></script>
+<script src="/styles/js/bootstrap.min.js"></script>
+<script src="/styles/js/holder.min.js"></script>
+<script src="/styles/js/lessismore.js"></script>
+<script src="/styles/js/application.js"></script>
+<script async src="//busuanzi.ibruce.info/busuanzi/2.3/busuanzi.pure.mini.js"></script>
+
+  </body>
+</html>

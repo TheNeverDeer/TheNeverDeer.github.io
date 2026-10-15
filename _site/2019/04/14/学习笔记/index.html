@@ -1,0 +1,237 @@
+<!DOCTYPE html>
+<html>
+
+  <head>
+	<meta charset="utf-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>2019/4/14 Linux基础知识 - TheNeverDeer</title>
+
+	<link rel="shortcut icon" href="/styles/images/favicon.jpg">
+	<link rel="icon" href="/styles/images/favicon.jpg">
+
+	<link rel="preconnect" href="https://fonts.googleapis.com">
+	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+	<link href="https://fonts.googleapis.com/css2?family=Ma+Shan+Zheng&family=Nunito:wght@400;600;700&family=ZCOOL+XiaoWei&display=swap" rel="stylesheet">
+	<link rel="stylesheet" href="/styles/css/index.css">
+	<link rel="stylesheet" href="/styles/css/theme-girly.css">
+	<link rel="stylesheet" href="/styles/css/fontawesome/css/font-awesome.min.css">
+	<link rel="stylesheet" href="/styles/css/syntax.css">
+	<link rel="canonical" href="/2019/04/14/%E5%AD%A6%E4%B9%A0%E7%AC%94%E8%AE%B0/">
+	<link rel="alternate" type="application/rss+xml" title="TheNeverDeer" href="/feed.xml">
+	
+	<meta name="keywords" content="2019/4/14 Linux基础知识, TheNeverDeer, 康志华;个人博客;学而不思则罔;思而不学则殆;生命不止;折腾不休">
+	<meta name="description" content="康志华;个人博客;学而不思则罔;思而不学则殆;生命不止;折腾不休">
+
+	<script src="/styles/js/jquery.min.js"></script>
+	<!--[if lt IE 9]>
+    	<script src="http://html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+  	<![endif]-->
+  	<script>
+		var _hmt = _hmt || [];
+		(function() {
+		  var hm = document.createElement("script");
+		  hm.src = "//hm.baidu.com/hm.js?";
+		  var s = document.getElementsByTagName("script")[0]; 
+		  s.parentNode.insertBefore(hm, s);
+		})();
+	</script>
+  	<style type="text/css">
+	  	.docs-content{
+	  		margin-bottom: 10px;
+	  	}
+  	</style>
+</head>
+
+  <body class="index">
+
+    <header class="navbar navbar-inverse navbar-fixed-top docs-nav" role="banner">
+  <div class="container">
+    <div class="navbar-header">
+      <button class="navbar-toggle" type="button" data-toggle="collapse" data-target=".bs-navbar-collapse">
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+      </button>
+      <a href="/" class="navbar-brand">Luzi</a>
+    </div>
+    <nav class="collapse navbar-collapse bs-navbar-collapse" role="navigation">
+      <ul class="nav navbar-nav">    
+        <li>
+          <a href="/">主页</a>
+        </li>
+        <li>
+          <a href="/categories/">类型</a>
+        </li>
+        <li>
+          <a href="/tag">标签</a>
+        </li>
+      </ul>
+      <ul class="nav navbar-nav navbar-right">
+        <!--<li>
+            <a><span id="busuanzi_container_site_pv">本站总访问量<span id="busuanzi_value_site_pv"></span>次</span></a>-->
+        </li>
+        <li class="dropdown">
+          <a href="#" class="dropdown-toggle" data-toggle="dropdown">关于<b class="caret"></b></a>
+          <ul class="dropdown-menu">
+            <li><a rel="nofollow" target="_blank" href="https://github.com/TheNeverDeer/">Github</a></li>
+            <!--<li><a rel="nofollow" target="_blank" href="">关于作者</a></li>-->
+            <li><a rel="nofollow" href="/books">我的书单</a></li>
+            <!--<li><a rel="nofollow" href="http://www.hifreud.com/domains/">域名管理</a></li> -->
+           <!-- <li><a rel="nofollow" href="/reference">推荐博客</a></li> -->
+           <!-- <li><a href="/feed.xml">RSS订阅</a></li> -->
+            <li class="divider"></li>
+            <li><a rel="nofollow" target="_blank" href="https://github.com/TheNeverDeer/TheNeverDeer.github.io">本项目</a></li>
+          </ul>
+        </li>
+      </ul>
+    </nav>
+  </div>
+</header>
+    <div class="docs-header" id="content">
+  <div class="container">
+  	
+  		<!--
+		    <h1>2019/4/14 Linux基础知识</h1>
+		    <p>Post on Apr 14, 2019 by <a href="/about">LuLu</a></p>
+		-->
+		    <h1>It's our wits that make us men.</h1>
+    
+  </div>
+</div>
+    
+      
+<div class="banner">
+  <div class="container">
+  	
+    	<a href="/categories/#文章-ref">文章</a>	/
+    	<a href="/tag/#interview-ref">interview</a>
+    
+  </div>
+</div>
+
+    
+
+    <div class="container docs-container">
+  <div class="row">
+    <div class="col-md-3">
+      <div class="sidebar hidden-print" role="complementary">
+        <div id="navigation">
+  <h1>目录</h1>
+  <ul class="nav sidenav">
+  </ul>
+  <div style="height: 200px;width: 200px;">
+    <script type="text/javascript" src="//rf.revolvermaps.com/0/0/8.js?i=&amp;m=0&amp;c=ff0000&amp;cr1=ffffff&amp;f=arial&amp;l=33" async="async"> 
+    </script>
+  </div>
+</div>
+
+ 
+      </div>
+    </div>
+    <div class="col-md-9" role="main">
+      <div class="panel docs-content">
+        <div class="wrapper">
+            <header class="post-header">
+              <h1 class="post-title">2019/4/14 Linux基础知识</h1>
+              <!--
+                <p class="post-meta">Apr 14, 2019</p>
+              -->
+              <div class="meta">Posted on <span class="postdate">Apr 14, 2019</span> By <a target="_blank" href="http://localhost:4000">LuLu</a></div>
+              <br />
+            </header>
+            <article class="post-content">
+              <ul id="markdown-toc">
+  <li><a href="#1卸载amazon" id="markdown-toc-1卸载amazon"><strong>1.卸载amazon</strong></a></li>
+  <li><a href="#2linux内核及发行版" id="markdown-toc-2linux内核及发行版"><strong>2.Linux内核及发行版</strong></a></li>
+  <li><a href="#3-单用户操作系统和多用户操作系统" id="markdown-toc-3-单用户操作系统和多用户操作系统"><strong>3. 单用户操作系统和多用户操作系统</strong></a></li>
+  <li><a href="#4windows和linux文件系统的区别" id="markdown-toc-4windows和linux文件系统的区别"><strong>4.windows和linux文件系统的区别</strong></a></li>
+</ul>
+<h1 id="1卸载amazon"><strong>1.卸载amazon</strong></h1>
+
+<p>sudo apt remove unity-webapps-common</p>
+
+<p><img src="https://wx1.sinaimg.cn/mw1024/0066mMjily1g22kq4fzbwj30hh07rdh8.jpg" alt="img" /></p>
+
+<h1 id="2linux内核及发行版"><strong>2.Linux内核及发行版</strong></h1>
+
+<p><strong>2.1 linux内核版本</strong></p>
+
+<p>内核是系统的心脏，是运行程序和管理像磁盘和打印机等硬件设备的的核心程序，它提供了一个在裸设备与应用程序间的抽象层</p>
+
+<p>linux内核版本又分为稳定版和开发版本，linux内核只有一个</p>
+
+<p><img src="https://wx4.sinaimg.cn/mw1024/0066mMjily1g22kq51s2dj307607b0uz.jpg" alt="img" /></p>
+
+<p><strong>2.2linux发行版，通常包含了桌面环境，办公套件等应用软件</strong></p>
+
+<p>Ubuntu</p>
+
+<p>Redhat</p>
+
+<p>等等很多。</p>
+
+<h1 id="3-单用户操作系统和多用户操作系统"><strong>3. 单用户操作系统和多用户操作系统</strong></h1>
+
+<p>单用户操作系统：指一台计算机在同一时间只能由一个用户使用，一个用户独自享用系统的全部硬   件和软件资源</p>
+
+<p>​    windowsxp之前的版本都是单用户操作系统</p>
+
+<p>多用户操作系统：指一台计算机在同一时间可以由多个用户使用，多个用户共同享用系统的全部硬件和软件系统</p>
+
+<p>​     linux和unix的设计初衷就是多用户操作系统</p>
+
+<h1 id="4windows和linux文件系统的区别"><strong>4.windows和linux文件系统的区别</strong></h1>
+
+<p><strong>4.1windows下的文件系统</strong></p>
+
+<p>​     在windows下，打开计算机，我们看到的是一个个的驱动器盘符</p>
+
+<p>​     每一个驱动器都与自己的根目录结构，这样形成了多个树并列的情形，</p>
+
+<p><strong>4.2Linux下的文件系统</strong></p>
+
+<p>ubuntu没有盘的概念，只有一个根目录 / ，所有文件都在它下面</p>
+
+<p><img src="https://wx1.sinaimg.cn/mw1024/0066mMjily1g22kq4sq04j30ez08r75s.jpg" alt="img" /></p>
+
+<p>/：根目录</p>
+
+<p>/etc：系统配置文件存放的目录</p>
+
+<p>/home：系统默认的用户家目录，新增用户账号时，用户的家目录都存放在此目录下</p>
+
+<p>从/home可以看出，同一时间可以由三个用户来使用，itheima，python，laowang</p>
+
+<p>python下面的三个文件夹都只属于python这个用户，而不属于其他两个用户，</p>
+
+<p>linux下，自己在自己家里建立目录，不要去别人家里捣乱。</p>
+
+<p><img src="https://wx4.sinaimg.cn/mw1024/0066mMjily1g22kq5z2tdj30n30gttc4.jpg" alt="img" /></p>
+
+<p>此文件都是存储在根目录下的，其中 home目录最重要</p>
+
+            </article>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+    
+    <footer class="footer" role="contentinfo">
+	<div class="container">
+		<p class="copyright">Copyright &copy; 2014-2026 <a href=""><code>LuLu</code></a>.</p>
+		<p>Powered by <a href="http://jekyllrb.com">Jekyll</a>, themed from <a href="http://lesscss.cn/">Less</a>, refactored by <a href="http://www.hifreud.com/">Freud Kang</a></p>
+	</div>
+</footer>
+
+<script src="/styles/js/jquery.min.js"></script>
+<script src="/styles/js/bootstrap.min.js"></script>
+<script src="/styles/js/holder.min.js"></script>
+<script src="/styles/js/lessismore.js"></script>
+<script src="/styles/js/application.js"></script>
+<script async src="//busuanzi.ibruce.info/busuanzi/2.3/busuanzi.pure.mini.js"></script>
+
+  </body>
+</html>

@@ -1,0 +1,240 @@
+<!DOCTYPE html>
+<html>
+
+  <head>
+	<meta charset="utf-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>2019/5/21 《图解密码技术》第八章 - TheNeverDeer</title>
+
+	<link rel="shortcut icon" href="/styles/images/favicon.jpg">
+	<link rel="icon" href="/styles/images/favicon.jpg">
+
+	<link rel="preconnect" href="https://fonts.googleapis.com">
+	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+	<link href="https://fonts.googleapis.com/css2?family=Ma+Shan+Zheng&family=Nunito:wght@400;600;700&family=ZCOOL+XiaoWei&display=swap" rel="stylesheet">
+	<link rel="stylesheet" href="/styles/css/index.css">
+	<link rel="stylesheet" href="/styles/css/theme-girly.css">
+	<link rel="stylesheet" href="/styles/css/fontawesome/css/font-awesome.min.css">
+	<link rel="stylesheet" href="/styles/css/syntax.css">
+	<link rel="canonical" href="/2019/05/21/%E5%AD%A6%E4%B9%A0%E7%AC%94%E8%AE%B0/">
+	<link rel="alternate" type="application/rss+xml" title="TheNeverDeer" href="/feed.xml">
+	
+	<meta name="keywords" content="2019/5/21 《图解密码技术》第八章, TheNeverDeer, 康志华;个人博客;学而不思则罔;思而不学则殆;生命不止;折腾不休">
+	<meta name="description" content="康志华;个人博客;学而不思则罔;思而不学则殆;生命不止;折腾不休">
+
+	<script src="/styles/js/jquery.min.js"></script>
+	<!--[if lt IE 9]>
+    	<script src="http://html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+  	<![endif]-->
+  	<script>
+		var _hmt = _hmt || [];
+		(function() {
+		  var hm = document.createElement("script");
+		  hm.src = "//hm.baidu.com/hm.js?";
+		  var s = document.getElementsByTagName("script")[0]; 
+		  s.parentNode.insertBefore(hm, s);
+		})();
+	</script>
+  	<style type="text/css">
+	  	.docs-content{
+	  		margin-bottom: 10px;
+	  	}
+  	</style>
+</head>
+
+  <body class="index">
+
+    <header class="navbar navbar-inverse navbar-fixed-top docs-nav" role="banner">
+  <div class="container">
+    <div class="navbar-header">
+      <button class="navbar-toggle" type="button" data-toggle="collapse" data-target=".bs-navbar-collapse">
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+      </button>
+      <a href="/" class="navbar-brand">Luzi</a>
+    </div>
+    <nav class="collapse navbar-collapse bs-navbar-collapse" role="navigation">
+      <ul class="nav navbar-nav">    
+        <li>
+          <a href="/">主页</a>
+        </li>
+        <li>
+          <a href="/categories/">类型</a>
+        </li>
+        <li>
+          <a href="/tag">标签</a>
+        </li>
+      </ul>
+      <ul class="nav navbar-nav navbar-right">
+        <!--<li>
+            <a><span id="busuanzi_container_site_pv">本站总访问量<span id="busuanzi_value_site_pv"></span>次</span></a>-->
+        </li>
+        <li class="dropdown">
+          <a href="#" class="dropdown-toggle" data-toggle="dropdown">关于<b class="caret"></b></a>
+          <ul class="dropdown-menu">
+            <li><a rel="nofollow" target="_blank" href="https://github.com/TheNeverDeer/">Github</a></li>
+            <!--<li><a rel="nofollow" target="_blank" href="">关于作者</a></li>-->
+            <li><a rel="nofollow" href="/books">我的书单</a></li>
+            <!--<li><a rel="nofollow" href="http://www.hifreud.com/domains/">域名管理</a></li> -->
+           <!-- <li><a rel="nofollow" href="/reference">推荐博客</a></li> -->
+           <!-- <li><a href="/feed.xml">RSS订阅</a></li> -->
+            <li class="divider"></li>
+            <li><a rel="nofollow" target="_blank" href="https://github.com/TheNeverDeer/TheNeverDeer.github.io">本项目</a></li>
+          </ul>
+        </li>
+      </ul>
+    </nav>
+  </div>
+</header>
+    <div class="docs-header" id="content">
+  <div class="container">
+  	
+  		<!--
+		    <h1>2019/5/21 《图解密码技术》第八章</h1>
+		    <p>Post on May 21, 2019 by <a href="/about">LuLu</a></p>
+		-->
+		    <h1>It's our wits that make us men.</h1>
+    
+  </div>
+</div>
+    
+      
+<div class="banner">
+  <div class="container">
+  	
+    	<a href="/categories/#文章-ref">文章</a>	/
+    	<a href="/tag/#interview-ref">interview</a>
+    
+  </div>
+</div>
+
+    
+
+    <div class="container docs-container">
+  <div class="row">
+    <div class="col-md-3">
+      <div class="sidebar hidden-print" role="complementary">
+        <div id="navigation">
+  <h1>目录</h1>
+  <ul class="nav sidenav">
+  </ul>
+  <div style="height: 200px;width: 200px;">
+    <script type="text/javascript" src="//rf.revolvermaps.com/0/0/8.js?i=&amp;m=0&amp;c=ff0000&amp;cr1=ffffff&amp;f=arial&amp;l=33" async="async"> 
+    </script>
+  </div>
+</div>
+
+ 
+      </div>
+    </div>
+    <div class="col-md-9" role="main">
+      <div class="panel docs-content">
+        <div class="wrapper">
+            <header class="post-header">
+              <h1 class="post-title">2019/5/21 《图解密码技术》第八章</h1>
+              <!--
+                <p class="post-meta">May 21, 2019</p>
+              -->
+              <div class="meta">Posted on <span class="postdate">May 21, 2019</span> By <a target="_blank" href="http://localhost:4000">LuLu</a></div>
+              <br />
+            </header>
+            <article class="post-content">
+              <ul id="markdown-toc">
+  <li><a href="#图解密码技术第八章" id="markdown-toc-图解密码技术第八章">《图解密码技术》第八章</a>    <ul>
+      <li><a href="#消息认证码" id="markdown-toc-消息认证码">消息认证码</a>        <ul>
+          <li><a href="#什么是消息验证码" id="markdown-toc-什么是消息验证码">什么是消息验证码</a></li>
+          <li><a href="#消息验证码的使用步骤" id="markdown-toc-消息验证码的使用步骤">消息验证码的使用步骤</a></li>
+          <li><a href="#消息验证码的密钥配送问题" id="markdown-toc-消息验证码的密钥配送问题">消息验证码的密钥配送问题</a></li>
+        </ul>
+      </li>
+      <li><a href="#消息验证码的应用实例" id="markdown-toc-消息验证码的应用实例">消息验证码的应用实例</a></li>
+      <li><a href="#消息认证码的实现方法" id="markdown-toc-消息认证码的实现方法">消息认证码的实现方法</a>        <ul>
+          <li><a href="#使用单向散列函数实现" id="markdown-toc-使用单向散列函数实现">使用单向散列函数实现</a></li>
+          <li><a href="#使用分组密码实现" id="markdown-toc-使用分组密码实现">使用分组密码实现</a></li>
+          <li><a href="#使用其他方法实现" id="markdown-toc-使用其他方法实现">使用其他方法实现</a></li>
+        </ul>
+      </li>
+    </ul>
+  </li>
+</ul>
+<h1 id="图解密码技术第八章">《图解密码技术》第八章</h1>
+
+<ul>
+  <li>完整性：integeity，认证：authentication</li>
+  <li>消息验证码：message authentication code，MAC</li>
+  <li>IP：internet protocol</li>
+</ul>
+
+<h2 id="消息认证码">消息认证码</h2>
+
+<p>完整性：消息没有被篡改</p>
+
+<p>一致性：消息来自正确的发送者</p>
+
+<h3 id="什么是消息验证码">什么是消息验证码</h3>
+
+<p>输入：任意长度的消息和发送者接收者之间的共享密钥；</p>
+
+<p>输出：固定长度的数据MAC值；</p>
+
+<p>消息认证码是一种与密钥相关联的单向散列函数。</p>
+
+<p><img src="https://wx4.sinaimg.cn/mw690/0066mMjily1g3a7ckawqqj30fh09j759.jpg" alt="img" /></p>
+
+<h3 id="消息验证码的使用步骤">消息验证码的使用步骤</h3>
+
+<p><img src="https://wx3.sinaimg.cn/mw690/0066mMjily1g3a7ckd5goj30gd0angn7.jpg" alt="img" /></p>
+
+<h3 id="消息验证码的密钥配送问题">消息验证码的密钥配送问题</h3>
+
+<p>需要像对称密码一样使用一些共享密钥的方法，e.g：公钥密码、Diffie-Hellman密钥交换、密钥分配中心等</p>
+
+<h2 id="消息验证码的应用实例">消息验证码的应用实例</h2>
+
+<ul>
+  <li>银行和银行之间是通过SWIFT来传递交易信息的，SWIFT是环球银行金融电信协会.</li>
+  <li>IPsec，是对IP协议增加安全性的一种方式。对通信内容的认证和完整性校验都是通过消息认证码完成的</li>
+  <li>SSL/TLS：网上购物等场景中所使用的通信协议</li>
+</ul>
+
+<h2 id="消息认证码的实现方法">消息认证码的实现方法</h2>
+
+<h3 id="使用单向散列函数实现">使用单向散列函数实现</h3>
+
+<p>使用SHA-2之类的单向散列函数实现消息认证码，其中一种实现方式为HMAC</p>
+
+<h3 id="使用分组密码实现">使用分组密码实现</h3>
+
+<p>使用AES之类的分组密码实现消息认证码，其中一种实现方式为AES-CMAC</p>
+
+<h3 id="使用其他方法实现">使用其他方法实现</h3>
+
+<p>流密码和公钥密码等实现.</p>
+
+
+            </article>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+    
+    <footer class="footer" role="contentinfo">
+	<div class="container">
+		<p class="copyright">Copyright &copy; 2014-2026 <a href=""><code>LuLu</code></a>.</p>
+		<p>Powered by <a href="http://jekyllrb.com">Jekyll</a>, themed from <a href="http://lesscss.cn/">Less</a>, refactored by <a href="http://www.hifreud.com/">Freud Kang</a></p>
+	</div>
+</footer>
+
+<script src="/styles/js/jquery.min.js"></script>
+<script src="/styles/js/bootstrap.min.js"></script>
+<script src="/styles/js/holder.min.js"></script>
+<script src="/styles/js/lessismore.js"></script>
+<script src="/styles/js/application.js"></script>
+<script async src="//busuanzi.ibruce.info/busuanzi/2.3/busuanzi.pure.mini.js"></script>
+
+  </body>
+</html>

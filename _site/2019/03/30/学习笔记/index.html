@@ -1,0 +1,236 @@
+<!DOCTYPE html>
+<html>
+
+  <head>
+	<meta charset="utf-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>2019/3/30 汇编语言再学习 - TheNeverDeer</title>
+
+	<link rel="shortcut icon" href="/styles/images/favicon.jpg">
+	<link rel="icon" href="/styles/images/favicon.jpg">
+
+	<link rel="preconnect" href="https://fonts.googleapis.com">
+	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+	<link href="https://fonts.googleapis.com/css2?family=Ma+Shan+Zheng&family=Nunito:wght@400;600;700&family=ZCOOL+XiaoWei&display=swap" rel="stylesheet">
+	<link rel="stylesheet" href="/styles/css/index.css">
+	<link rel="stylesheet" href="/styles/css/theme-girly.css">
+	<link rel="stylesheet" href="/styles/css/fontawesome/css/font-awesome.min.css">
+	<link rel="stylesheet" href="/styles/css/syntax.css">
+	<link rel="canonical" href="/2019/03/30/%E5%AD%A6%E4%B9%A0%E7%AC%94%E8%AE%B0/">
+	<link rel="alternate" type="application/rss+xml" title="TheNeverDeer" href="/feed.xml">
+	
+	<meta name="keywords" content="2019/3/30 汇编语言再学习, TheNeverDeer, 康志华;个人博客;学而不思则罔;思而不学则殆;生命不止;折腾不休">
+	<meta name="description" content="康志华;个人博客;学而不思则罔;思而不学则殆;生命不止;折腾不休">
+
+	<script src="/styles/js/jquery.min.js"></script>
+	<!--[if lt IE 9]>
+    	<script src="http://html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+  	<![endif]-->
+  	<script>
+		var _hmt = _hmt || [];
+		(function() {
+		  var hm = document.createElement("script");
+		  hm.src = "//hm.baidu.com/hm.js?";
+		  var s = document.getElementsByTagName("script")[0]; 
+		  s.parentNode.insertBefore(hm, s);
+		})();
+	</script>
+  	<style type="text/css">
+	  	.docs-content{
+	  		margin-bottom: 10px;
+	  	}
+  	</style>
+</head>
+
+  <body class="index">
+
+    <header class="navbar navbar-inverse navbar-fixed-top docs-nav" role="banner">
+  <div class="container">
+    <div class="navbar-header">
+      <button class="navbar-toggle" type="button" data-toggle="collapse" data-target=".bs-navbar-collapse">
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+      </button>
+      <a href="/" class="navbar-brand">Luzi</a>
+    </div>
+    <nav class="collapse navbar-collapse bs-navbar-collapse" role="navigation">
+      <ul class="nav navbar-nav">    
+        <li>
+          <a href="/">主页</a>
+        </li>
+        <li>
+          <a href="/categories/">类型</a>
+        </li>
+        <li>
+          <a href="/tag">标签</a>
+        </li>
+      </ul>
+      <ul class="nav navbar-nav navbar-right">
+        <!--<li>
+            <a><span id="busuanzi_container_site_pv">本站总访问量<span id="busuanzi_value_site_pv"></span>次</span></a>-->
+        </li>
+        <li class="dropdown">
+          <a href="#" class="dropdown-toggle" data-toggle="dropdown">关于<b class="caret"></b></a>
+          <ul class="dropdown-menu">
+            <li><a rel="nofollow" target="_blank" href="https://github.com/TheNeverDeer/">Github</a></li>
+            <!--<li><a rel="nofollow" target="_blank" href="">关于作者</a></li>-->
+            <li><a rel="nofollow" href="/books">我的书单</a></li>
+            <!--<li><a rel="nofollow" href="http://www.hifreud.com/domains/">域名管理</a></li> -->
+           <!-- <li><a rel="nofollow" href="/reference">推荐博客</a></li> -->
+           <!-- <li><a href="/feed.xml">RSS订阅</a></li> -->
+            <li class="divider"></li>
+            <li><a rel="nofollow" target="_blank" href="https://github.com/TheNeverDeer/TheNeverDeer.github.io">本项目</a></li>
+          </ul>
+        </li>
+      </ul>
+    </nav>
+  </div>
+</header>
+    <div class="docs-header" id="content">
+  <div class="container">
+  	
+  		<!--
+		    <h1>2019/3/30 汇编语言再学习</h1>
+		    <p>Post on Mar 30, 2019 by <a href="/about">LuLu</a></p>
+		-->
+		    <h1>It's our wits that make us men.</h1>
+    
+  </div>
+</div>
+    
+      
+<div class="banner">
+  <div class="container">
+  	
+    	<a href="/categories/#文章-ref">文章</a>	/
+    	<a href="/tag/#interview-ref">interview</a>
+    
+  </div>
+</div>
+
+    
+
+    <div class="container docs-container">
+  <div class="row">
+    <div class="col-md-3">
+      <div class="sidebar hidden-print" role="complementary">
+        <div id="navigation">
+  <h1>目录</h1>
+  <ul class="nav sidenav">
+  </ul>
+  <div style="height: 200px;width: 200px;">
+    <script type="text/javascript" src="//rf.revolvermaps.com/0/0/8.js?i=&amp;m=0&amp;c=ff0000&amp;cr1=ffffff&amp;f=arial&amp;l=33" async="async"> 
+    </script>
+  </div>
+</div>
+
+ 
+      </div>
+    </div>
+    <div class="col-md-9" role="main">
+      <div class="panel docs-content">
+        <div class="wrapper">
+            <header class="post-header">
+              <h1 class="post-title">2019/3/30 汇编语言再学习</h1>
+              <!--
+                <p class="post-meta">Mar 30, 2019</p>
+              -->
+              <div class="meta">Posted on <span class="postdate">Mar 30, 2019</span> By <a target="_blank" href="http://localhost:4000">LuLu</a></div>
+              <br />
+            </header>
+            <article class="post-content">
+              <ul id="markdown-toc">
+  <li><a href="#汇编语言再学习" id="markdown-toc-汇编语言再学习">汇编语言再学习：</a>    <ul>
+      <li><a href="#机器语言" id="markdown-toc-机器语言">机器语言</a></li>
+      <li><a href="#寄存器" id="markdown-toc-寄存器">寄存器</a></li>
+      <li><a href="#汇编语言的组成" id="markdown-toc-汇编语言的组成">汇编语言的组成</a></li>
+      <li><a href="#汇编指令" id="markdown-toc-汇编指令">汇编指令</a></li>
+    </ul>
+  </li>
+</ul>
+<h1 id="汇编语言再学习">汇编语言再学习：</h1>
+
+<p>做了几天拆炸弹之后，觉得对汇编语言的理解还不是特别好，准备再系统的学习一下。</p>
+
+<p>汇编语言是一种符号语言，与机器语言一一对应；它使用助记符表示相应的操作，并遵循一定的语法规则。</p>
+
+<p>它的优点是面向机器编程，在”时间“和”空间“上效率，缺点是涉及硬件细节，要求熟悉计算机系统的内部结构。</p>
+
+<h2 id="机器语言">机器语言</h2>
+
+<p>​        机器语言是机器指令的集合，机器指令展开来讲就是一台机器可以正确执行的命令，电子计算机的机器指令是一列二进制数字的。计算机将之转变为一列高低电平，以使计算机的电子器件受到驱动，进行运算。
+​        计算机是指由CPU和其受CPU直接或者间接控制的芯片，器件，设备组成的计算机系统，如PC机。 CPU是一种微型处理器，由于硬件设计和内部结构的不同，就需要用不同的电脉冲来控制，使他工作，每一种微型处理器都有自己的机器指令集，也就是机器语言。</p>
+
+<h2 id="寄存器">寄存器</h2>
+
+<p>​        简单地讲，寄存器是CPU中存储数据的器件，一个CPU中有多个寄存器，AX是其中一个寄存器的代号，BX是另一个寄存器的代号。程序员用汇编语言写出源程序，再用汇编编译器编译成机器码。</p>
+
+<h2 id="汇编语言的组成">汇编语言的组成</h2>
+
+<p>汇编语言由三类指令组成：</p>
+
+<ul>
+  <li>汇编指令：机器码的助记符，有对应的机器码。</li>
+  <li>伪指令：没有对应的机器码，由编译器执行，计算机并不执行。</li>
+  <li>其它符号：如+ - * /等，由编译器识别。</li>
+</ul>
+
+<h2 id="汇编指令">汇编指令</h2>
+
+<ul>
+  <li>
+    <p>add表示两个整数相加。add %ebp %eax</p>
+
+    <p>add指令操作数有两个，实际上就是x加y等于t。因为是两个操作数，那么就是说 肯定是ebp eax相加，加起来之后的和放到eax里面去。也就是说这个指令的操作数是两个，目的寄存器是在右侧那个。当然它既是目的又是源，实际上两个都是源，加完之后放到目的寄存器。目的寄存器就是右侧的第二个源，加起来就完了。</p>
+  </li>
+  <li>mov数据传送指令。   注：不能两个操作数都是内存地址
+    <ul>
+      <li>movl  $0x4,%eax                类似于C语言  temp=0x4</li>
+      <li>movl   $-147,（%eax ）      类似于C语言   *p=-147</li>
+      <li>movl   %eax，%edx            类似于C语言   temp2=temp1</li>
+      <li>movl   %eax，（%edx）    类似于C语言   *p=temp</li>
+      <li>movl （%eax），%edx      类似于C语言   temp=*p</li>
+    </ul>
+  </li>
+  <li>
+    <p>push指令。push 3</p>
+
+    <p>push指令用于将运算子放入 Stack，这里就是将3写入main这个帧。 虽然看上去很简单，push指令其实有一个前置操作。它会先取出 ESP 寄存器里面的地址，将其减去4个字节，然后将新地址写入 ESP 寄存器。使用减法是因为 Stack 。从高位向低位发展，4个字节则是因为3的类型是int，占用4个字节。得到新地址以后， 3 就会写入这个地址开始的四个字节。</p>
+  </li>
+  <li>
+    <p>call指令。用来调用函数的指令。</p>
+  </li>
+  <li>
+    <p>pop指令。</p>
+
+    <p>pop指令用于取出 Stack 最近一个写入的值（即最低位地址的值），并将这个值写入运算子指定的位置。pop %ebx表示取出 Stack 最近写入的值（即 EBX 寄存器的原始值），再将这个值写回 EBX 寄存器（因为加法已经做完了，EBX 寄存器用不到了）。 
+注意，pop指令还会将 ESP 寄存器里面的地址加4，即回收4个字节。</p>
+  </li>
+</ul>
+
+            </article>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+    
+    <footer class="footer" role="contentinfo">
+	<div class="container">
+		<p class="copyright">Copyright &copy; 2014-2026 <a href=""><code>LuLu</code></a>.</p>
+		<p>Powered by <a href="http://jekyllrb.com">Jekyll</a>, themed from <a href="http://lesscss.cn/">Less</a>, refactored by <a href="http://www.hifreud.com/">Freud Kang</a></p>
+	</div>
+</footer>
+
+<script src="/styles/js/jquery.min.js"></script>
+<script src="/styles/js/bootstrap.min.js"></script>
+<script src="/styles/js/holder.min.js"></script>
+<script src="/styles/js/lessismore.js"></script>
+<script src="/styles/js/application.js"></script>
+<script async src="//busuanzi.ibruce.info/busuanzi/2.3/busuanzi.pure.mini.js"></script>
+
+  </body>
+</html>

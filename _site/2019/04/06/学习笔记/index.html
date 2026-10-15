@@ -1,0 +1,201 @@
+<!DOCTYPE html>
+<html>
+
+  <head>
+	<meta charset="utf-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>2019/4/6 反汇编器 - TheNeverDeer</title>
+
+	<link rel="shortcut icon" href="/styles/images/favicon.jpg">
+	<link rel="icon" href="/styles/images/favicon.jpg">
+
+	<link rel="preconnect" href="https://fonts.googleapis.com">
+	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+	<link href="https://fonts.googleapis.com/css2?family=Ma+Shan+Zheng&family=Nunito:wght@400;600;700&family=ZCOOL+XiaoWei&display=swap" rel="stylesheet">
+	<link rel="stylesheet" href="/styles/css/index.css">
+	<link rel="stylesheet" href="/styles/css/theme-girly.css">
+	<link rel="stylesheet" href="/styles/css/fontawesome/css/font-awesome.min.css">
+	<link rel="stylesheet" href="/styles/css/syntax.css">
+	<link rel="canonical" href="/2019/04/06/%E5%AD%A6%E4%B9%A0%E7%AC%94%E8%AE%B0/">
+	<link rel="alternate" type="application/rss+xml" title="TheNeverDeer" href="/feed.xml">
+	
+	<meta name="keywords" content="2019/4/6 反汇编器, TheNeverDeer, 康志华;个人博客;学而不思则罔;思而不学则殆;生命不止;折腾不休">
+	<meta name="description" content="康志华;个人博客;学而不思则罔;思而不学则殆;生命不止;折腾不休">
+
+	<script src="/styles/js/jquery.min.js"></script>
+	<!--[if lt IE 9]>
+    	<script src="http://html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+  	<![endif]-->
+  	<script>
+		var _hmt = _hmt || [];
+		(function() {
+		  var hm = document.createElement("script");
+		  hm.src = "//hm.baidu.com/hm.js?";
+		  var s = document.getElementsByTagName("script")[0]; 
+		  s.parentNode.insertBefore(hm, s);
+		})();
+	</script>
+  	<style type="text/css">
+	  	.docs-content{
+	  		margin-bottom: 10px;
+	  	}
+  	</style>
+</head>
+
+  <body class="index">
+
+    <header class="navbar navbar-inverse navbar-fixed-top docs-nav" role="banner">
+  <div class="container">
+    <div class="navbar-header">
+      <button class="navbar-toggle" type="button" data-toggle="collapse" data-target=".bs-navbar-collapse">
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+      </button>
+      <a href="/" class="navbar-brand">Luzi</a>
+    </div>
+    <nav class="collapse navbar-collapse bs-navbar-collapse" role="navigation">
+      <ul class="nav navbar-nav">    
+        <li>
+          <a href="/">主页</a>
+        </li>
+        <li>
+          <a href="/categories/">类型</a>
+        </li>
+        <li>
+          <a href="/tag">标签</a>
+        </li>
+      </ul>
+      <ul class="nav navbar-nav navbar-right">
+        <!--<li>
+            <a><span id="busuanzi_container_site_pv">本站总访问量<span id="busuanzi_value_site_pv"></span>次</span></a>-->
+        </li>
+        <li class="dropdown">
+          <a href="#" class="dropdown-toggle" data-toggle="dropdown">关于<b class="caret"></b></a>
+          <ul class="dropdown-menu">
+            <li><a rel="nofollow" target="_blank" href="https://github.com/TheNeverDeer/">Github</a></li>
+            <!--<li><a rel="nofollow" target="_blank" href="">关于作者</a></li>-->
+            <li><a rel="nofollow" href="/books">我的书单</a></li>
+            <!--<li><a rel="nofollow" href="http://www.hifreud.com/domains/">域名管理</a></li> -->
+           <!-- <li><a rel="nofollow" href="/reference">推荐博客</a></li> -->
+           <!-- <li><a href="/feed.xml">RSS订阅</a></li> -->
+            <li class="divider"></li>
+            <li><a rel="nofollow" target="_blank" href="https://github.com/TheNeverDeer/TheNeverDeer.github.io">本项目</a></li>
+          </ul>
+        </li>
+      </ul>
+    </nav>
+  </div>
+</header>
+    <div class="docs-header" id="content">
+  <div class="container">
+  	
+  		<!--
+		    <h1>2019/4/6 反汇编器</h1>
+		    <p>Post on Apr 06, 2019 by <a href="/about">LuLu</a></p>
+		-->
+		    <h1>It's our wits that make us men.</h1>
+    
+  </div>
+</div>
+    
+      
+<div class="banner">
+  <div class="container">
+  	
+    	<a href="/categories/#文章-ref">文章</a>	/
+    	<a href="/tag/#interview-ref">interview</a>
+    
+  </div>
+</div>
+
+    
+
+    <div class="container docs-container">
+  <div class="row">
+    <div class="col-md-3">
+      <div class="sidebar hidden-print" role="complementary">
+        <div id="navigation">
+  <h1>目录</h1>
+  <ul class="nav sidenav">
+  </ul>
+  <div style="height: 200px;width: 200px;">
+    <script type="text/javascript" src="//rf.revolvermaps.com/0/0/8.js?i=&amp;m=0&amp;c=ff0000&amp;cr1=ffffff&amp;f=arial&amp;l=33" async="async"> 
+    </script>
+  </div>
+</div>
+
+ 
+      </div>
+    </div>
+    <div class="col-md-9" role="main">
+      <div class="panel docs-content">
+        <div class="wrapper">
+            <header class="post-header">
+              <h1 class="post-title">2019/4/6 反汇编器</h1>
+              <!--
+                <p class="post-meta">Apr 6, 2019</p>
+              -->
+              <div class="meta">Posted on <span class="postdate">Apr 06, 2019</span> By <a target="_blank" href="http://localhost:4000">LuLu</a></div>
+              <br />
+            </header>
+            <article class="post-content">
+              <ul id="markdown-toc">
+  <li><a href="#反汇编器" id="markdown-toc-反汇编器">反汇编器</a>    <ul>
+      <li><a href="#应用场景" id="markdown-toc-应用场景">应用场景</a></li>
+      <li><a href="#常见反汇编器ida-pro" id="markdown-toc-常见反汇编器ida-pro">常见反汇编器：IDA PRO</a></li>
+    </ul>
+  </li>
+</ul>
+<h1 id="反汇编器">反汇编器</h1>
+
+<ul>
+  <li>
+    <p>反汇编器是一种工具程序，可以将机器代码转换为目标处理器专用的汇编代码或汇编指令。将机器代码转换为汇编代码的过程称为反汇编。就操作而言，反汇编就是汇编/交叉汇编的逆过程。</p>
+  </li>
+  <li>汇编最早是一个动词，指的是将源代码翻译成机器码的过程，翻译过程结束以后，得到的就是汇编代码。汇编代码只有机器能够识别并且直接执行，而不方便程序员编写和阅读，于是人们就发明了汇编助记符，用英文缩写来对应相应的机器代码。汇编语言的编译程序所完成的工作就是将程序员用汇编助记符编写的汇编程序翻译成机器代码，让计算机按照用户的意图执行指令。人们已经将汇编和汇编助记符的概念混淆了。机器代码可以直接对应到汇编助记符的形式，反汇编器的作用就是将机器代码反向翻译到汇编助记符，让我们能够理解只有机器才能理解的二进制代码的含义。</li>
+  <li>在调试器中必然会自带简单的反汇编引擎，但是这些反汇编引擎功能有限，除了反汇编功能以外没有太多的额外功能，要完成更多的功能，必须有专业反汇编程序的帮助。用得比较多的反汇编器有IDA Pro和W32Dasm。其中IDA Pro功能最为强大，能将可执行代码反汇编到多种硬件平台的指令集，配有众多的反汇编选项，能根据目标程序的编译器识别出很多函数和参数甚至结构体并且自动标注。此外还支持改名、内建简单调试器及支持很多高级功能，完全可以满足各种的工作需要。</li>
+</ul>
+
+<h2 id="应用场景">应用场景</h2>
+
+<p>​	通常，使用反汇编器是为了在没有源代码的情况下对程序进行理解，需要进行反汇编的常见情况包括以下几种。</p>
+
+<ul>
+  <li>分析恶意软件</li>
+  <li>分析闭源软件的漏洞</li>
+  <li>分析闭源软件的互操作性</li>
+  <li>分析编译器生成的代码</li>
+  <li>在调试时显示程序指令</li>
+</ul>
+
+<h2 id="常见反汇编器ida-pro">常见反汇编器：IDA PRO</h2>
+
+<p>​	交互式反汇编器专业版( Interactive Disassembler Professional，IDA PRO) ，是一个世界顶级的交互式反汇编工具。从本质上说，IDA PRO是一种递归下降反汇编器，既能区分数据与代码，还设法确定这些数据的类型，这样可以更好地反汇编和更深层地分析。从功能上看，IDA PRO共有两个版本：标准版和高级版。这两个版本的主要区别在于他们支持反汇编的处理器体系结构数量不同。标准版支持30多种处理器，而高级版则支持50多种处理器。</p>
+
+
+            </article>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+    
+    <footer class="footer" role="contentinfo">
+	<div class="container">
+		<p class="copyright">Copyright &copy; 2014-2026 <a href=""><code>LuLu</code></a>.</p>
+		<p>Powered by <a href="http://jekyllrb.com">Jekyll</a>, themed from <a href="http://lesscss.cn/">Less</a>, refactored by <a href="http://www.hifreud.com/">Freud Kang</a></p>
+	</div>
+</footer>
+
+<script src="/styles/js/jquery.min.js"></script>
+<script src="/styles/js/bootstrap.min.js"></script>
+<script src="/styles/js/holder.min.js"></script>
+<script src="/styles/js/lessismore.js"></script>
+<script src="/styles/js/application.js"></script>
+<script async src="//busuanzi.ibruce.info/busuanzi/2.3/busuanzi.pure.mini.js"></script>
+
+  </body>
+</html>
