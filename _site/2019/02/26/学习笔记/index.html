@@ -1,0 +1,222 @@
+<!DOCTYPE html>
+<html>
+
+  <head>
+	<meta charset="utf-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>2019/2/26 Web之requests库 - TheNeverDeer</title>
+
+	<link rel="shortcut icon" href="/styles/images/favicon.jpg">
+	<link rel="icon" href="/styles/images/favicon.jpg">
+
+	<link rel="preconnect" href="https://fonts.googleapis.com">
+	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+	<link href="https://fonts.googleapis.com/css2?family=Ma+Shan+Zheng&family=Nunito:wght@400;600;700&family=ZCOOL+XiaoWei&display=swap" rel="stylesheet">
+	<link rel="stylesheet" href="/styles/css/index.css">
+	<link rel="stylesheet" href="/styles/css/theme-girly.css">
+	<link rel="stylesheet" href="/styles/css/fontawesome/css/font-awesome.min.css">
+	<link rel="stylesheet" href="/styles/css/syntax.css">
+	<link rel="canonical" href="/2019/02/26/%E5%AD%A6%E4%B9%A0%E7%AC%94%E8%AE%B0/">
+	<link rel="alternate" type="application/rss+xml" title="TheNeverDeer" href="/feed.xml">
+	
+	<meta name="keywords" content="2019/2/26 Web之requests库, TheNeverDeer, 康志华;个人博客;学而不思则罔;思而不学则殆;生命不止;折腾不休">
+	<meta name="description" content="康志华;个人博客;学而不思则罔;思而不学则殆;生命不止;折腾不休">
+
+	<script src="/styles/js/jquery.min.js"></script>
+	<!--[if lt IE 9]>
+    	<script src="http://html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+  	<![endif]-->
+  	<script>
+		var _hmt = _hmt || [];
+		(function() {
+		  var hm = document.createElement("script");
+		  hm.src = "//hm.baidu.com/hm.js?";
+		  var s = document.getElementsByTagName("script")[0]; 
+		  s.parentNode.insertBefore(hm, s);
+		})();
+	</script>
+  	<style type="text/css">
+	  	.docs-content{
+	  		margin-bottom: 10px;
+	  	}
+  	</style>
+</head>
+
+  <body class="index">
+
+    <header class="navbar navbar-inverse navbar-fixed-top docs-nav" role="banner">
+  <div class="container">
+    <div class="navbar-header">
+      <button class="navbar-toggle" type="button" data-toggle="collapse" data-target=".bs-navbar-collapse">
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+      </button>
+      <a href="/" class="navbar-brand">Luzi</a>
+    </div>
+    <nav class="collapse navbar-collapse bs-navbar-collapse" role="navigation">
+      <ul class="nav navbar-nav">    
+        <li>
+          <a href="/">主页</a>
+        </li>
+        <li>
+          <a href="/categories/">类型</a>
+        </li>
+        <li>
+          <a href="/tag">标签</a>
+        </li>
+      </ul>
+      <ul class="nav navbar-nav navbar-right">
+        <!--<li>
+            <a><span id="busuanzi_container_site_pv">本站总访问量<span id="busuanzi_value_site_pv"></span>次</span></a>-->
+        </li>
+        <li class="dropdown">
+          <a href="#" class="dropdown-toggle" data-toggle="dropdown">关于<b class="caret"></b></a>
+          <ul class="dropdown-menu">
+            <li><a rel="nofollow" target="_blank" href="https://github.com/TheNeverDeer/">Github</a></li>
+            <!--<li><a rel="nofollow" target="_blank" href="">关于作者</a></li>-->
+            <li><a rel="nofollow" href="/books">我的书单</a></li>
+            <!--<li><a rel="nofollow" href="http://www.hifreud.com/domains/">域名管理</a></li> -->
+           <!-- <li><a rel="nofollow" href="/reference">推荐博客</a></li> -->
+           <!-- <li><a href="/feed.xml">RSS订阅</a></li> -->
+            <li class="divider"></li>
+            <li><a rel="nofollow" target="_blank" href="https://github.com/TheNeverDeer/TheNeverDeer.github.io">本项目</a></li>
+          </ul>
+        </li>
+      </ul>
+    </nav>
+  </div>
+</header>
+    <div class="docs-header" id="content">
+  <div class="container">
+  	
+  		<!--
+		    <h1>2019/2/26 Web之requests库</h1>
+		    <p>Post on Feb 26, 2019 by <a href="/about">LuLu</a></p>
+		-->
+		    <h1>It's our wits that make us men.</h1>
+    
+  </div>
+</div>
+    
+      
+<div class="banner">
+  <div class="container">
+  	
+    	<a href="/categories/#文章-ref">文章</a>	/
+    	<a href="/tag/#interview-ref">interview</a>
+    
+  </div>
+</div>
+
+    
+
+    <div class="container docs-container">
+  <div class="row">
+    <div class="col-md-3">
+      <div class="sidebar hidden-print" role="complementary">
+        <div id="navigation">
+  <h1>目录</h1>
+  <ul class="nav sidenav">
+  </ul>
+  <div style="height: 200px;width: 200px;">
+    <script type="text/javascript" src="//rf.revolvermaps.com/0/0/8.js?i=&amp;m=0&amp;c=ff0000&amp;cr1=ffffff&amp;f=arial&amp;l=33" async="async"> 
+    </script>
+  </div>
+</div>
+
+ 
+      </div>
+    </div>
+    <div class="col-md-9" role="main">
+      <div class="panel docs-content">
+        <div class="wrapper">
+            <header class="post-header">
+              <h1 class="post-title">2019/2/26 Web之requests库</h1>
+              <!--
+                <p class="post-meta">Feb 26, 2019</p>
+              -->
+              <div class="meta">Posted on <span class="postdate">Feb 26, 2019</span> By <a target="_blank" href="http://localhost:4000">LuLu</a></div>
+              <br />
+            </header>
+            <article class="post-content">
+              <ul id="markdown-toc">
+  <li><a href="#web题目之requests库的安装" id="markdown-toc-web题目之requests库的安装">Web题目之requests库的安装</a></li>
+  <li><a href="#web题目之requests的探索" id="markdown-toc-web题目之requests的探索">Web题目之requests的探索</a></li>
+</ul>
+
+<h1 id="web题目之requests库的安装">Web题目之requests库的安装</h1>
+<p>今天试着去做一道web题目，第一次接触web题目，所以今天进行的不是很顺利。</p>
+
+<p>选择的是第一道题目，25分（其实内心还有有点恐惧，之前解10分的题目都有没有很顺利，但又很想去试试）</p>
+
+<p>打开Calculator题目，先打开了两个网址，里面的算术题目。（愚蠢的我用python当了计算器，把结果算了之后直接复制粘贴上去，但是总是提示Too late，加快手速，多次尝试后放弃）</p>
+
+<p>看到提示里面给了一个网址：python requests库，便打开网址，顺便搜索了一下requests。</p>
+
+<p>打开python，输入import requests，显示错误，去搜索requests的安装。</p>
+
+<p>在网上看到了两种方法，一种是已经安装了pip的方法，一种是没有安装pip的方法。</p>
+
+<p>由于脑子里没有印象安装了pip，便果断选择了第二种。</p>
+
+<p>选择第二种后，便开始了又一次的折腾之路：下载requests，没安装成功，提示下载urllib3，下载完成之后，依旧出错，搜索后发现还得安装一个东西。基于上一次的经验，我觉得这样做下去是不对的</p>
+
+<p>于是开始搜索检查pip是否安装了的办法，按照方法找过去，发现自己是有pip的（被自己蠢哭）</p>
+
+<p>用了官网给的命令：在终端输入pip install requests，便安装好了</p>
+
+<p>（教训：以后看到一个自己不确定有没有的文件时，要先去试着搜寻看看到底有没有，这样会省下很多的时间去研究别的问题。不要脑子里想着什么就是什么，有的时候脑子也会忘记，或者根本就不认识）</p>
+
+<h1 id="web题目之requests的探索">Web题目之requests的探索</h1>
+<p>Requests是一个功能很强大的网络请求库，可以实现跟浏览器一样发送各种HTTP请求来获取网站的数据。完全满足今日的Web需求。</p>
+
+<p>在网站上学习一些python的知识：[廖雪峰][https://www.liaoxuefeng.com/wiki/0014316089557264a6b348958f449949df42a6d3a2e542c000]</p>
+
+<p>搜索了一些关于requests库的用法（题目给的网站里有很多），整理了一下算题的思路：</p>
+
+<p>1.先get得到网页中给的算式 2.将得到的结果post上去 3.然后再看看有没有什么线索去找flag</p>
+
+<p>（这应该就是题目里面提示的获得算式的和提交答案的是一个人了吧）</p>
+
+<div class="language-python highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="kn">import</span> <span class="n">requests</span>  <span class="c1">#导入requests库
+</span><span class="n">r</span><span class="o">=</span><span class="n">requests</span><span class="p">.</span><span class="nf">get</span><span class="p">(</span><span class="sh">'</span><span class="s">http://123.207.149.64:23331/calculator/</span><span class="sh">'</span><span class="p">)</span> <span class="c1">#向目标url地址发送get请求
+</span><span class="nf">print</span><span class="p">(</span><span class="n">r</span><span class="p">.</span><span class="n">text</span><span class="p">)</span><span class="c1">#r.text是网页HTML内容
+</span></code></pre></div></div>
+
+<p>从内容里能看到算式，下一步就是要把算式提取出来进行计算。想要提取出算式，要用到正则表达式</p>
+
+<p>正则表达式寻找算数式子：</p>
+
+<p>Findall 可将找到的匹配的打包成一个数组。</p>
+
+<p>re.findall(r‘要寻找的’,’寻找的地方’)</p>
+
+<p>在运用正则表达式提取算式的时候，总是还有着很多问题。</p>
+
+
+            </article>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+    
+    <footer class="footer" role="contentinfo">
+	<div class="container">
+		<p class="copyright">Copyright &copy; 2014-2026 <a href=""><code>LuLu</code></a>.</p>
+		<p>Powered by <a href="http://jekyllrb.com">Jekyll</a>, themed from <a href="http://lesscss.cn/">Less</a>, refactored by <a href="http://www.hifreud.com/">Freud Kang</a></p>
+	</div>
+</footer>
+
+<script src="/styles/js/jquery.min.js"></script>
+<script src="/styles/js/bootstrap.min.js"></script>
+<script src="/styles/js/holder.min.js"></script>
+<script src="/styles/js/lessismore.js"></script>
+<script src="/styles/js/application.js"></script>
+<script async src="//busuanzi.ibruce.info/busuanzi/2.3/busuanzi.pure.mini.js"></script>
+
+  </body>
+</html>

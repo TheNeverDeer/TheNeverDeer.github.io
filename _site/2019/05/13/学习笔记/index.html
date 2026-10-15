@@ -1,0 +1,267 @@
+<!DOCTYPE html>
+<html>
+
+  <head>
+	<meta charset="utf-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>《图解密码技术》第六章 - TheNeverDeer</title>
+
+	<link rel="shortcut icon" href="/styles/images/favicon.jpg">
+	<link rel="icon" href="/styles/images/favicon.jpg">
+
+	<link rel="preconnect" href="https://fonts.googleapis.com">
+	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+	<link href="https://fonts.googleapis.com/css2?family=Ma+Shan+Zheng&family=Nunito:wght@400;600;700&family=ZCOOL+XiaoWei&display=swap" rel="stylesheet">
+	<link rel="stylesheet" href="/styles/css/index.css">
+	<link rel="stylesheet" href="/styles/css/theme-girly.css">
+	<link rel="stylesheet" href="/styles/css/fontawesome/css/font-awesome.min.css">
+	<link rel="stylesheet" href="/styles/css/syntax.css">
+	<link rel="canonical" href="/2019/05/13/%E5%AD%A6%E4%B9%A0%E7%AC%94%E8%AE%B0/">
+	<link rel="alternate" type="application/rss+xml" title="TheNeverDeer" href="/feed.xml">
+	
+	<meta name="keywords" content="《图解密码技术》第六章, TheNeverDeer, 康志华;个人博客;学而不思则罔;思而不学则殆;生命不止;折腾不休">
+	<meta name="description" content="康志华;个人博客;学而不思则罔;思而不学则殆;生命不止;折腾不休">
+
+	<script src="/styles/js/jquery.min.js"></script>
+	<!--[if lt IE 9]>
+    	<script src="http://html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+  	<![endif]-->
+  	<script>
+		var _hmt = _hmt || [];
+		(function() {
+		  var hm = document.createElement("script");
+		  hm.src = "//hm.baidu.com/hm.js?";
+		  var s = document.getElementsByTagName("script")[0]; 
+		  s.parentNode.insertBefore(hm, s);
+		})();
+	</script>
+  	<style type="text/css">
+	  	.docs-content{
+	  		margin-bottom: 10px;
+	  	}
+  	</style>
+</head>
+
+  <body class="index">
+
+    <header class="navbar navbar-inverse navbar-fixed-top docs-nav" role="banner">
+  <div class="container">
+    <div class="navbar-header">
+      <button class="navbar-toggle" type="button" data-toggle="collapse" data-target=".bs-navbar-collapse">
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+      </button>
+      <a href="/" class="navbar-brand">Luzi</a>
+    </div>
+    <nav class="collapse navbar-collapse bs-navbar-collapse" role="navigation">
+      <ul class="nav navbar-nav">    
+        <li>
+          <a href="/">主页</a>
+        </li>
+        <li>
+          <a href="/categories/">类型</a>
+        </li>
+        <li>
+          <a href="/tag">标签</a>
+        </li>
+      </ul>
+      <ul class="nav navbar-nav navbar-right">
+        <!--<li>
+            <a><span id="busuanzi_container_site_pv">本站总访问量<span id="busuanzi_value_site_pv"></span>次</span></a>-->
+        </li>
+        <li class="dropdown">
+          <a href="#" class="dropdown-toggle" data-toggle="dropdown">关于<b class="caret"></b></a>
+          <ul class="dropdown-menu">
+            <li><a rel="nofollow" target="_blank" href="https://github.com/TheNeverDeer/">Github</a></li>
+            <!--<li><a rel="nofollow" target="_blank" href="">关于作者</a></li>-->
+            <li><a rel="nofollow" href="/books">我的书单</a></li>
+            <!--<li><a rel="nofollow" href="http://www.hifreud.com/domains/">域名管理</a></li> -->
+           <!-- <li><a rel="nofollow" href="/reference">推荐博客</a></li> -->
+           <!-- <li><a href="/feed.xml">RSS订阅</a></li> -->
+            <li class="divider"></li>
+            <li><a rel="nofollow" target="_blank" href="https://github.com/TheNeverDeer/TheNeverDeer.github.io">本项目</a></li>
+          </ul>
+        </li>
+      </ul>
+    </nav>
+  </div>
+</header>
+    <div class="docs-header" id="content">
+  <div class="container">
+  	
+  		<!--
+		    <h1>《图解密码技术》第六章</h1>
+		    <p>Post on May 13, 2019 by <a href="/about">LuLu</a></p>
+		-->
+		    <h1>It's our wits that make us men.</h1>
+    
+  </div>
+</div>
+    
+      
+<div class="banner">
+  <div class="container">
+  	
+    	<a href="/categories/#文章-ref">文章</a>	/
+    	<a href="/tag/#interview-ref">interview</a>
+    
+  </div>
+</div>
+
+    
+
+    <div class="container docs-container">
+  <div class="row">
+    <div class="col-md-3">
+      <div class="sidebar hidden-print" role="complementary">
+        <div id="navigation">
+  <h1>目录</h1>
+  <ul class="nav sidenav">
+  </ul>
+  <div style="height: 200px;width: 200px;">
+    <script type="text/javascript" src="//rf.revolvermaps.com/0/0/8.js?i=&amp;m=0&amp;c=ff0000&amp;cr1=ffffff&amp;f=arial&amp;l=33" async="async"> 
+    </script>
+  </div>
+</div>
+
+ 
+      </div>
+    </div>
+    <div class="col-md-9" role="main">
+      <div class="panel docs-content">
+        <div class="wrapper">
+            <header class="post-header">
+              <h1 class="post-title">《图解密码技术》第六章</h1>
+              <!--
+                <p class="post-meta">May 13, 2019</p>
+              -->
+              <div class="meta">Posted on <span class="postdate">May 13, 2019</span> By <a target="_blank" href="http://localhost:4000">LuLu</a></div>
+              <br />
+            </header>
+            <article class="post-content">
+              <ul id="markdown-toc">
+  <li><a href="#图解密码技术第六章" id="markdown-toc-图解密码技术第六章">《图解密码技术》第六章</a>    <ul>
+      <li><a href="#混合密码系统" id="markdown-toc-混合密码系统">混合密码系统</a>        <ul>
+          <li><a href="#对称密码与公钥密码" id="markdown-toc-对称密码与公钥密码">对称密码与公钥密码</a></li>
+          <li><a href="#混合密码系统-1" id="markdown-toc-混合密码系统-1">混合密码系统</a></li>
+          <li><a href="#加密" id="markdown-toc-加密">加密</a></li>
+          <li><a href="#解密" id="markdown-toc-解密">解密</a></li>
+          <li><a href="#混合密码系统的具体例子" id="markdown-toc-混合密码系统的具体例子">混合密码系统的具体例子</a></li>
+        </ul>
+      </li>
+      <li><a href="#怎样才是高强度的混合密码系统" id="markdown-toc-怎样才是高强度的混合密码系统">怎样才是高强度的混合密码系统</a>        <ul>
+          <li><a href="#伪随机数生成器" id="markdown-toc-伪随机数生成器">伪随机数生成器</a></li>
+          <li><a href="#对称密码" id="markdown-toc-对称密码">对称密码</a></li>
+          <li><a href="#公钥密码" id="markdown-toc-公钥密码">公钥密码</a></li>
+          <li><a href="#密钥长度的平衡" id="markdown-toc-密钥长度的平衡">密钥长度的平衡</a></li>
+        </ul>
+      </li>
+      <li><a href="#密码技术的组合" id="markdown-toc-密码技术的组合">密码技术的组合</a></li>
+    </ul>
+  </li>
+</ul>
+<h1 id="图解密码技术第六章">《图解密码技术》第六章</h1>
+
+<ul>
+  <li>混合密码系统：hybrid cryptosystem，会话密钥：session key</li>
+</ul>
+
+<p>混合密码系统：用对称密钥来加密明文，用公钥密码来加密对称密码中所使用的密钥。</p>
+
+<h2 id="混合密码系统">混合密码系统</h2>
+
+<h3 id="对称密码与公钥密码">对称密码与公钥密码</h3>
+
+<p>对称密码：需要解决密钥配送问题</p>
+
+<p>公钥密码：处理速度远低于对称密码（通过混合密码系统解决），难以抵御中间人攻击（通过对公钥进行认证解决）</p>
+
+<h3 id="混合密码系统-1">混合密码系统</h3>
+
+<p>混合密码系统是将对称密码和公钥密码的优势相结合的方法。</p>
+
+<p>混合密码系统组成机制：</p>
+
+<ul>
+  <li>对称密码加密消息</li>
+  <li>伪随机数生成器生成对称密钥加密中使用的会话密钥</li>
+  <li>公钥密码加密会话密钥</li>
+  <li>从混合密码系统外部赋予公钥密码加密是使用的密钥</li>
+</ul>
+
+<h3 id="加密">加密</h3>
+
+<p><img src="https://wx4.sinaimg.cn/mw690/0066mMjily1g30mv9c3uij30i60i4go3.jpg" alt="img" /></p>
+
+<p>会话密钥：为本次通信而生成的临时密钥，一般通过伪随机数生成器生成。</p>
+
+<ul>
+  <li>会话密钥是混合密码系统的核心</li>
+  <li>会话密钥是对称密码的密钥，同时也是公钥密码的明文</li>
+  <li>将对称密码和公钥密码两种密码方式相互联系起来的正是会话密钥</li>
+</ul>
+
+<h3 id="解密">解密</h3>
+
+<p><img src="https://wx4.sinaimg.cn/mw690/0066mMjily1g30mv995zhj30gq0hntb4.jpg" alt="img" /></p>
+
+<p>分离：只要发送者和接收者事先约定好密文的结构，分离很容易完成</p>
+
+<h3 id="混合密码系统的具体例子">混合密码系统的具体例子</h3>
+
+<p>著名密码软件PGP、以及网上的密码通信所使用的SSL/TLS都运用了混合密码系统。</p>
+
+<h2 id="怎样才是高强度的混合密码系统">怎样才是高强度的混合密码系统</h2>
+
+<h3 id="伪随机数生成器">伪随机数生成器</h3>
+
+<p>用它来产生会话密钥，如果伪随机数生成器的算法不好，会话密钥就可能被推测出来。</p>
+
+<h3 id="对称密码">对称密码</h3>
+
+<p>要使用高强度的对称密码算法，确保密钥具有足够长度，选择使用合适的分组密码模式</p>
+
+<h3 id="公钥密码">公钥密码</h3>
+
+<p>使用高强度的公钥密码算法，确保密钥具有足够长度</p>
+
+<h3 id="密钥长度的平衡">密钥长度的平衡</h3>
+
+<p>对称密码与公钥密码的密钥长度必须具备同等的强度，然而，考虑到长期运用，公钥密码的强度应该要高于对称密码，因为对称密码的会话密钥破译只会影响到本次通信的内容，公钥密码一旦被破译，从过去到未来所有通信内容就读能够被破译了</p>
+
+<h2 id="密码技术的组合">密码技术的组合</h2>
+
+<ul>
+  <li>数字签名：单项散列函数和公钥密码组合而成</li>
+  <li>证书：公钥和数字签名组合而成</li>
+  <li>消息认证码：单项散列函数和密钥组合而成，也可以通过对称密码来生成</li>
+  <li>伪随机数生成器，可以使用对称密码、单项散列函数或公钥密码来构建</li>
+  <li>还有一些神奇的系统：电子投票、盲签名、零知识证明、虚拟货币比特币等</li>
+</ul>
+
+            </article>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+    
+    <footer class="footer" role="contentinfo">
+	<div class="container">
+		<p class="copyright">Copyright &copy; 2014-2026 <a href=""><code>LuLu</code></a>.</p>
+		<p>Powered by <a href="http://jekyllrb.com">Jekyll</a>, themed from <a href="http://lesscss.cn/">Less</a>, refactored by <a href="http://www.hifreud.com/">Freud Kang</a></p>
+	</div>
+</footer>
+
+<script src="/styles/js/jquery.min.js"></script>
+<script src="/styles/js/bootstrap.min.js"></script>
+<script src="/styles/js/holder.min.js"></script>
+<script src="/styles/js/lessismore.js"></script>
+<script src="/styles/js/application.js"></script>
+<script async src="//busuanzi.ibruce.info/busuanzi/2.3/busuanzi.pure.mini.js"></script>
+
+  </body>
+</html>

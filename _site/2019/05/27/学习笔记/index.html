@@ -1,0 +1,301 @@
+<!DOCTYPE html>
+<html>
+
+  <head>
+	<meta charset="utf-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>2019/5/27 《图解密码技术》第十一章 - TheNeverDeer</title>
+
+	<link rel="shortcut icon" href="/styles/images/favicon.jpg">
+	<link rel="icon" href="/styles/images/favicon.jpg">
+
+	<link rel="preconnect" href="https://fonts.googleapis.com">
+	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+	<link href="https://fonts.googleapis.com/css2?family=Ma+Shan+Zheng&family=Nunito:wght@400;600;700&family=ZCOOL+XiaoWei&display=swap" rel="stylesheet">
+	<link rel="stylesheet" href="/styles/css/index.css">
+	<link rel="stylesheet" href="/styles/css/theme-girly.css">
+	<link rel="stylesheet" href="/styles/css/fontawesome/css/font-awesome.min.css">
+	<link rel="stylesheet" href="/styles/css/syntax.css">
+	<link rel="canonical" href="/2019/05/27/%E5%AD%A6%E4%B9%A0%E7%AC%94%E8%AE%B0/">
+	<link rel="alternate" type="application/rss+xml" title="TheNeverDeer" href="/feed.xml">
+	
+	<meta name="keywords" content="2019/5/27 《图解密码技术》第十一章, TheNeverDeer, 康志华;个人博客;学而不思则罔;思而不学则殆;生命不止;折腾不休">
+	<meta name="description" content="康志华;个人博客;学而不思则罔;思而不学则殆;生命不止;折腾不休">
+
+	<script src="/styles/js/jquery.min.js"></script>
+	<!--[if lt IE 9]>
+    	<script src="http://html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+  	<![endif]-->
+  	<script>
+		var _hmt = _hmt || [];
+		(function() {
+		  var hm = document.createElement("script");
+		  hm.src = "//hm.baidu.com/hm.js?";
+		  var s = document.getElementsByTagName("script")[0]; 
+		  s.parentNode.insertBefore(hm, s);
+		})();
+	</script>
+  	<style type="text/css">
+	  	.docs-content{
+	  		margin-bottom: 10px;
+	  	}
+  	</style>
+</head>
+
+  <body class="index">
+
+    <header class="navbar navbar-inverse navbar-fixed-top docs-nav" role="banner">
+  <div class="container">
+    <div class="navbar-header">
+      <button class="navbar-toggle" type="button" data-toggle="collapse" data-target=".bs-navbar-collapse">
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+      </button>
+      <a href="/" class="navbar-brand">Luzi</a>
+    </div>
+    <nav class="collapse navbar-collapse bs-navbar-collapse" role="navigation">
+      <ul class="nav navbar-nav">    
+        <li>
+          <a href="/">主页</a>
+        </li>
+        <li>
+          <a href="/categories/">类型</a>
+        </li>
+        <li>
+          <a href="/tag">标签</a>
+        </li>
+      </ul>
+      <ul class="nav navbar-nav navbar-right">
+        <!--<li>
+            <a><span id="busuanzi_container_site_pv">本站总访问量<span id="busuanzi_value_site_pv"></span>次</span></a>-->
+        </li>
+        <li class="dropdown">
+          <a href="#" class="dropdown-toggle" data-toggle="dropdown">关于<b class="caret"></b></a>
+          <ul class="dropdown-menu">
+            <li><a rel="nofollow" target="_blank" href="https://github.com/TheNeverDeer/">Github</a></li>
+            <!--<li><a rel="nofollow" target="_blank" href="">关于作者</a></li>-->
+            <li><a rel="nofollow" href="/books">我的书单</a></li>
+            <!--<li><a rel="nofollow" href="http://www.hifreud.com/domains/">域名管理</a></li> -->
+           <!-- <li><a rel="nofollow" href="/reference">推荐博客</a></li> -->
+           <!-- <li><a href="/feed.xml">RSS订阅</a></li> -->
+            <li class="divider"></li>
+            <li><a rel="nofollow" target="_blank" href="https://github.com/TheNeverDeer/TheNeverDeer.github.io">本项目</a></li>
+          </ul>
+        </li>
+      </ul>
+    </nav>
+  </div>
+</header>
+    <div class="docs-header" id="content">
+  <div class="container">
+  	
+  		<!--
+		    <h1>2019/5/27 《图解密码技术》第十一章</h1>
+		    <p>Post on May 27, 2019 by <a href="/about">LuLu</a></p>
+		-->
+		    <h1>It's our wits that make us men.</h1>
+    
+  </div>
+</div>
+    
+      
+<div class="banner">
+  <div class="container">
+  	
+    	<a href="/categories/#文章-ref">文章</a>	/
+    	<a href="/tag/#interview-ref">interview</a>
+    
+  </div>
+</div>
+
+    
+
+    <div class="container docs-container">
+  <div class="row">
+    <div class="col-md-3">
+      <div class="sidebar hidden-print" role="complementary">
+        <div id="navigation">
+  <h1>目录</h1>
+  <ul class="nav sidenav">
+  </ul>
+  <div style="height: 200px;width: 200px;">
+    <script type="text/javascript" src="//rf.revolvermaps.com/0/0/8.js?i=&amp;m=0&amp;c=ff0000&amp;cr1=ffffff&amp;f=arial&amp;l=33" async="async"> 
+    </script>
+  </div>
+</div>
+
+ 
+      </div>
+    </div>
+    <div class="col-md-9" role="main">
+      <div class="panel docs-content">
+        <div class="wrapper">
+            <header class="post-header">
+              <h1 class="post-title">2019/5/27 《图解密码技术》第十一章</h1>
+              <!--
+                <p class="post-meta">May 27, 2019</p>
+              -->
+              <div class="meta">Posted on <span class="postdate">May 27, 2019</span> By <a target="_blank" href="http://localhost:4000">LuLu</a></div>
+              <br />
+            </header>
+            <article class="post-content">
+              <ul id="markdown-toc">
+  <li><a href="#保存密钥" id="markdown-toc-保存密钥">保存密钥</a></li>
+  <li><a href="#作废密钥" id="markdown-toc-作废密钥">作废密钥</a></li>
+  <li><a href="#diffie-hellman密钥交换" id="markdown-toc-diffie-hellman密钥交换">Diffie-Hellman密钥交换</a>    <ul>
+      <li><a href="#什么是diffie-hellman密钥交换" id="markdown-toc-什么是diffie-hellman密钥交换">什么是Diffie-Hellman密钥交换</a></li>
+      <li><a href="#diffie-hellman密钥交换的步骤" id="markdown-toc-diffie-hellman密钥交换的步骤">Diffie-Hellman密钥交换的步骤</a></li>
+      <li><a href="#eve能计算出密钥吗" id="markdown-toc-eve能计算出密钥吗">Eve能计算出密钥吗</a></li>
+      <li><a href="#生成元的意义" id="markdown-toc-生成元的意义">生成元的意义</a></li>
+      <li><a href="#椭圆曲线diffie-hellman密钥交换" id="markdown-toc-椭圆曲线diffie-hellman密钥交换">椭圆曲线Diffie-Hellman密钥交换</a></li>
+    </ul>
+  </li>
+  <li><a href="#基于口令的密码pbe" id="markdown-toc-基于口令的密码pbe">基于口令的密码PBE</a>    <ul>
+      <li><a href="#什么是pbe" id="markdown-toc-什么是pbe">什么是PBE</a></li>
+      <li><a href="#pbe加密" id="markdown-toc-pbe加密">PBE加密</a></li>
+      <li><a href="#pbe解密" id="markdown-toc-pbe解密">PBE解密</a></li>
+      <li><a href="#盐的作用" id="markdown-toc-盐的作用">盐的作用</a></li>
+      <li><a href="#口令的作用" id="markdown-toc-口令的作用">口令的作用</a></li>
+      <li><a href="#通过拉伸来改良pbe" id="markdown-toc-通过拉伸来改良pbe">通过拉伸来改良PBE</a></li>
+    </ul>
+  </li>
+  <li><a href="#如何生成安全的口令" id="markdown-toc-如何生成安全的口令">如何生成安全的口令</a>    <ul>
+      <li><a href="#使用只有自己才能知道的信息" id="markdown-toc-使用只有自己才能知道的信息">使用只有自己才能知道的信息</a></li>
+      <li><a href="#将多个不同的口令分开使用" id="markdown-toc-将多个不同的口令分开使用">将多个不同的口令分开使用</a></li>
+      <li><a href="#有效利用笔记" id="markdown-toc-有效利用笔记">有效利用笔记</a></li>
+      <li><a href="#理解口令的局限性" id="markdown-toc-理解口令的局限性">理解口令的局限性</a></li>
+      <li><a href="#使用口令生成和管理工具" id="markdown-toc-使用口令生成和管理工具">使用口令生成和管理工具</a></li>
+    </ul>
+  </li>
+</ul>
+<ul>
+  <li>Diffie-Hellman密钥交换：Diffie-Hellman key exchange；生成元：generator；字典攻击：dictionary attack</li>
+  <li>拉伸：stretching</li>
+</ul>
+
+<h3 id="保存密钥">保存密钥</h3>
+
+<p>对密钥进行加密的方法可以减少需要保管的密钥数量，在现实中是一个非常有效的方法</p>
+
+<p><img src="https://wx3.sinaimg.cn/mw690/0066mMjily1g3g1x41knfj30h207caaw.jpg" alt="img" /></p>
+
+<h3 id="作废密钥">作废密钥</h3>
+
+<p>要完全删除密钥，不单要用到密码软件，还需要在涉及计算机系统时，对信息安全进行充分考虑</p>
+
+<h2 id="diffie-hellman密钥交换">Diffie-Hellman密钥交换</h2>
+
+<p>一种解决密钥配送问题的方法</p>
+
+<h3 id="什么是diffie-hellman密钥交换">什么是Diffie-Hellman密钥交换</h3>
+
+<p>通过这种算法，通信双方通过交换一些可以公开的信息就能够生成共享的秘密数字，这串数字作为共享密钥</p>
+
+<h3 id="diffie-hellman密钥交换的步骤">Diffie-Hellman密钥交换的步骤</h3>
+
+<p><img src="https://wx2.sinaimg.cn/mw690/0066mMjily1g3g1x5qukhj30fu0cxdhw.jpg" alt="img" /></p>
+
+<ul>
+  <li>P是一个非常大的质数，G是一个与P相关的数，称为生成元</li>
+  <li>Alice生成A，在1~p-2之间，Bob生成B,在1~p-2之间</li>
+</ul>
+
+<h3 id="eve能计算出密钥吗">Eve能计算出密钥吗</h3>
+
+<p>解决这个问题的有效算法还没有找到，这个问题称为有限域的离散对数问题</p>
+
+<h3 id="生成元的意义">生成元的意义</h3>
+
+<p>P的生成怨的乘方结果与1~p-1中的数字是一一对应的，所以Alice能在1~p-2中随意选数字，不能选p-1是因为结果永远为1</p>
+
+<h3 id="椭圆曲线diffie-hellman密钥交换">椭圆曲线Diffie-Hellman密钥交换</h3>
+
+<p>Diffie-Hellman密钥交换利用的是“离散对数问题”，如果是“椭圆曲线上的离散对数问题”，就是椭圆曲线Diffie-Hellman密钥交换</p>
+
+<h2 id="基于口令的密码pbe">基于口令的密码PBE</h2>
+
+<h3 id="什么是pbe">什么是PBE</h3>
+
+<p>password based encryption： 根据口令生成密钥，并用该密钥进行加密的方法，加密和解密使用同一个</p>
+
+<h3 id="pbe加密">PBE加密</h3>
+
+<p><img src="https://wx1.sinaimg.cn/mw690/0066mMjily1g3g1x7avkcj30f50fcwgx.jpg" alt="img" /></p>
+
+<h3 id="pbe解密">PBE解密</h3>
+
+<p><img src="https://wx4.sinaimg.cn/mw690/0066mMjily1g3g1x5kzijj30fa0f7tb3.jpg" alt="img" /></p>
+
+<h3 id="盐的作用">盐的作用</h3>
+
+<p>盐是由伪随机数生成的随机数，在生成密钥KEK时，会和口令一起输入单向散列函数</p>
+
+<p>盐是用来防御字典攻击的</p>
+
+<p>字典攻击：事先生成的KEK能够大幅缩短尝试的时间。加入盐之后，候选KEK的数量变得非常巨大</p>
+
+<h3 id="口令的作用">口令的作用</h3>
+
+<p>通过口令生成KEK，通过这个密钥来加密会话密钥.</p>
+
+<p>需要将盐和加密后的CEK通过物理的方式进行保护.</p>
+
+<h3 id="通过拉伸来改良pbe">通过拉伸来改良PBE</h3>
+
+<p>将单向散列函数进行多次迭代的方法称为拉伸</p>
+
+<h2 id="如何生成安全的口令">如何生成安全的口令</h2>
+
+<h3 id="使用只有自己才能知道的信息">使用只有自己才能知道的信息</h3>
+
+<p>使用只有自己才能知道的信息是一个大原则，因为口令不能够被别人推测出来</p>
+
+<ul>
+  <li>不要使用自己重要的信息</li>
+  <li>不要使用关于自己的信息</li>
+  <li>不要使用别人见过的信息：e.g. 名言名句</li>
+</ul>
+
+<h3 id="将多个不同的口令分开使用">将多个不同的口令分开使用</h3>
+
+<p>不将同一个口令用于不同的用途</p>
+
+<h3 id="有效利用笔记">有效利用笔记</h3>
+
+<p>应该将笔记与物理的钥匙同样对待</p>
+
+<h3 id="理解口令的局限性">理解口令的局限性</h3>
+
+<p>可以被暴力破解</p>
+
+<h3 id="使用口令生成和管理工具">使用口令生成和管理工具</h3>
+
+<p>一些工具通过伪随机数生成器生成口令，但是工具及其开发者是否可信是非常重要的</p>
+
+
+            </article>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+    
+    <footer class="footer" role="contentinfo">
+	<div class="container">
+		<p class="copyright">Copyright &copy; 2014-2026 <a href=""><code>LuLu</code></a>.</p>
+		<p>Powered by <a href="http://jekyllrb.com">Jekyll</a>, themed from <a href="http://lesscss.cn/">Less</a>, refactored by <a href="http://www.hifreud.com/">Freud Kang</a></p>
+	</div>
+</footer>
+
+<script src="/styles/js/jquery.min.js"></script>
+<script src="/styles/js/bootstrap.min.js"></script>
+<script src="/styles/js/holder.min.js"></script>
+<script src="/styles/js/lessismore.js"></script>
+<script src="/styles/js/application.js"></script>
+<script async src="//busuanzi.ibruce.info/busuanzi/2.3/busuanzi.pure.mini.js"></script>
+
+  </body>
+</html>

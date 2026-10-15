@@ -1,0 +1,325 @@
+<!DOCTYPE html>
+<html>
+
+  <head>
+	<meta charset="utf-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>2019/7/15 三个算法的C语言实现 - TheNeverDeer</title>
+
+	<link rel="shortcut icon" href="/styles/images/favicon.jpg">
+	<link rel="icon" href="/styles/images/favicon.jpg">
+
+	<link rel="preconnect" href="https://fonts.googleapis.com">
+	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+	<link href="https://fonts.googleapis.com/css2?family=Ma+Shan+Zheng&family=Nunito:wght@400;600;700&family=ZCOOL+XiaoWei&display=swap" rel="stylesheet">
+	<link rel="stylesheet" href="/styles/css/index.css">
+	<link rel="stylesheet" href="/styles/css/theme-girly.css">
+	<link rel="stylesheet" href="/styles/css/fontawesome/css/font-awesome.min.css">
+	<link rel="stylesheet" href="/styles/css/syntax.css">
+	<link rel="canonical" href="/2019/07/15/%E5%AD%A6%E4%B9%A0%E7%AC%94%E8%AE%B0/">
+	<link rel="alternate" type="application/rss+xml" title="TheNeverDeer" href="/feed.xml">
+	
+	<meta name="keywords" content="2019/7/15 三个算法的C语言实现, TheNeverDeer, 康志华;个人博客;学而不思则罔;思而不学则殆;生命不止;折腾不休">
+	<meta name="description" content="康志华;个人博客;学而不思则罔;思而不学则殆;生命不止;折腾不休">
+
+	<script src="/styles/js/jquery.min.js"></script>
+	<!--[if lt IE 9]>
+    	<script src="http://html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+  	<![endif]-->
+  	<script>
+		var _hmt = _hmt || [];
+		(function() {
+		  var hm = document.createElement("script");
+		  hm.src = "//hm.baidu.com/hm.js?";
+		  var s = document.getElementsByTagName("script")[0]; 
+		  s.parentNode.insertBefore(hm, s);
+		})();
+	</script>
+  	<style type="text/css">
+	  	.docs-content{
+	  		margin-bottom: 10px;
+	  	}
+  	</style>
+</head>
+
+  <body class="index">
+
+    <header class="navbar navbar-inverse navbar-fixed-top docs-nav" role="banner">
+  <div class="container">
+    <div class="navbar-header">
+      <button class="navbar-toggle" type="button" data-toggle="collapse" data-target=".bs-navbar-collapse">
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+      </button>
+      <a href="/" class="navbar-brand">Luzi</a>
+    </div>
+    <nav class="collapse navbar-collapse bs-navbar-collapse" role="navigation">
+      <ul class="nav navbar-nav">    
+        <li>
+          <a href="/">主页</a>
+        </li>
+        <li>
+          <a href="/categories/">类型</a>
+        </li>
+        <li>
+          <a href="/tag">标签</a>
+        </li>
+      </ul>
+      <ul class="nav navbar-nav navbar-right">
+        <!--<li>
+            <a><span id="busuanzi_container_site_pv">本站总访问量<span id="busuanzi_value_site_pv"></span>次</span></a>-->
+        </li>
+        <li class="dropdown">
+          <a href="#" class="dropdown-toggle" data-toggle="dropdown">关于<b class="caret"></b></a>
+          <ul class="dropdown-menu">
+            <li><a rel="nofollow" target="_blank" href="https://github.com/TheNeverDeer/">Github</a></li>
+            <!--<li><a rel="nofollow" target="_blank" href="">关于作者</a></li>-->
+            <li><a rel="nofollow" href="/books">我的书单</a></li>
+            <!--<li><a rel="nofollow" href="http://www.hifreud.com/domains/">域名管理</a></li> -->
+           <!-- <li><a rel="nofollow" href="/reference">推荐博客</a></li> -->
+           <!-- <li><a href="/feed.xml">RSS订阅</a></li> -->
+            <li class="divider"></li>
+            <li><a rel="nofollow" target="_blank" href="https://github.com/TheNeverDeer/TheNeverDeer.github.io">本项目</a></li>
+          </ul>
+        </li>
+      </ul>
+    </nav>
+  </div>
+</header>
+    <div class="docs-header" id="content">
+  <div class="container">
+  	
+  		<!--
+		    <h1>2019/7/15 三个算法的C语言实现</h1>
+		    <p>Post on Jul 15, 2019 by <a href="/about">LuLu</a></p>
+		-->
+		    <h1>It's our wits that make us men.</h1>
+    
+  </div>
+</div>
+    
+      
+<div class="banner">
+  <div class="container">
+  	
+    	<a href="/categories/#文章-ref">文章</a>	/
+    	<a href="/tag/#interview-ref">interview</a>
+    
+  </div>
+</div>
+
+    
+
+    <div class="container docs-container">
+  <div class="row">
+    <div class="col-md-3">
+      <div class="sidebar hidden-print" role="complementary">
+        <div id="navigation">
+  <h1>目录</h1>
+  <ul class="nav sidenav">
+  </ul>
+  <div style="height: 200px;width: 200px;">
+    <script type="text/javascript" src="//rf.revolvermaps.com/0/0/8.js?i=&amp;m=0&amp;c=ff0000&amp;cr1=ffffff&amp;f=arial&amp;l=33" async="async"> 
+    </script>
+  </div>
+</div>
+
+ 
+      </div>
+    </div>
+    <div class="col-md-9" role="main">
+      <div class="panel docs-content">
+        <div class="wrapper">
+            <header class="post-header">
+              <h1 class="post-title">2019/7/15 三个算法的C语言实现</h1>
+              <!--
+                <p class="post-meta">Jul 15, 2019</p>
+              -->
+              <div class="meta">Posted on <span class="postdate">Jul 15, 2019</span> By <a target="_blank" href="http://localhost:4000">LuLu</a></div>
+              <br />
+            </header>
+            <article class="post-content">
+              <ul id="markdown-toc">
+  <li><a href="#三个算法的c语言实现" id="markdown-toc-三个算法的c语言实现">三个算法的C语言实现</a>    <ul>
+      <li><a href="#欧几里得算法辗转相除法" id="markdown-toc-欧几里得算法辗转相除法">欧几里得算法/辗转相除法</a></li>
+      <li><a href="#最小公倍数算法" id="markdown-toc-最小公倍数算法">最小公倍数算法</a></li>
+      <li><a href="#乘法链算法" id="markdown-toc-乘法链算法">乘法链算法</a></li>
+    </ul>
+  </li>
+</ul>
+<h1 id="三个算法的c语言实现">三个算法的C语言实现</h1>
+
+<h2 id="欧几里得算法辗转相除法">欧几里得算法/辗转相除法</h2>
+
+<div class="language-c highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="c1">//欧几里得算法（辗转相除法）求最大公约数</span>
+<span class="cp">#include</span> <span class="cpf">&lt;stdio.h&gt;</span><span class="cp">
+#include</span> <span class="cpf">&lt;math.h&gt;</span><span class="cp">
+</span><span class="kt">void</span> <span class="nf">main</span><span class="p">()</span>
+<span class="p">{</span>
+	<span class="kt">int</span> <span class="n">a</span><span class="p">,</span><span class="n">b</span><span class="p">,</span><span class="n">r</span><span class="p">,</span><span class="n">c</span><span class="p">,</span><span class="n">d</span><span class="p">;</span> <span class="c1">////要求a和b的最大公约数，r是余数</span>
+	<span class="n">printf</span><span class="p">(</span><span class="s">"请输入两个数中较大的数a</span><span class="se">\n</span><span class="s">"</span><span class="p">);</span>
+	<span class="n">scanf</span><span class="p">(</span><span class="s">"%d"</span><span class="p">,</span><span class="o">&amp;</span><span class="n">a</span><span class="p">);</span>
+	<span class="n">c</span><span class="o">=</span><span class="n">a</span><span class="p">;</span>
+	<span class="c1">//判断a是否为正整数</span>
+	<span class="k">if</span><span class="p">(</span><span class="n">a</span><span class="o">&lt;</span><span class="mi">0</span><span class="p">)</span>
+	<span class="p">{</span>
+		<span class="n">printf</span><span class="p">(</span><span class="s">"请输入正整数"</span><span class="p">);</span>
+		<span class="n">printf</span><span class="p">(</span><span class="s">"请输入两个数中较大的数a</span><span class="se">\n</span><span class="s">"</span><span class="p">);</span>
+		<span class="n">scanf</span><span class="p">(</span><span class="s">"%d"</span><span class="p">,</span><span class="o">&amp;</span><span class="n">a</span><span class="p">);</span>
+		<span class="n">c</span><span class="o">=</span><span class="n">a</span><span class="p">;</span>
+	<span class="p">}</span>
+	<span class="n">printf</span><span class="p">(</span><span class="s">"请输入两个数中较小的数b</span><span class="se">\n</span><span class="s">"</span><span class="p">);</span>
+	<span class="n">scanf</span><span class="p">(</span><span class="s">"%d"</span><span class="p">,</span><span class="o">&amp;</span><span class="n">b</span><span class="p">);</span>
+	<span class="n">d</span><span class="o">=</span><span class="n">b</span><span class="p">;</span>
+	<span class="c1">//判断b是否为正整数</span>
+	<span class="k">if</span><span class="p">(</span><span class="n">b</span><span class="o">&lt;</span><span class="mi">0</span><span class="p">)</span>
+	<span class="p">{</span>
+		<span class="n">printf</span><span class="p">(</span><span class="s">"请输入正整数"</span><span class="p">);</span>
+		<span class="n">printf</span><span class="p">(</span><span class="s">"请输入两个数中较小的数b</span><span class="se">\n</span><span class="s">"</span><span class="p">);</span>
+		<span class="n">scanf</span><span class="p">(</span><span class="s">"%d"</span><span class="p">,</span><span class="o">&amp;</span><span class="n">b</span><span class="p">);</span>
+		<span class="n">d</span><span class="o">=</span><span class="n">b</span><span class="p">;</span>
+	<span class="p">}</span>
+	<span class="k">while</span><span class="p">(</span><span class="n">r</span><span class="o">=</span><span class="n">a</span><span class="o">%</span><span class="n">b</span><span class="p">)</span>
+	<span class="p">{</span>
+		<span class="c1">//将b当作新的a，r当作新的b	</span>
+		<span class="n">a</span><span class="o">=</span><span class="n">b</span><span class="p">;</span>
+		<span class="n">b</span><span class="o">=</span><span class="n">r</span><span class="p">;</span>
+	<span class="p">}</span>
+	<span class="c1">//程序结束的b就是最大公约数</span>
+	<span class="n">printf</span><span class="p">(</span><span class="s">"%d和%d的最大公约数是%d</span><span class="se">\n</span><span class="s">"</span><span class="p">,</span><span class="n">c</span><span class="p">,</span><span class="n">d</span><span class="p">,</span><span class="n">b</span><span class="p">);</span>
+<span class="p">}</span>
+</code></pre></div></div>
+
+<h2 id="最小公倍数算法">最小公倍数算法</h2>
+
+<div class="language-c highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="c1">//最小公倍数的加法方法</span>
+<span class="cp">#include</span><span class="cpf">&lt;stdio.h&gt;</span><span class="cp">
+</span><span class="kt">void</span> <span class="nf">main</span><span class="p">()</span>
+<span class="p">{</span>
+	<span class="kt">int</span> <span class="n">a</span><span class="p">,</span><span class="n">b</span><span class="p">,</span><span class="n">c</span><span class="p">,</span><span class="n">d</span><span class="p">;</span> <span class="c1">//要求a和b的最小公倍数</span>
+	<span class="n">printf</span><span class="p">(</span><span class="s">"请输入两个数其中一个数a</span><span class="se">\n</span><span class="s">"</span><span class="p">);</span>
+	<span class="n">scanf</span><span class="p">(</span><span class="s">"%d"</span><span class="p">,</span><span class="o">&amp;</span><span class="n">a</span><span class="p">);</span>
+	<span class="n">c</span><span class="o">=</span><span class="n">a</span><span class="p">;</span>
+	<span class="c1">//判断a是否为正整数</span>
+	<span class="k">if</span><span class="p">(</span><span class="n">a</span><span class="o">&lt;=</span><span class="mi">0</span><span class="p">)</span>
+	<span class="p">{</span>
+		<span class="n">printf</span><span class="p">(</span><span class="s">"请输入正整数"</span><span class="p">);</span>
+		<span class="n">printf</span><span class="p">(</span><span class="s">"请输入两个数其中一个数a</span><span class="se">\n</span><span class="s">"</span><span class="p">);</span>
+		<span class="n">scanf</span><span class="p">(</span><span class="s">"%d"</span><span class="p">,</span><span class="o">&amp;</span><span class="n">a</span><span class="p">);</span>
+		<span class="n">c</span><span class="o">=</span><span class="n">a</span><span class="p">;</span>
+	<span class="p">}</span>
+	<span class="n">printf</span><span class="p">(</span><span class="s">"请输入两个数另外一个数b</span><span class="se">\n</span><span class="s">"</span><span class="p">);</span>
+	<span class="n">scanf</span><span class="p">(</span><span class="s">"%d"</span><span class="p">,</span><span class="o">&amp;</span><span class="n">b</span><span class="p">);</span>
+	<span class="n">d</span><span class="o">=</span><span class="n">b</span><span class="p">;</span>
+	<span class="c1">//判断b是否为正整数</span>
+	<span class="k">if</span><span class="p">(</span><span class="n">b</span><span class="o">&lt;=</span><span class="mi">0</span><span class="p">)</span>
+	<span class="p">{</span>
+		<span class="n">printf</span><span class="p">(</span><span class="s">"请输入正整数"</span><span class="p">);</span>
+		<span class="n">printf</span><span class="p">(</span><span class="s">"请输入两个数另外一个数b</span><span class="se">\n</span><span class="s">"</span><span class="p">);</span>
+		<span class="n">scanf</span><span class="p">(</span><span class="s">"%d"</span><span class="p">,</span><span class="o">&amp;</span><span class="n">b</span><span class="p">);</span>
+		<span class="n">d</span><span class="o">=</span><span class="n">b</span><span class="p">;</span>
+	<span class="p">}</span>
+	<span class="k">while</span><span class="p">(</span><span class="n">a</span><span class="o">-</span><span class="n">b</span><span class="p">)</span>
+	<span class="p">{</span>
+		<span class="k">if</span><span class="p">(</span><span class="n">a</span><span class="o">&gt;</span><span class="n">b</span><span class="p">)</span>
+		<span class="p">{</span>
+			<span class="n">b</span><span class="o">+=</span><span class="n">d</span><span class="p">;</span>
+		<span class="p">}</span>
+		<span class="k">else</span>
+		<span class="p">{</span>
+			<span class="n">a</span><span class="o">+=</span><span class="n">c</span><span class="p">;</span>
+		<span class="p">}</span>
+	<span class="p">}</span>
+	<span class="n">printf</span><span class="p">(</span><span class="s">"%d和%d的最小公倍数是%d</span><span class="se">\n</span><span class="s">"</span><span class="p">,</span><span class="n">c</span><span class="p">,</span><span class="n">d</span><span class="p">,</span><span class="n">a</span><span class="p">);</span>
+<span class="p">}</span>
+</code></pre></div></div>
+
+<h2 id="乘法链算法">乘法链算法</h2>
+
+<pre><code class="language-C">//乘法链算法
+#include &lt;stdio.h&gt;
+void main()
+{
+	int u,s=1,t,a,n,m[30],i,c=0; //c为数组下标; //u是数字a的指数,s是计数,n是除数,t是根据0,1累乘的；
+	printf("请输入底数a\n");
+	scanf("%d",&amp;a);
+	//判断a是否为正整数
+	if(a&lt;0)
+	{
+		printf("请输入正整数");
+		printf("请输入底数a\n");
+		scanf("%d",&amp;a);
+	}
+	printf("请输入除数n\n");
+	scanf("%d",&amp;n);
+	//判断n是否为正整数
+	if(n&lt;0)
+	{
+		printf("请输入正整数");
+		printf("请输入除数n\n");
+		scanf("%d",&amp;n);
+	}
+	printf("请输入指数u\n");
+	scanf("%d",&amp;u);
+	//判断u是否为正整数
+	if(u&lt;0)
+	{
+		printf("请输入正整数");
+		printf("请输入指数u\n");
+		scanf("%d",&amp;u);
+	}
+	//将指数u转换成二进制存入数组m[30]
+	while(u)
+	{
+		i=u%2;
+		m[c]=i;
+		c++;
+		u=u/2;
+	}
+	c--;//c代表存入数据长度 范围是0~c-1
+	for(;c&gt;=0;c--)
+	{
+		printf("%d",m[c]);
+	}
+	printf("\n");
+	//开始进行乘法链算法
+	t=a;
+	for(;c&gt;=0;c--)
+	{
+		t=(t*t)%n;
+		if(m[c])//如果二进制位是1则对s进行改变
+		{
+			s=(s*t)%n;
+		}
+		//如果二进制位是1则只对t进行乘方
+	}
+	printf("最后的结果是%d\n",s);
+}
+</code></pre>
+
+            </article>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+    
+    <footer class="footer" role="contentinfo">
+	<div class="container">
+		<p class="copyright">Copyright &copy; 2014-2026 <a href=""><code>LuLu</code></a>.</p>
+		<p>Powered by <a href="http://jekyllrb.com">Jekyll</a>, themed from <a href="http://lesscss.cn/">Less</a>, refactored by <a href="http://www.hifreud.com/">Freud Kang</a></p>
+	</div>
+</footer>
+
+<script src="/styles/js/jquery.min.js"></script>
+<script src="/styles/js/bootstrap.min.js"></script>
+<script src="/styles/js/holder.min.js"></script>
+<script src="/styles/js/lessismore.js"></script>
+<script src="/styles/js/application.js"></script>
+<script async src="//busuanzi.ibruce.info/busuanzi/2.3/busuanzi.pure.mini.js"></script>
+
+  </body>
+</html>

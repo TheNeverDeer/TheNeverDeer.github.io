@@ -1,0 +1,235 @@
+<!DOCTYPE html>
+<html>
+
+  <head>
+	<meta charset="utf-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>2019/7/18 数论基础4 - TheNeverDeer</title>
+
+	<link rel="shortcut icon" href="/styles/images/favicon.jpg">
+	<link rel="icon" href="/styles/images/favicon.jpg">
+
+	<link rel="preconnect" href="https://fonts.googleapis.com">
+	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+	<link href="https://fonts.googleapis.com/css2?family=Ma+Shan+Zheng&family=Nunito:wght@400;600;700&family=ZCOOL+XiaoWei&display=swap" rel="stylesheet">
+	<link rel="stylesheet" href="/styles/css/index.css">
+	<link rel="stylesheet" href="/styles/css/theme-girly.css">
+	<link rel="stylesheet" href="/styles/css/fontawesome/css/font-awesome.min.css">
+	<link rel="stylesheet" href="/styles/css/syntax.css">
+	<link rel="canonical" href="/2019/07/18/%E5%AD%A6%E4%B9%A0%E7%AC%94%E8%AE%B0/">
+	<link rel="alternate" type="application/rss+xml" title="TheNeverDeer" href="/feed.xml">
+	
+	<meta name="keywords" content="2019/7/18 数论基础4, TheNeverDeer, 康志华;个人博客;学而不思则罔;思而不学则殆;生命不止;折腾不休">
+	<meta name="description" content="康志华;个人博客;学而不思则罔;思而不学则殆;生命不止;折腾不休">
+
+	<script src="/styles/js/jquery.min.js"></script>
+	<!--[if lt IE 9]>
+    	<script src="http://html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+  	<![endif]-->
+  	<script>
+		var _hmt = _hmt || [];
+		(function() {
+		  var hm = document.createElement("script");
+		  hm.src = "//hm.baidu.com/hm.js?";
+		  var s = document.getElementsByTagName("script")[0]; 
+		  s.parentNode.insertBefore(hm, s);
+		})();
+	</script>
+  	<style type="text/css">
+	  	.docs-content{
+	  		margin-bottom: 10px;
+	  	}
+  	</style>
+</head>
+
+  <body class="index">
+
+    <header class="navbar navbar-inverse navbar-fixed-top docs-nav" role="banner">
+  <div class="container">
+    <div class="navbar-header">
+      <button class="navbar-toggle" type="button" data-toggle="collapse" data-target=".bs-navbar-collapse">
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+      </button>
+      <a href="/" class="navbar-brand">Luzi</a>
+    </div>
+    <nav class="collapse navbar-collapse bs-navbar-collapse" role="navigation">
+      <ul class="nav navbar-nav">    
+        <li>
+          <a href="/">主页</a>
+        </li>
+        <li>
+          <a href="/categories/">类型</a>
+        </li>
+        <li>
+          <a href="/tag">标签</a>
+        </li>
+      </ul>
+      <ul class="nav navbar-nav navbar-right">
+        <!--<li>
+            <a><span id="busuanzi_container_site_pv">本站总访问量<span id="busuanzi_value_site_pv"></span>次</span></a>-->
+        </li>
+        <li class="dropdown">
+          <a href="#" class="dropdown-toggle" data-toggle="dropdown">关于<b class="caret"></b></a>
+          <ul class="dropdown-menu">
+            <li><a rel="nofollow" target="_blank" href="https://github.com/TheNeverDeer/">Github</a></li>
+            <!--<li><a rel="nofollow" target="_blank" href="">关于作者</a></li>-->
+            <li><a rel="nofollow" href="/books">我的书单</a></li>
+            <!--<li><a rel="nofollow" href="http://www.hifreud.com/domains/">域名管理</a></li> -->
+           <!-- <li><a rel="nofollow" href="/reference">推荐博客</a></li> -->
+           <!-- <li><a href="/feed.xml">RSS订阅</a></li> -->
+            <li class="divider"></li>
+            <li><a rel="nofollow" target="_blank" href="https://github.com/TheNeverDeer/TheNeverDeer.github.io">本项目</a></li>
+          </ul>
+        </li>
+      </ul>
+    </nav>
+  </div>
+</header>
+    <div class="docs-header" id="content">
+  <div class="container">
+  	
+  		<!--
+		    <h1>2019/7/18 数论基础4</h1>
+		    <p>Post on Jul 18, 2019 by <a href="/about">LuLu</a></p>
+		-->
+		    <h1>It's our wits that make us men.</h1>
+    
+  </div>
+</div>
+    
+      
+<div class="banner">
+  <div class="container">
+  	
+    	<a href="/categories/#文章-ref">文章</a>	/
+    	<a href="/tag/#interview-ref">interview</a>
+    
+  </div>
+</div>
+
+    
+
+    <div class="container docs-container">
+  <div class="row">
+    <div class="col-md-3">
+      <div class="sidebar hidden-print" role="complementary">
+        <div id="navigation">
+  <h1>目录</h1>
+  <ul class="nav sidenav">
+  </ul>
+  <div style="height: 200px;width: 200px;">
+    <script type="text/javascript" src="//rf.revolvermaps.com/0/0/8.js?i=&amp;m=0&amp;c=ff0000&amp;cr1=ffffff&amp;f=arial&amp;l=33" async="async"> 
+    </script>
+  </div>
+</div>
+
+ 
+      </div>
+    </div>
+    <div class="col-md-9" role="main">
+      <div class="panel docs-content">
+        <div class="wrapper">
+            <header class="post-header">
+              <h1 class="post-title">2019/7/18 数论基础4</h1>
+              <!--
+                <p class="post-meta">Jul 18, 2019</p>
+              -->
+              <div class="meta">Posted on <span class="postdate">Jul 18, 2019</span> By <a target="_blank" href="http://localhost:4000">LuLu</a></div>
+              <br />
+            </header>
+            <article class="post-content">
+              <ul id="markdown-toc">
+  <li><a href="#数论基础4" id="markdown-toc-数论基础4">数论基础4</a>    <ul>
+      <li><a href="#欧拉函数" id="markdown-toc-欧拉函数">欧拉函数</a>        <ul>
+          <li><a href="#欧拉函数的性质" id="markdown-toc-欧拉函数的性质">欧拉函数的性质</a></li>
+          <li><a href="#求欧拉函数" id="markdown-toc-求欧拉函数">求欧拉函数</a></li>
+        </ul>
+      </li>
+      <li><a href="#欧拉定理" id="markdown-toc-欧拉定理">欧拉定理</a></li>
+      <li><a href="#费马小定理欧拉特例" id="markdown-toc-费马小定理欧拉特例">费马小定理(欧拉特例)</a></li>
+    </ul>
+  </li>
+</ul>
+<h1 id="数论基础4">数论基础4</h1>
+
+<h2 id="欧拉函数">欧拉函数</h2>
+
+<p>欧拉函数的计算结果是小于等于n且与n互素的正整数的<strong>个数</strong>
+\(e.g.φ(8)=4\)
+小于等于n且与n互素的正整数的个数：1,3,5,7</p>
+
+<h3 id="欧拉函数的性质">欧拉函数的性质</h3>
+
+<ul>
+  <li>p和q均为素数</li>
+</ul>
+
+\[φ(p)=p-1;
+φ(p*q)=φ(p)*φ(q)=(p-1)*(q-1);\]
+
+<ul>
+  <li>p为素数，k为正整数</li>
+</ul>
+
+\[φ(p^k)=p^{k-1}*(p-1);\]
+
+<ul>
+  <li>若gcd(a,b)=1,则</li>
+</ul>
+
+\[φ(a*b)=φ(a)*φ(b)\]
+
+<h3 id="求欧拉函数">求欧拉函数</h3>
+
+<p>求解思路，大数字通过素数唯一分解定理分解成小数字</p>
+
+<p>再利用知识求解
+\(\begin{array}{l}{\varphi(3000)} \\ {=\varphi\left(3 \times 2^{3} \times 5^{3}\right)} \\ {=\varphi(3) \times \varphi\left(2^{3}\right) \times \varphi\left(5^{3}\right)} \\ {=(3-1) \times 2^{2} \times \varphi(2) \times 5^{2} \times \varphi(5)} \\ {=2 \times 4 \times 1 \times 25 \times 4=800}\end{array}\)</p>
+
+<h2 id="欧拉定理">欧拉定理</h2>
+
+<p>设n≥2，如果gcd(a,n)=1，则（…..模n=1）
+\(a^{\varphi(n)} \equiv 1(\bmod n)\)
+同理有，
+\(a^{\varphi(n)+1} \equiv 1(\bmod n)\)
+e.g.
+\(\begin{array}{l}{\varphi(15)=\varphi(3) \times \varphi(5)=2 \times 4=8} \\ {4^{8}, 7^{8}, 11^{8} \equiv 1(\bmod 15)}\end{array}\)
+e.g.
+\(\begin{array}{l}{13^{\varphi(60)} \equiv 1(\bmod 60)} \\ {\varphi(60)=\varphi\left(2^{2}\right) \times \varphi(3) \times \varphi(5)=2 \times 2 \times 4=16} \\ {13^{16} \equiv 1(\bmod 60)} \\ {13^{2001}=13^{16 \times 125+1}=13(\bmod 60)} \\ {13^{2001} \bmod 60=13}\end{array}\)</p>
+
+<h2 id="费马小定理欧拉特例">费马小定理(欧拉特例)</h2>
+
+<p>若p是素数，且gcd(a,p)=1，则（…..模n=1）
+\(a^{p-1} \equiv 1(\bmod p)\)
+同理有，
+\(a^{p} \equiv a(\bmod p)\)
+e.g.
+\(\begin{array}{l}{\operatorname{gcd}(310,199)=1} \\ {310^{19-1} \equiv 1\left(\bmod _{1} 199\right)} \\ {310^{198} \bmod 199=1}\end{array}\)</p>
+
+            </article>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+    
+    <footer class="footer" role="contentinfo">
+	<div class="container">
+		<p class="copyright">Copyright &copy; 2014-2026 <a href=""><code>LuLu</code></a>.</p>
+		<p>Powered by <a href="http://jekyllrb.com">Jekyll</a>, themed from <a href="http://lesscss.cn/">Less</a>, refactored by <a href="http://www.hifreud.com/">Freud Kang</a></p>
+	</div>
+</footer>
+
+<script src="/styles/js/jquery.min.js"></script>
+<script src="/styles/js/bootstrap.min.js"></script>
+<script src="/styles/js/holder.min.js"></script>
+<script src="/styles/js/lessismore.js"></script>
+<script src="/styles/js/application.js"></script>
+<script async src="//busuanzi.ibruce.info/busuanzi/2.3/busuanzi.pure.mini.js"></script>
+
+  </body>
+</html>

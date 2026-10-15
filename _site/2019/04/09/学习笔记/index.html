@@ -1,0 +1,229 @@
+<!DOCTYPE html>
+<html>
+
+  <head>
+	<meta charset="utf-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>2019/4/9 反汇编再学习 - TheNeverDeer</title>
+
+	<link rel="shortcut icon" href="/styles/images/favicon.jpg">
+	<link rel="icon" href="/styles/images/favicon.jpg">
+
+	<link rel="preconnect" href="https://fonts.googleapis.com">
+	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+	<link href="https://fonts.googleapis.com/css2?family=Ma+Shan+Zheng&family=Nunito:wght@400;600;700&family=ZCOOL+XiaoWei&display=swap" rel="stylesheet">
+	<link rel="stylesheet" href="/styles/css/index.css">
+	<link rel="stylesheet" href="/styles/css/theme-girly.css">
+	<link rel="stylesheet" href="/styles/css/fontawesome/css/font-awesome.min.css">
+	<link rel="stylesheet" href="/styles/css/syntax.css">
+	<link rel="canonical" href="/2019/04/09/%E5%AD%A6%E4%B9%A0%E7%AC%94%E8%AE%B0/">
+	<link rel="alternate" type="application/rss+xml" title="TheNeverDeer" href="/feed.xml">
+	
+	<meta name="keywords" content="2019/4/9 反汇编再学习, TheNeverDeer, 康志华;个人博客;学而不思则罔;思而不学则殆;生命不止;折腾不休">
+	<meta name="description" content="康志华;个人博客;学而不思则罔;思而不学则殆;生命不止;折腾不休">
+
+	<script src="/styles/js/jquery.min.js"></script>
+	<!--[if lt IE 9]>
+    	<script src="http://html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+  	<![endif]-->
+  	<script>
+		var _hmt = _hmt || [];
+		(function() {
+		  var hm = document.createElement("script");
+		  hm.src = "//hm.baidu.com/hm.js?";
+		  var s = document.getElementsByTagName("script")[0]; 
+		  s.parentNode.insertBefore(hm, s);
+		})();
+	</script>
+  	<style type="text/css">
+	  	.docs-content{
+	  		margin-bottom: 10px;
+	  	}
+  	</style>
+</head>
+
+  <body class="index">
+
+    <header class="navbar navbar-inverse navbar-fixed-top docs-nav" role="banner">
+  <div class="container">
+    <div class="navbar-header">
+      <button class="navbar-toggle" type="button" data-toggle="collapse" data-target=".bs-navbar-collapse">
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+      </button>
+      <a href="/" class="navbar-brand">Luzi</a>
+    </div>
+    <nav class="collapse navbar-collapse bs-navbar-collapse" role="navigation">
+      <ul class="nav navbar-nav">    
+        <li>
+          <a href="/">主页</a>
+        </li>
+        <li>
+          <a href="/categories/">类型</a>
+        </li>
+        <li>
+          <a href="/tag">标签</a>
+        </li>
+      </ul>
+      <ul class="nav navbar-nav navbar-right">
+        <!--<li>
+            <a><span id="busuanzi_container_site_pv">本站总访问量<span id="busuanzi_value_site_pv"></span>次</span></a>-->
+        </li>
+        <li class="dropdown">
+          <a href="#" class="dropdown-toggle" data-toggle="dropdown">关于<b class="caret"></b></a>
+          <ul class="dropdown-menu">
+            <li><a rel="nofollow" target="_blank" href="https://github.com/TheNeverDeer/">Github</a></li>
+            <!--<li><a rel="nofollow" target="_blank" href="">关于作者</a></li>-->
+            <li><a rel="nofollow" href="/books">我的书单</a></li>
+            <!--<li><a rel="nofollow" href="http://www.hifreud.com/domains/">域名管理</a></li> -->
+           <!-- <li><a rel="nofollow" href="/reference">推荐博客</a></li> -->
+           <!-- <li><a href="/feed.xml">RSS订阅</a></li> -->
+            <li class="divider"></li>
+            <li><a rel="nofollow" target="_blank" href="https://github.com/TheNeverDeer/TheNeverDeer.github.io">本项目</a></li>
+          </ul>
+        </li>
+      </ul>
+    </nav>
+  </div>
+</header>
+    <div class="docs-header" id="content">
+  <div class="container">
+  	
+  		<!--
+		    <h1>2019/4/9 反汇编再学习</h1>
+		    <p>Post on Apr 09, 2019 by <a href="/about">LuLu</a></p>
+		-->
+		    <h1>It's our wits that make us men.</h1>
+    
+  </div>
+</div>
+    
+      
+<div class="banner">
+  <div class="container">
+  	
+    	<a href="/categories/#文章-ref">文章</a>	/
+    	<a href="/tag/#interview-ref">interview</a>
+    
+  </div>
+</div>
+
+    
+
+    <div class="container docs-container">
+  <div class="row">
+    <div class="col-md-3">
+      <div class="sidebar hidden-print" role="complementary">
+        <div id="navigation">
+  <h1>目录</h1>
+  <ul class="nav sidenav">
+  </ul>
+  <div style="height: 200px;width: 200px;">
+    <script type="text/javascript" src="//rf.revolvermaps.com/0/0/8.js?i=&amp;m=0&amp;c=ff0000&amp;cr1=ffffff&amp;f=arial&amp;l=33" async="async"> 
+    </script>
+  </div>
+</div>
+
+ 
+      </div>
+    </div>
+    <div class="col-md-9" role="main">
+      <div class="panel docs-content">
+        <div class="wrapper">
+            <header class="post-header">
+              <h1 class="post-title">2019/4/9 反汇编再学习</h1>
+              <!--
+                <p class="post-meta">Apr 9, 2019</p>
+              -->
+              <div class="meta">Posted on <span class="postdate">Apr 09, 2019</span> By <a target="_blank" href="http://localhost:4000">LuLu</a></div>
+              <br />
+            </header>
+            <article class="post-content">
+              <ul id="markdown-toc">
+  <li><a href="#反汇编再学习" id="markdown-toc-反汇编再学习">反汇编再学习</a>    <ul>
+      <li><a href="#基本的反汇编算法" id="markdown-toc-基本的反汇编算法">基本的反汇编算法</a>        <ul>
+          <li><a href="#1线性扫描" id="markdown-toc-1线性扫描">1.线性扫描</a></li>
+          <li><a href="#2递归下降" id="markdown-toc-2递归下降">2.递归下降</a></li>
+        </ul>
+      </li>
+    </ul>
+  </li>
+</ul>
+<h1 id="反汇编再学习">反汇编再学习</h1>
+
+<p>《IDA Pro权威指南》：为了满足所有要求，反汇编器必须从大量算法中选择一些适当的算法，来处理我们提供的文件。</p>
+
+<h2 id="基本的反汇编算法">基本的反汇编算法</h2>
+
+<ol>
+  <li>确定进行反汇编的代码区域。通常，指令与数据混杂在一起，区分它们就显得非常重要。以最常见的情形——反汇编可执行文件为例，该文件必须符合可执行文件的某种通用格式，如Windows所用的可移植可执行（PE）格式或许多UNIX系统常用的可执行和链接格式（ELF）。这些格式通常含有一种机制，用来确定文件中包含代码和代码入口点的部分的位置（通常变现为层级文件头的形式）。</li>
+  <li>知道指令的起始地址后，下一步就是读取该地址（或文件偏移量）所包含的值，并执行一次表查找，将二进制操作码的值与它的汇编语言助记符对应起来。</li>
+  <li>获取指令并解码任何所需的操作数后，需要对它的汇编语言等价形式进行格式化，并将其在反汇编代码中输出。</li>
+  <li>输出一条指令后，继续反汇编下一条指令，并重复上述过程，直到反汇编完文件中的所有指令。</li>
+  <li>有大量算法可以用于确定从何处开始反汇编、如何选择下一条反汇编的指令、如何区分代码与数据，以及如何确定何时完成对最后一条指令的反汇编。线性扫描和递归下降是两种最主要的反汇编算法。</li>
+</ol>
+
+<h3 id="1线性扫描">1.线性扫描</h3>
+
+<p>原理:一条指令结束，另一条指令开始</p>
+
+<p>关键:确定起始位置</p>
+
+<p>流程:从起始，逐条反汇编指令，直到完成整个代码段</p>
+
+<p>优点:  可覆盖程序的所有代码段</p>
+
+<p>缺陷: 如果代码段中混有数据！</p>
+
+<p>gdb windbg objdump均采用线性扫描</p>
+
+<h3 id="2递归下降">2.递归下降</h3>
+
+<p>原理:根据一条指令是否被另一条指令引用来决定是否对其进行反汇编</p>
+
+<ul>
+  <li>
+    <p>顺序流指令：直接解析它后面的下一条指令，如MOV、PUSH、POP</p>
+  </li>
+  <li>
+    <p>条件分支指令：解析它的所有条件路径，如JNZ</p>
+  </li>
+  <li>
+    <p>无条件分支指令：反汇编器会尝试定位到跳转的目标，但有可能失败（如JMP EAX,EAX在静态环境下无法确认)</p>
+  </li>
+  <li>
+    <p>函数调用指令：和无条件分支指令相似，如CALL EAX</p>
+  </li>
+</ul>
+
+<p>优点：可以区别代码和数据</p>
+
+<p>IDA使用的是递归遍历反汇编算法</p>
+
+
+            </article>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+    
+    <footer class="footer" role="contentinfo">
+	<div class="container">
+		<p class="copyright">Copyright &copy; 2014-2026 <a href=""><code>LuLu</code></a>.</p>
+		<p>Powered by <a href="http://jekyllrb.com">Jekyll</a>, themed from <a href="http://lesscss.cn/">Less</a>, refactored by <a href="http://www.hifreud.com/">Freud Kang</a></p>
+	</div>
+</footer>
+
+<script src="/styles/js/jquery.min.js"></script>
+<script src="/styles/js/bootstrap.min.js"></script>
+<script src="/styles/js/holder.min.js"></script>
+<script src="/styles/js/lessismore.js"></script>
+<script src="/styles/js/application.js"></script>
+<script async src="//busuanzi.ibruce.info/busuanzi/2.3/busuanzi.pure.mini.js"></script>
+
+  </body>
+</html>

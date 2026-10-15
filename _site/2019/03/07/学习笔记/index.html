@@ -1,0 +1,315 @@
+<!DOCTYPE html>
+<html>
+
+  <head>
+	<meta charset="utf-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>2019/3/7 逆向工程 - TheNeverDeer</title>
+
+	<link rel="shortcut icon" href="/styles/images/favicon.jpg">
+	<link rel="icon" href="/styles/images/favicon.jpg">
+
+	<link rel="preconnect" href="https://fonts.googleapis.com">
+	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+	<link href="https://fonts.googleapis.com/css2?family=Ma+Shan+Zheng&family=Nunito:wght@400;600;700&family=ZCOOL+XiaoWei&display=swap" rel="stylesheet">
+	<link rel="stylesheet" href="/styles/css/index.css">
+	<link rel="stylesheet" href="/styles/css/theme-girly.css">
+	<link rel="stylesheet" href="/styles/css/fontawesome/css/font-awesome.min.css">
+	<link rel="stylesheet" href="/styles/css/syntax.css">
+	<link rel="canonical" href="/2019/03/07/%E5%AD%A6%E4%B9%A0%E7%AC%94%E8%AE%B0/">
+	<link rel="alternate" type="application/rss+xml" title="TheNeverDeer" href="/feed.xml">
+	
+	<meta name="keywords" content="2019/3/7 逆向工程, TheNeverDeer, 康志华;个人博客;学而不思则罔;思而不学则殆;生命不止;折腾不休">
+	<meta name="description" content="康志华;个人博客;学而不思则罔;思而不学则殆;生命不止;折腾不休">
+
+	<script src="/styles/js/jquery.min.js"></script>
+	<!--[if lt IE 9]>
+    	<script src="http://html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+  	<![endif]-->
+  	<script>
+		var _hmt = _hmt || [];
+		(function() {
+		  var hm = document.createElement("script");
+		  hm.src = "//hm.baidu.com/hm.js?";
+		  var s = document.getElementsByTagName("script")[0]; 
+		  s.parentNode.insertBefore(hm, s);
+		})();
+	</script>
+  	<style type="text/css">
+	  	.docs-content{
+	  		margin-bottom: 10px;
+	  	}
+  	</style>
+</head>
+
+  <body class="index">
+
+    <header class="navbar navbar-inverse navbar-fixed-top docs-nav" role="banner">
+  <div class="container">
+    <div class="navbar-header">
+      <button class="navbar-toggle" type="button" data-toggle="collapse" data-target=".bs-navbar-collapse">
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+      </button>
+      <a href="/" class="navbar-brand">Luzi</a>
+    </div>
+    <nav class="collapse navbar-collapse bs-navbar-collapse" role="navigation">
+      <ul class="nav navbar-nav">    
+        <li>
+          <a href="/">主页</a>
+        </li>
+        <li>
+          <a href="/categories/">类型</a>
+        </li>
+        <li>
+          <a href="/tag">标签</a>
+        </li>
+      </ul>
+      <ul class="nav navbar-nav navbar-right">
+        <!--<li>
+            <a><span id="busuanzi_container_site_pv">本站总访问量<span id="busuanzi_value_site_pv"></span>次</span></a>-->
+        </li>
+        <li class="dropdown">
+          <a href="#" class="dropdown-toggle" data-toggle="dropdown">关于<b class="caret"></b></a>
+          <ul class="dropdown-menu">
+            <li><a rel="nofollow" target="_blank" href="https://github.com/TheNeverDeer/">Github</a></li>
+            <!--<li><a rel="nofollow" target="_blank" href="">关于作者</a></li>-->
+            <li><a rel="nofollow" href="/books">我的书单</a></li>
+            <!--<li><a rel="nofollow" href="http://www.hifreud.com/domains/">域名管理</a></li> -->
+           <!-- <li><a rel="nofollow" href="/reference">推荐博客</a></li> -->
+           <!-- <li><a href="/feed.xml">RSS订阅</a></li> -->
+            <li class="divider"></li>
+            <li><a rel="nofollow" target="_blank" href="https://github.com/TheNeverDeer/TheNeverDeer.github.io">本项目</a></li>
+          </ul>
+        </li>
+      </ul>
+    </nav>
+  </div>
+</header>
+    <div class="docs-header" id="content">
+  <div class="container">
+  	
+  		<!--
+		    <h1>2019/3/7 逆向工程</h1>
+		    <p>Post on Mar 07, 2019 by <a href="/about">LuLu</a></p>
+		-->
+		    <h1>It's our wits that make us men.</h1>
+    
+  </div>
+</div>
+    
+      
+<div class="banner">
+  <div class="container">
+  	
+    	<a href="/categories/#文章-ref">文章</a>	/
+    	<a href="/tag/#interview-ref">interview</a>
+    
+  </div>
+</div>
+
+    
+
+    <div class="container docs-container">
+  <div class="row">
+    <div class="col-md-3">
+      <div class="sidebar hidden-print" role="complementary">
+        <div id="navigation">
+  <h1>目录</h1>
+  <ul class="nav sidenav">
+  </ul>
+  <div style="height: 200px;width: 200px;">
+    <script type="text/javascript" src="//rf.revolvermaps.com/0/0/8.js?i=&amp;m=0&amp;c=ff0000&amp;cr1=ffffff&amp;f=arial&amp;l=33" async="async"> 
+    </script>
+  </div>
+</div>
+
+ 
+      </div>
+    </div>
+    <div class="col-md-9" role="main">
+      <div class="panel docs-content">
+        <div class="wrapper">
+            <header class="post-header">
+              <h1 class="post-title">2019/3/7 逆向工程</h1>
+              <!--
+                <p class="post-meta">Mar 7, 2019</p>
+              -->
+              <div class="meta">Posted on <span class="postdate">Mar 07, 2019</span> By <a target="_blank" href="http://localhost:4000">LuLu</a></div>
+              <br />
+            </header>
+            <article class="post-content">
+              <ul id="markdown-toc">
+  <li><a href="#逆向工程" id="markdown-toc-逆向工程">逆向工程</a></li>
+  <li><a href="#objdump工具" id="markdown-toc-objdump工具">objdump工具</a></li>
+  <li><a href="#gdb调试器" id="markdown-toc-gdb调试器">gdb调试器</a></li>
+  <li><a href="#解题" id="markdown-toc-解题">解题</a></li>
+</ul>
+<p>​	今天开始接触逆向工程拆除“二进制炸弹”的题目，题目中推荐了两个工具：objdump工具和gdb调试器，于是决定先从概念和工具入手，了解一下逆向工程。</p>
+
+<h1 id="逆向工程">逆向工程</h1>
+
+<p>​	逆向工程，又称反向工程，是一种技术过程，即对一项目标产品进行逆向分析及研究，从而演绎并得出该产品的处理流程、组织结构、功能性能规格等设计要素，以制作出功能相近，但又不完全一样的产品。逆向工程源于商业及军事领域中的硬件分析。其主要目的是，在无法轻易获得必要的生产信息下，直接从成品的分析，推导产品的设计原理。</p>
+
+<p>​	逆向工程可能会被误认为是对知识产权的严重侵害，但是在实际应用上，反而可能会保护知识产权所有者。例如在集成电路领域，如果怀疑某公司侵犯知识产权，可以用逆向工程技术来寻找证据。</p>
+
+<h1 id="objdump工具">objdump工具</h1>
+
+<ul>
+  <li>
+    <p>objdump是什么？</p>
+
+    <p>objdump工具用来显示二进制文件的信息，就是以一种可阅读的格式让你更多地了解二进制文件可能带有的附加信息。</p>
+  </li>
+  <li>
+    <p>objdump常用参数：</p>
+
+    <ul>
+      <li>-f 显示文件头信息</li>
+      <li>-D 反汇编所有section (-d反汇编特定section)</li>
+      <li>-h 显示目标文件各个section的头部摘要信息</li>
+      <li>-t 显示文件的符号表入口。类似于nm -s提供的信息</li>
+      <li>-r 显示文件的重定位入口。如果和-d或者-D一起使用，重定位部分以反汇编后的格式显示出来。</li>
+      <li>-x 显示所有可用的头信息，包括符号表、重定位入口。-x 等价于 -a -f -h -r -t 同时指定。</li>
+      <li>-i 显示对于 -b 或者 -m 选项可用的架构和目标格式列表。</li>
+      <li>-R 显示文件的动态重定位入口，仅仅对于动态目标文件有意义，比如某些共享库。</li>
+      <li>-S 尽可能反汇编出源代码，尤其当编译的时候指定了-g这种调试参数时，效果比较明显。隐含了-d参数。</li>
+    </ul>
+
+    <p>[参考资料][https://linuxtools-rst.readthedocs.io/zh_CN/latest/tool/objdump.html]</p>
+  </li>
+</ul>
+
+<h1 id="gdb调试器">gdb调试器</h1>
+
+<ul>
+  <li>
+    <p>gdb是什么？</p>
+
+    <p>GDB是一个由GNU开源组织发布的、UNIX/LINUX操作系统下的、基于命令行的、功能强大的程序调试工具。 对于一名Linux下工作的c++程序员，gdb是必不可少的工具。</p>
+  </li>
+  <li>
+    <p>gdb主要的功能：</p>
+
+    <ul>
+      <li>启动程序，可以按照工程师自定义的要求随心所欲的运行程序。</li>
+      <li>让被调试的程序在工程师指定的断点处停住，断点可以是条件表达式。</li>
+      <li>当程序被停住时，可以检查此时程序中所发生的事，并追索上文。</li>
+      <li>动态地改变程序的执行环境。</li>
+    </ul>
+  </li>
+  <li>
+    <p>启动gdb：</p>
+
+    <ul>
+      <li>
+        <p>对于C/C++程序的调试,需要在编译前就加上-g选项:</p>
+
+        <div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>$g++ -g hello.cpp -o hello
+</code></pre></div>        </div>
+      </li>
+      <li>
+        <p>调试可执行文件：（program也就是你的执行文件，一般在当前目录下）</p>
+
+        <div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>$gdb &lt;program&gt;
+</code></pre></div>        </div>
+      </li>
+    </ul>
+  </li>
+  <li>
+    <p>gdb交互命令：（交互模式下直接回车的作用是重复上一指令，对于单步调试非常方便；）</p>
+    <ul>
+      <li>运行：
+        <ul>
+          <li>run：简记为 r ，其作用是运行程序，当遇到断点后，程序会在断点处停止运行，等待用户输入下一步的命令。</li>
+          <li>continue （简写c ）：继续执行，到下一个断点处（或运行结束）</li>
+          <li>next：（简写 n），单步跟踪程序，当遇到函数调用时，也不进入此函数体；此命令同 step 的主要区别是，step 遇到用户自定义的函数，将步进到函数中去运行，而 next 则直接调用函数，不会进入到函数体内。</li>
+          <li>step （简写s）：单步调试如果有函数调用，则进入函数；与命令n不同，n是不进入调用的函数的</li>
+          <li>until：当你厌倦了在一个循环体内单步跟踪时，这个命令可以运行程序直到退出循环体。</li>
+          <li>until+行号： 运行至某行，不仅仅用来跳出循环</li>
+          <li>finish： 运行程序，直到当前函数完成返回，并打印函数返回时的堆栈地址和返回值及参数值等信息。</li>
+          <li>call 函数(参数)：调用程序中可见的函数，并传递“参数”，如：call gdb_test(55)</li>
+          <li>quit：简记为 q ，退出gdb</li>
+        </ul>
+      </li>
+      <li>设置断点：break n （简写b n）:在第n行处设置断点</li>
+      <li>查看源代码：
+        <ul>
+          <li>list 简记为 l ，其作用就是列出程序的源代码，默认每次显示10行</li>
+          <li>list 行号：将显示当前文件以“行号”为中心的前后10行代码，如：list 12</li>
+        </ul>
+      </li>
+      <li>打印表达式：print 表达式：简记为 p ，其中“表达式”可以是任何当前正在被测试程序的有效表达式，print a：将显示整数a的值。</li>
+      <li>查询运行信息</li>
+      <li>分割窗口：用于分割窗口，可以一边查看代码，一边测试。</li>
+    </ul>
+  </li>
+</ul>
+
+<p>[参考资料][https://linuxtools-rst.readthedocs.io/zh_CN/latest/tool/gdb.html]</p>
+
+<h1 id="解题">解题</h1>
+
+<p>对题目的大致了解：</p>
+
+<ul>
+  <li>
+    <p>题目中的压缩包中含有两个文件：</p>
+
+    <p>bomb.c：代码框架，bomb主程序即main函数，没有细节。（我先打开了bomb.c，看到了六个phase函数，特别抽象，没有什么具体的信息）
+bomb： bomb的可执行程序。linux下的可执行程序，需要0或1个命令行参数。</p>
+  </li>
+  <li>
+    <p>程序运行在linux环境之中，程序运行中有6个关卡（6个phase），每个phase需要用户在终端上输入特定的字符或者数字才能通关，否则会引爆炸弹！</p>
+  </li>
+  <li>
+    <p>使用gdb工具反汇编出汇编代码，结合c语言文件找到每个关卡的入口函数，分析汇编代码，拆除炸弹。</p>
+  </li>
+</ul>
+
+<ol>
+  <li>
+    <p>先将bobm3复制到共享文件夹之中；</p>
+  </li>
+  <li>
+    <p>打开Ubuntu，输入objdump -d bomb &gt; lu.txt</p>
+
+    <p><img src="https://wxt.sinaimg.cn/thumb300/0066mMjily1g0ueqfwajuj30e104sweb.jpg?tags=%5B%5D" alt="img" /></p>
+  </li>
+  <li>
+    <p>就可以在bomb同目录下生成一个文件：lu.txt</p>
+
+    <p><img src="https://wxt.sinaimg.cn/thumb300/0066mMjily1g0ueqfwt8hj309h071dfs.jpg?tags=%5B%5D" alt="img" /></p>
+  </li>
+  <li>
+    <p>里面是C程序的六个phase函数的汇编代码。</p>
+  </li>
+</ol>
+
+
+            </article>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+    
+    <footer class="footer" role="contentinfo">
+	<div class="container">
+		<p class="copyright">Copyright &copy; 2014-2026 <a href=""><code>LuLu</code></a>.</p>
+		<p>Powered by <a href="http://jekyllrb.com">Jekyll</a>, themed from <a href="http://lesscss.cn/">Less</a>, refactored by <a href="http://www.hifreud.com/">Freud Kang</a></p>
+	</div>
+</footer>
+
+<script src="/styles/js/jquery.min.js"></script>
+<script src="/styles/js/bootstrap.min.js"></script>
+<script src="/styles/js/holder.min.js"></script>
+<script src="/styles/js/lessismore.js"></script>
+<script src="/styles/js/application.js"></script>
+<script async src="//busuanzi.ibruce.info/busuanzi/2.3/busuanzi.pure.mini.js"></script>
+
+  </body>
+</html>

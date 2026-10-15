@@ -1,0 +1,300 @@
+<!DOCTYPE html>
+<html>
+
+  <head>
+	<meta charset="utf-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>2019/4/28《图解密码技术》第三章 - TheNeverDeer</title>
+
+	<link rel="shortcut icon" href="/styles/images/favicon.jpg">
+	<link rel="icon" href="/styles/images/favicon.jpg">
+
+	<link rel="preconnect" href="https://fonts.googleapis.com">
+	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+	<link href="https://fonts.googleapis.com/css2?family=Ma+Shan+Zheng&family=Nunito:wght@400;600;700&family=ZCOOL+XiaoWei&display=swap" rel="stylesheet">
+	<link rel="stylesheet" href="/styles/css/index.css">
+	<link rel="stylesheet" href="/styles/css/theme-girly.css">
+	<link rel="stylesheet" href="/styles/css/fontawesome/css/font-awesome.min.css">
+	<link rel="stylesheet" href="/styles/css/syntax.css">
+	<link rel="canonical" href="/2019/04/28/%E5%AD%A6%E4%B9%A0%E7%AC%94%E8%AE%B0/">
+	<link rel="alternate" type="application/rss+xml" title="TheNeverDeer" href="/feed.xml">
+	
+	<meta name="keywords" content="2019/4/28《图解密码技术》第三章, TheNeverDeer, 康志华;个人博客;学而不思则罔;思而不学则殆;生命不止;折腾不休">
+	<meta name="description" content="康志华;个人博客;学而不思则罔;思而不学则殆;生命不止;折腾不休">
+
+	<script src="/styles/js/jquery.min.js"></script>
+	<!--[if lt IE 9]>
+    	<script src="http://html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+  	<![endif]-->
+  	<script>
+		var _hmt = _hmt || [];
+		(function() {
+		  var hm = document.createElement("script");
+		  hm.src = "//hm.baidu.com/hm.js?";
+		  var s = document.getElementsByTagName("script")[0]; 
+		  s.parentNode.insertBefore(hm, s);
+		})();
+	</script>
+  	<style type="text/css">
+	  	.docs-content{
+	  		margin-bottom: 10px;
+	  	}
+  	</style>
+</head>
+
+  <body class="index">
+
+    <header class="navbar navbar-inverse navbar-fixed-top docs-nav" role="banner">
+  <div class="container">
+    <div class="navbar-header">
+      <button class="navbar-toggle" type="button" data-toggle="collapse" data-target=".bs-navbar-collapse">
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+      </button>
+      <a href="/" class="navbar-brand">Luzi</a>
+    </div>
+    <nav class="collapse navbar-collapse bs-navbar-collapse" role="navigation">
+      <ul class="nav navbar-nav">    
+        <li>
+          <a href="/">主页</a>
+        </li>
+        <li>
+          <a href="/categories/">类型</a>
+        </li>
+        <li>
+          <a href="/tag">标签</a>
+        </li>
+      </ul>
+      <ul class="nav navbar-nav navbar-right">
+        <!--<li>
+            <a><span id="busuanzi_container_site_pv">本站总访问量<span id="busuanzi_value_site_pv"></span>次</span></a>-->
+        </li>
+        <li class="dropdown">
+          <a href="#" class="dropdown-toggle" data-toggle="dropdown">关于<b class="caret"></b></a>
+          <ul class="dropdown-menu">
+            <li><a rel="nofollow" target="_blank" href="https://github.com/TheNeverDeer/">Github</a></li>
+            <!--<li><a rel="nofollow" target="_blank" href="">关于作者</a></li>-->
+            <li><a rel="nofollow" href="/books">我的书单</a></li>
+            <!--<li><a rel="nofollow" href="http://www.hifreud.com/domains/">域名管理</a></li> -->
+           <!-- <li><a rel="nofollow" href="/reference">推荐博客</a></li> -->
+           <!-- <li><a href="/feed.xml">RSS订阅</a></li> -->
+            <li class="divider"></li>
+            <li><a rel="nofollow" target="_blank" href="https://github.com/TheNeverDeer/TheNeverDeer.github.io">本项目</a></li>
+          </ul>
+        </li>
+      </ul>
+    </nav>
+  </div>
+</header>
+    <div class="docs-header" id="content">
+  <div class="container">
+  	
+  		<!--
+		    <h1>2019/4/28《图解密码技术》第三章</h1>
+		    <p>Post on Apr 28, 2019 by <a href="/about">LuLu</a></p>
+		-->
+		    <h1>It's our wits that make us men.</h1>
+    
+  </div>
+</div>
+    
+      
+<div class="banner">
+  <div class="container">
+  	
+    	<a href="/categories/#文章-ref">文章</a>	/
+    	<a href="/tag/#interview-ref">interview</a>
+    
+  </div>
+</div>
+
+    
+
+    <div class="container docs-container">
+  <div class="row">
+    <div class="col-md-3">
+      <div class="sidebar hidden-print" role="complementary">
+        <div id="navigation">
+  <h1>目录</h1>
+  <ul class="nav sidenav">
+  </ul>
+  <div style="height: 200px;width: 200px;">
+    <script type="text/javascript" src="//rf.revolvermaps.com/0/0/8.js?i=&amp;m=0&amp;c=ff0000&amp;cr1=ffffff&amp;f=arial&amp;l=33" async="async"> 
+    </script>
+  </div>
+</div>
+
+ 
+      </div>
+    </div>
+    <div class="col-md-9" role="main">
+      <div class="panel docs-content">
+        <div class="wrapper">
+            <header class="post-header">
+              <h1 class="post-title">2019/4/28《图解密码技术》第三章</h1>
+              <!--
+                <p class="post-meta">Apr 28, 2019</p>
+              -->
+              <div class="meta">Posted on <span class="postdate">Apr 28, 2019</span> By <a target="_blank" href="http://localhost:4000">LuLu</a></div>
+              <br />
+            </header>
+            <article class="post-content">
+              <ul id="markdown-toc">
+  <li><a href="#图解密码技术第三章" id="markdown-toc-图解密码技术第三章">图解密码技术（第三章）</a>    <ul>
+      <li><a href="#从文字密码到比特序列密码" id="markdown-toc-从文字密码到比特序列密码">从文字密码到比特序列密码</a>        <ul>
+          <li><a href="#编码" id="markdown-toc-编码">编码</a></li>
+          <li><a href="#小测验1-字母数字的映射和恺撒密码" id="markdown-toc-小测验1-字母数字的映射和恺撒密码">小测验1 字母→数字的映射和恺撒密码</a></li>
+          <li><a href="#xor" id="markdown-toc-xor">XOR</a></li>
+        </ul>
+      </li>
+      <li><a href="#一次性密码本绝对不会被破译的密码" id="markdown-toc-一次性密码本绝对不会被破译的密码">一次性密码本——绝对不会被破译的密码</a>        <ul>
+          <li><a href="#一次性密码本的加密" id="markdown-toc-一次性密码本的加密">一次性密码本的加密</a></li>
+          <li><a href="#一次性密码本的解密" id="markdown-toc-一次性密码本的解密">一次性密码本的解密</a></li>
+          <li><a href="#一次性密码本是无法破译的" id="markdown-toc-一次性密码本是无法破译的">一次性密码本是无法破译的</a></li>
+          <li><a href="#一次性密码本没有被使用" id="markdown-toc-一次性密码本没有被使用">一次性密码本没有被使用</a></li>
+          <li><a href="#小测验2-一次性密码本与压缩" id="markdown-toc-小测验2-一次性密码本与压缩">小测验2 一次性密码本与压缩</a></li>
+        </ul>
+      </li>
+    </ul>
+  </li>
+</ul>
+<h1 id="图解密码技术第三章">图解密码技术（第三章）</h1>
+
+<p>对称密码（共享密钥密码）</p>
+
+<p>使用对称密码进行加密，就要尽可能地打乱密文，这样才能达到加密的目的。</p>
+
+<p>密码算法有时会涉及开发者的专利和授权等问题，因此使用密码算法时，要先调查一下该算法的专利和授权信息。</p>
+
+<ul>
+  <li>编码 encoding，异或XOR exclusive or</li>
+  <li>一次性密码本 one-time pad，无条件安全 unconditionally secure,理论上无法破译 theoretically unbreakable，流密码 stream cipher</li>
+</ul>
+
+<h2 id="从文字密码到比特序列密码">从文字密码到比特序列密码</h2>
+
+<h3 id="编码">编码</h3>
+
+<ul>
+  <li>将现实世界中的东西映射为比特序列的操作称为编码</li>
+</ul>
+
+<h3 id="小测验1-字母数字的映射和恺撒密码">小测验1 字母→数字的映射和恺撒密码</h3>
+
+<blockquote>
+  <blockquote>
+    <p>答：原来的数字为明文，加密后的数字是密文。A的明文为0，密文为3.以此类推，到了x之后，就不能单纯加3，x由23变为0.所以，运算为：密文=（明文+3）mod 26.mod为取余运算。</p>
+
+    <h3 id="xor">XOR</h3>
+  </blockquote>
+</blockquote>
+
+<ul>
+  <li>
+    <p>XOR的运算规则如下：两个相同的数进行XOR运算的结果一定为0.</p>
+
+    <p>0  XOR  0 =0</p>
+
+    <p>0  XOR  1 =1</p>
+
+    <p>1  XOR  0 =1</p>
+
+    <p>1  XOR  1 =0</p>
+  </li>
+  <li>A XOR  B再与B 进行XOR运算会得到A
+    <ul>
+      <li>明文A用密钥B进行加密，得到密文A XOR B</li>
+      <li>将密文A XOR B用密钥B进行解密，得到明文A</li>
+    </ul>
+  </li>
+  <li>对于密码技术来说，是否可以预测是非常重要的一点。能够产生不可预测的比特序列，对于密码技术的贡献是巨大的。这种不可预测的比特序列就成为随机数。</li>
+</ul>
+
+<h2 id="一次性密码本绝对不会被破译的密码">一次性密码本——绝对不会被破译的密码</h2>
+
+<h3 id="一次性密码本的加密">一次性密码本的加密</h3>
+
+<ul>
+  <li>原理：将明文与一串随机的比特序列进行XOR运算。</li>
+</ul>
+
+<h3 id="一次性密码本的解密">一次性密码本的解密</h3>
+
+<ul>
+  <li>原理：用密文和密钥进行XOR运算，就可以得到明文。</li>
+</ul>
+
+<h3 id="一次性密码本是无法破译的">一次性密码本是无法破译的</h3>
+
+<p>暴力破解总有一天我们会尝试到和加密时相同的密钥，我们能够解出明文。但是即使我们能够解出一个字符，我们也无法判断它是否是正确的明文。</p>
+
+<ul>
+  <li>暴力破解是将所有的密钥都尝试一边，并判断所得到的是不是正确的明文的方法。在一次性密码本中，无法判断，因此无法破译。</li>
+</ul>
+
+<p>一次性密码本又称为维纳密码，香农证明了它无法破译。所以它是无条件安全的，在理论上无法破译的。</p>
+
+<h3 id="一次性密码本没有被使用">一次性密码本没有被使用</h3>
+
+<ul>
+  <li>
+    <p>密钥的配送</p>
+
+    <p>没有安全传送与明文长度相等的密钥，如果有，就可以用相同的办法传送明文了</p>
+  </li>
+  <li>
+    <p>密钥的保存</p>
+
+    <p>如果有安全保存与明文长度相等的密钥的办法，那也就有了安全保存明文本身的办法了。</p>
+  </li>
+  <li>
+    <p>密钥的重用</p>
+
+    <p>一次性密码本中绝对不能重用过去用过的随机比特序列，否则会泄露通信机密</p>
+  </li>
+  <li>
+    <p>密钥的同步</p>
+
+    <p>明文和密钥长度一样，如果明文很大，那么密钥也很大，通信过程中很可能就</p>
+  </li>
+  <li>
+    <p>密钥的生成</p>
+
+    <p>随机数不是计算机程序生成的伪随机数，而必须是无重现性的真正随机数</p>
+  </li>
+</ul>
+
+<p>出于上述原因，只有那些机密性胜过一切的猜想。例如，大国之间的热线。但是一次性密码本的思路却孕育出了流密码。</p>
+
+<h3 id="小测验2-一次性密码本与压缩">小测验2 一次性密码本与压缩</h3>
+
+<p>答：一次性密码本的密钥是随机的比特序列，不能被压缩。</p>
+
+<p>压缩软件压缩的原理是找出重复的序列，替换成较短的数据。而随机的比特序列是不能被压缩的。</p>
+
+            </article>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+    
+    <footer class="footer" role="contentinfo">
+	<div class="container">
+		<p class="copyright">Copyright &copy; 2014-2026 <a href=""><code>LuLu</code></a>.</p>
+		<p>Powered by <a href="http://jekyllrb.com">Jekyll</a>, themed from <a href="http://lesscss.cn/">Less</a>, refactored by <a href="http://www.hifreud.com/">Freud Kang</a></p>
+	</div>
+</footer>
+
+<script src="/styles/js/jquery.min.js"></script>
+<script src="/styles/js/bootstrap.min.js"></script>
+<script src="/styles/js/holder.min.js"></script>
+<script src="/styles/js/lessismore.js"></script>
+<script src="/styles/js/application.js"></script>
+<script async src="//busuanzi.ibruce.info/busuanzi/2.3/busuanzi.pure.mini.js"></script>
+
+  </body>
+</html>

@@ -1,0 +1,387 @@
+<!DOCTYPE html>
+<html>
+
+  <head>
+	<meta charset="utf-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>2019/7/13 数论基础1-1 - TheNeverDeer</title>
+
+	<link rel="shortcut icon" href="/styles/images/favicon.jpg">
+	<link rel="icon" href="/styles/images/favicon.jpg">
+
+	<link rel="preconnect" href="https://fonts.googleapis.com">
+	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+	<link href="https://fonts.googleapis.com/css2?family=Ma+Shan+Zheng&family=Nunito:wght@400;600;700&family=ZCOOL+XiaoWei&display=swap" rel="stylesheet">
+	<link rel="stylesheet" href="/styles/css/index.css">
+	<link rel="stylesheet" href="/styles/css/theme-girly.css">
+	<link rel="stylesheet" href="/styles/css/fontawesome/css/font-awesome.min.css">
+	<link rel="stylesheet" href="/styles/css/syntax.css">
+	<link rel="canonical" href="/2019/07/13/%E5%AD%A6%E4%B9%A0%E7%AC%94%E8%AE%B0/">
+	<link rel="alternate" type="application/rss+xml" title="TheNeverDeer" href="/feed.xml">
+	
+	<meta name="keywords" content="2019/7/13 数论基础1-1, TheNeverDeer, 康志华;个人博客;学而不思则罔;思而不学则殆;生命不止;折腾不休">
+	<meta name="description" content="康志华;个人博客;学而不思则罔;思而不学则殆;生命不止;折腾不休">
+
+	<script src="/styles/js/jquery.min.js"></script>
+	<!--[if lt IE 9]>
+    	<script src="http://html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+  	<![endif]-->
+  	<script>
+		var _hmt = _hmt || [];
+		(function() {
+		  var hm = document.createElement("script");
+		  hm.src = "//hm.baidu.com/hm.js?";
+		  var s = document.getElementsByTagName("script")[0]; 
+		  s.parentNode.insertBefore(hm, s);
+		})();
+	</script>
+  	<style type="text/css">
+	  	.docs-content{
+	  		margin-bottom: 10px;
+	  	}
+  	</style>
+</head>
+
+  <body class="index">
+
+    <header class="navbar navbar-inverse navbar-fixed-top docs-nav" role="banner">
+  <div class="container">
+    <div class="navbar-header">
+      <button class="navbar-toggle" type="button" data-toggle="collapse" data-target=".bs-navbar-collapse">
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+      </button>
+      <a href="/" class="navbar-brand">Luzi</a>
+    </div>
+    <nav class="collapse navbar-collapse bs-navbar-collapse" role="navigation">
+      <ul class="nav navbar-nav">    
+        <li>
+          <a href="/">主页</a>
+        </li>
+        <li>
+          <a href="/categories/">类型</a>
+        </li>
+        <li>
+          <a href="/tag">标签</a>
+        </li>
+      </ul>
+      <ul class="nav navbar-nav navbar-right">
+        <!--<li>
+            <a><span id="busuanzi_container_site_pv">本站总访问量<span id="busuanzi_value_site_pv"></span>次</span></a>-->
+        </li>
+        <li class="dropdown">
+          <a href="#" class="dropdown-toggle" data-toggle="dropdown">关于<b class="caret"></b></a>
+          <ul class="dropdown-menu">
+            <li><a rel="nofollow" target="_blank" href="https://github.com/TheNeverDeer/">Github</a></li>
+            <!--<li><a rel="nofollow" target="_blank" href="">关于作者</a></li>-->
+            <li><a rel="nofollow" href="/books">我的书单</a></li>
+            <!--<li><a rel="nofollow" href="http://www.hifreud.com/domains/">域名管理</a></li> -->
+           <!-- <li><a rel="nofollow" href="/reference">推荐博客</a></li> -->
+           <!-- <li><a href="/feed.xml">RSS订阅</a></li> -->
+            <li class="divider"></li>
+            <li><a rel="nofollow" target="_blank" href="https://github.com/TheNeverDeer/TheNeverDeer.github.io">本项目</a></li>
+          </ul>
+        </li>
+      </ul>
+    </nav>
+  </div>
+</header>
+    <div class="docs-header" id="content">
+  <div class="container">
+  	
+  		<!--
+		    <h1>2019/7/13 数论基础1-1</h1>
+		    <p>Post on Jul 13, 2019 by <a href="/about">LuLu</a></p>
+		-->
+		    <h1>It's our wits that make us men.</h1>
+    
+  </div>
+</div>
+    
+      
+<div class="banner">
+  <div class="container">
+  	
+    	<a href="/categories/#文章-ref">文章</a>	/
+    	<a href="/tag/#interview-ref">interview</a>
+    
+  </div>
+</div>
+
+    
+
+    <div class="container docs-container">
+  <div class="row">
+    <div class="col-md-3">
+      <div class="sidebar hidden-print" role="complementary">
+        <div id="navigation">
+  <h1>目录</h1>
+  <ul class="nav sidenav">
+  </ul>
+  <div style="height: 200px;width: 200px;">
+    <script type="text/javascript" src="//rf.revolvermaps.com/0/0/8.js?i=&amp;m=0&amp;c=ff0000&amp;cr1=ffffff&amp;f=arial&amp;l=33" async="async"> 
+    </script>
+  </div>
+</div>
+
+ 
+      </div>
+    </div>
+    <div class="col-md-9" role="main">
+      <div class="panel docs-content">
+        <div class="wrapper">
+            <header class="post-header">
+              <h1 class="post-title">2019/7/13 数论基础1-1</h1>
+              <!--
+                <p class="post-meta">Jul 13, 2019</p>
+              -->
+              <div class="meta">Posted on <span class="postdate">Jul 13, 2019</span> By <a target="_blank" href="http://localhost:4000">LuLu</a></div>
+              <br />
+            </header>
+            <article class="post-content">
+              <ul id="markdown-toc">
+  <li><a href="#数论基础1-1" id="markdown-toc-数论基础1-1">数论基础1-1</a>    <ul>
+      <li><a href="#整数" id="markdown-toc-整数">整数</a>        <ul>
+          <li><a href="#整数分解的唯一性定理" id="markdown-toc-整数分解的唯一性定理">整数分解的唯一性定理</a></li>
+        </ul>
+      </li>
+    </ul>
+  </li>
+  <li><a href="#数论基础1-2" id="markdown-toc-数论基础1-2">数论基础1-2</a>    <ul>
+      <li><a href="#素性检测" id="markdown-toc-素性检测">素性检测</a>        <ul>
+          <li><a href="#步骤" id="markdown-toc-步骤">步骤：</a></li>
+          <li><a href="#基于原理" id="markdown-toc-基于原理">基于原理</a></li>
+          <li><a href="#说明" id="markdown-toc-说明">说明</a></li>
+        </ul>
+      </li>
+    </ul>
+  </li>
+  <li><a href="#数论基础2-1" id="markdown-toc-数论基础2-1">数论基础2-1</a>    <ul>
+      <li><a href="#公约数" id="markdown-toc-公约数">公约数</a></li>
+      <li><a href="#计算最大公约数的算法欧几里得算法辗转相除法" id="markdown-toc-计算最大公约数的算法欧几里得算法辗转相除法">计算最大公约数的算法——欧几里得算法（辗转相除法）</a>        <ul>
+          <li><a href="#基于的原理" id="markdown-toc-基于的原理">基于的原理</a></li>
+        </ul>
+      </li>
+    </ul>
+  </li>
+  <li><a href="#数论基础2-2" id="markdown-toc-数论基础2-2">数论基础2-2</a>    <ul>
+      <li><a href="#公倍数" id="markdown-toc-公倍数">公倍数</a></li>
+      <li><a href="#如何计算最小公倍数" id="markdown-toc-如何计算最小公倍数">如何计算最小公倍数</a>        <ul>
+          <li><a href="#只用加法计算最小公倍数" id="markdown-toc-只用加法计算最小公倍数">只用加法计算最小公倍数</a></li>
+        </ul>
+      </li>
+    </ul>
+  </li>
+  <li><a href="#数论基础3-1" id="markdown-toc-数论基础3-1">数论基础3-1</a>    <ul>
+      <li><a href="#模运算" id="markdown-toc-模运算">模运算</a></li>
+      <li><a href="#模n同余" id="markdown-toc-模n同余">模n同余</a>        <ul>
+          <li><a href="#模运算的性质" id="markdown-toc-模运算的性质">模运算的性质</a></li>
+          <li><a href="#乘法链算法" id="markdown-toc-乘法链算法">乘法链算法</a></li>
+        </ul>
+      </li>
+    </ul>
+  </li>
+</ul>
+<h1 id="数论基础1-1">数论基础1-1</h1>
+
+<h2 id="整数">整数</h2>
+
+<p>整数分为：素数，合数，1</p>
+
+<p>素数：大于1，且只能被1和本身整除</p>
+
+<table>
+  <tbody>
+    <tr>
+      <td>b</td>
+      <td>a，b是除数，a是被除数，例如3</td>
+      <td>12，如果b是可以整除a的素数，则b是素因子,2/3是素因子，4是因子</td>
+    </tr>
+  </tbody>
+</table>
+
+<h3 id="整数分解的唯一性定理">整数分解的唯一性定理</h3>
+
+<p>任何一个正整数a＞1，总可以分解为一系列素数乘积的形式，而且分解形式是唯一的</p>
+
+<p>e.g. 36=2*2*3*3</p>
+
+<h1 id="数论基础1-2">数论基础1-2</h1>
+
+<h2 id="素性检测">素性检测</h2>
+
+<p>生成素数的正确方法——素性检测：随机生成一个大奇数，然后检测它是否为素数</p>
+
+<p>Miller-Rabin算法是容易实现且广泛使用的算法</p>
+
+<h3 id="步骤">步骤：</h3>
+
+<ul>
+  <li>通过伪随机序列发生器随机产生一个n比特的随机数p</li>
+  <li>将p的最高位（确保素数达到有效长度防止0）和最低位（确保为奇数）设置为1</li>
+  <li>检查p能否被小于2000的素数整除</li>
+  <li>随机选择a，a&lt;p</li>
+  <li>用a对p进行素性测试（Miller-Rabin算法），若p没通过，抛弃p转第一步，或者p+2进行第三步</li>
+  <li>如果通过测试，转到第四步，如果p通过足够多次数的测试，认为p是素数</li>
+</ul>
+
+<h3 id="基于原理">基于原理</h3>
+
+<ul>
+  <li>在整数n中，约lnn个整数中就有一个素数</li>
+  <li>素数密度客观，检测方法很实用，约几秒钟就能生成一个素数</li>
+</ul>
+
+<h3 id="说明">说明</h3>
+
+<p>素性检测算法是概率算法，会有一定的错误率，但是较低</p>
+
+<ul>
+  <li>可能会把合数误判成素数输出出来，</li>
+  <li>多次使用素数检测算法会减低错误率</li>
+</ul>
+
+<h1 id="数论基础2-1">数论基础2-1</h1>
+
+<h2 id="公约数">公约数</h2>
+
+<ul>
+  <li>a1，a2…都可以被d整除，则称a1，a2…是d的公约数，最大的叫做<strong>最大公约数</strong>，记为gcd（a1，a2…）</li>
+  <li>互素：gcd（a1，a2…）=1，则称1，a2..互素
+    <ul>
+      <li>互素正整数不一定有素数：25,36</li>
+      <li>在个数不少于三个的互素正整数中，不一定两两互素：6,10,15</li>
+    </ul>
+  </li>
+</ul>
+
+<h2 id="计算最大公约数的算法欧几里得算法辗转相除法">计算最大公约数的算法——欧几里得算法（辗转相除法）</h2>
+
+<h3 id="基于的原理">基于的原理</h3>
+
+<p>若a=b*d+r，则gcd（a，b）=gcd（b，r）</p>
+
+<p>b除数，d商，r余数</p>
+
+<p>将大数的问题转换为小数的问题，a&gt;b&gt;r</p>
+
+<p>不断地将除数和余数当作新的被除数和除数</p>
+
+<p>a=38，b=26，则gcd（38,26）</p>
+
+<ul>
+  <li>
+    <p>38=26*1+12</p>
+  </li>
+  <li>
+    <p>26=12*2+2</p>
+  </li>
+  <li>
+    <p>12=2*6</p>
+
+    <p>最后一个非零余数就是所求gcd</p>
+  </li>
+</ul>
+
+<h1 id="数论基础2-2">数论基础2-2</h1>
+
+<h2 id="公倍数">公倍数</h2>
+
+<p>lcm（a,b）=a和b的最小公倍数</p>
+
+<h2 id="如何计算最小公倍数">如何计算最小公倍数</h2>
+
+<h3 id="只用加法计算最小公倍数">只用加法计算最小公倍数</h3>
+
+<ul>
+  <li>两者取最小</li>
+  <li>反复加自己</li>
+  <li>相等时停止</li>
+</ul>
+
+<p>e.g.</p>
+
+<table>
+  <thead>
+    <tr>
+      <th>30</th>
+      <th> </th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>24</td>
+      <td> </td>
+    </tr>
+    <tr>
+      <td>18</td>
+      <td> </td>
+    </tr>
+    <tr>
+      <td>12</td>
+      <td>30</td>
+    </tr>
+    <tr>
+      <td>6</td>
+      <td>15</td>
+    </tr>
+  </tbody>
+</table>
+
+<h1 id="数论基础3-1">数论基础3-1</h1>
+
+<h2 id="模运算">模运算</h2>
+
+<p>即求余数的运算，符号mod，a mod n =r，表示a除以n余数为r，n称为模数</p>
+
+<p>e.g. 11 mod 7 = 4</p>
+
+<h2 id="模n同余">模n同余</h2>
+
+<p>a mod n=b mod n=r，记作a ＝b （mod n)</p>
+
+<p>称a和b在模n下是同余的</p>
+
+<h3 id="模运算的性质">模运算的性质</h3>
+
+<ul>
+  <li>（a+b） mod n=（a mod n+b mod n） mod n</li>
+  <li>（a*b） mod n=（a mod n*b mod n） mod n</li>
+  <li>（a-b） mod n=（a mod n-b mod n） mod n</li>
+  <li>交换律 结合律 分配律</li>
+</ul>
+
+<p>可以对模运算进行化简，使得中间结果不会溢出，一直保持在0-n-1之间</p>
+
+<h3 id="乘法链算法">乘法链算法</h3>
+
+<p>a的m次方  mod  n</p>
+
+<p>a的25次方=a的16次方*a的8次方*a的1次方（从二进制表示看出的）</p>
+
+            </article>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+    
+    <footer class="footer" role="contentinfo">
+	<div class="container">
+		<p class="copyright">Copyright &copy; 2014-2026 <a href=""><code>LuLu</code></a>.</p>
+		<p>Powered by <a href="http://jekyllrb.com">Jekyll</a>, themed from <a href="http://lesscss.cn/">Less</a>, refactored by <a href="http://www.hifreud.com/">Freud Kang</a></p>
+	</div>
+</footer>
+
+<script src="/styles/js/jquery.min.js"></script>
+<script src="/styles/js/bootstrap.min.js"></script>
+<script src="/styles/js/holder.min.js"></script>
+<script src="/styles/js/lessismore.js"></script>
+<script src="/styles/js/application.js"></script>
+<script async src="//busuanzi.ibruce.info/busuanzi/2.3/busuanzi.pure.mini.js"></script>
+
+  </body>
+</html>

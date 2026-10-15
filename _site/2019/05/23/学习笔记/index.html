@@ -1,0 +1,279 @@
+<!DOCTYPE html>
+<html>
+
+  <head>
+	<meta charset="utf-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>2019/5/23 《图解密码技术》第九章 - TheNeverDeer</title>
+
+	<link rel="shortcut icon" href="/styles/images/favicon.jpg">
+	<link rel="icon" href="/styles/images/favicon.jpg">
+
+	<link rel="preconnect" href="https://fonts.googleapis.com">
+	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+	<link href="https://fonts.googleapis.com/css2?family=Ma+Shan+Zheng&family=Nunito:wght@400;600;700&family=ZCOOL+XiaoWei&display=swap" rel="stylesheet">
+	<link rel="stylesheet" href="/styles/css/index.css">
+	<link rel="stylesheet" href="/styles/css/theme-girly.css">
+	<link rel="stylesheet" href="/styles/css/fontawesome/css/font-awesome.min.css">
+	<link rel="stylesheet" href="/styles/css/syntax.css">
+	<link rel="canonical" href="/2019/05/23/%E5%AD%A6%E4%B9%A0%E7%AC%94%E8%AE%B0/">
+	<link rel="alternate" type="application/rss+xml" title="TheNeverDeer" href="/feed.xml">
+	
+	<meta name="keywords" content="2019/5/23 《图解密码技术》第九章, TheNeverDeer, 康志华;个人博客;学而不思则罔;思而不学则殆;生命不止;折腾不休">
+	<meta name="description" content="康志华;个人博客;学而不思则罔;思而不学则殆;生命不止;折腾不休">
+
+	<script src="/styles/js/jquery.min.js"></script>
+	<!--[if lt IE 9]>
+    	<script src="http://html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+  	<![endif]-->
+  	<script>
+		var _hmt = _hmt || [];
+		(function() {
+		  var hm = document.createElement("script");
+		  hm.src = "//hm.baidu.com/hm.js?";
+		  var s = document.getElementsByTagName("script")[0]; 
+		  s.parentNode.insertBefore(hm, s);
+		})();
+	</script>
+  	<style type="text/css">
+	  	.docs-content{
+	  		margin-bottom: 10px;
+	  	}
+  	</style>
+</head>
+
+  <body class="index">
+
+    <header class="navbar navbar-inverse navbar-fixed-top docs-nav" role="banner">
+  <div class="container">
+    <div class="navbar-header">
+      <button class="navbar-toggle" type="button" data-toggle="collapse" data-target=".bs-navbar-collapse">
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+      </button>
+      <a href="/" class="navbar-brand">Luzi</a>
+    </div>
+    <nav class="collapse navbar-collapse bs-navbar-collapse" role="navigation">
+      <ul class="nav navbar-nav">    
+        <li>
+          <a href="/">主页</a>
+        </li>
+        <li>
+          <a href="/categories/">类型</a>
+        </li>
+        <li>
+          <a href="/tag">标签</a>
+        </li>
+      </ul>
+      <ul class="nav navbar-nav navbar-right">
+        <!--<li>
+            <a><span id="busuanzi_container_site_pv">本站总访问量<span id="busuanzi_value_site_pv"></span>次</span></a>-->
+        </li>
+        <li class="dropdown">
+          <a href="#" class="dropdown-toggle" data-toggle="dropdown">关于<b class="caret"></b></a>
+          <ul class="dropdown-menu">
+            <li><a rel="nofollow" target="_blank" href="https://github.com/TheNeverDeer/">Github</a></li>
+            <!--<li><a rel="nofollow" target="_blank" href="">关于作者</a></li>-->
+            <li><a rel="nofollow" href="/books">我的书单</a></li>
+            <!--<li><a rel="nofollow" href="http://www.hifreud.com/domains/">域名管理</a></li> -->
+           <!-- <li><a rel="nofollow" href="/reference">推荐博客</a></li> -->
+           <!-- <li><a href="/feed.xml">RSS订阅</a></li> -->
+            <li class="divider"></li>
+            <li><a rel="nofollow" target="_blank" href="https://github.com/TheNeverDeer/TheNeverDeer.github.io">本项目</a></li>
+          </ul>
+        </li>
+      </ul>
+    </nav>
+  </div>
+</header>
+    <div class="docs-header" id="content">
+  <div class="container">
+  	
+  		<!--
+		    <h1>2019/5/23 《图解密码技术》第九章</h1>
+		    <p>Post on May 23, 2019 by <a href="/about">LuLu</a></p>
+		-->
+		    <h1>It's our wits that make us men.</h1>
+    
+  </div>
+</div>
+    
+      
+<div class="banner">
+  <div class="container">
+  	
+    	<a href="/categories/#文章-ref">文章</a>	/
+    	<a href="/tag/#interview-ref">interview</a>
+    
+  </div>
+</div>
+
+    
+
+    <div class="container docs-container">
+  <div class="row">
+    <div class="col-md-3">
+      <div class="sidebar hidden-print" role="complementary">
+        <div id="navigation">
+  <h1>目录</h1>
+  <ul class="nav sidenav">
+  </ul>
+  <div style="height: 200px;width: 200px;">
+    <script type="text/javascript" src="//rf.revolvermaps.com/0/0/8.js?i=&amp;m=0&amp;c=ff0000&amp;cr1=ffffff&amp;f=arial&amp;l=33" async="async"> 
+    </script>
+  </div>
+</div>
+
+ 
+      </div>
+    </div>
+    <div class="col-md-9" role="main">
+      <div class="panel docs-content">
+        <div class="wrapper">
+            <header class="post-header">
+              <h1 class="post-title">2019/5/23 《图解密码技术》第九章</h1>
+              <!--
+                <p class="post-meta">May 23, 2019</p>
+              -->
+              <div class="meta">Posted on <span class="postdate">May 23, 2019</span> By <a target="_blank" href="http://localhost:4000">LuLu</a></div>
+              <br />
+            </header>
+            <article class="post-content">
+              <ul id="markdown-toc">
+  <li><a href="#图解密码技术第九章" id="markdown-toc-图解密码技术第九章">《图解密码技术》第九章</a>    <ul>
+      <li><a href="#数字签名" id="markdown-toc-数字签名">数字签名</a>        <ul>
+          <li><a href="#从消息认证码到数字签名" id="markdown-toc-从消息认证码到数字签名">从消息认证码到数字签名</a></li>
+          <li><a href="#签名的生成和验证" id="markdown-toc-签名的生成和验证">签名的生成和验证</a></li>
+          <li><a href="#公钥密码与数字签名" id="markdown-toc-公钥密码与数字签名">公钥密码与数字签名</a></li>
+        </ul>
+      </li>
+      <li><a href="#数字签名的方法" id="markdown-toc-数字签名的方法">数字签名的方法</a>        <ul>
+          <li><a href="#直接对消息签名" id="markdown-toc-直接对消息签名">直接对消息签名</a></li>
+          <li><a href="#对消息的散列值签名" id="markdown-toc-对消息的散列值签名">对消息的散列值签名</a></li>
+        </ul>
+      </li>
+      <li><a href="#对数字签名的疑问" id="markdown-toc-对数字签名的疑问">对数字签名的疑问</a>        <ul>
+          <li><a href="#密文为什么能作为签名使用" id="markdown-toc-密文为什么能作为签名使用">密文为什么能作为签名使用</a></li>
+          <li><a href="#数字签名不能保证机密性吗" id="markdown-toc-数字签名不能保证机密性吗">数字签名不能保证机密性吗</a></li>
+          <li><a href="#这种签名可以随意复制吗" id="markdown-toc-这种签名可以随意复制吗">这种签名可以随意复制吗</a></li>
+          <li><a href="#消息内容会不会被任意修改" id="markdown-toc-消息内容会不会被任意修改">消息内容会不会被任意修改</a></li>
+          <li><a href="#签名会不会被重复使用" id="markdown-toc-签名会不会被重复使用">签名会不会被重复使用</a></li>
+          <li><a href="#删除签名也无法作废合同吗" id="markdown-toc-删除签名也无法作废合同吗">删除签名也无法作废合同吗</a></li>
+          <li><a href="#如何防止否认" id="markdown-toc-如何防止否认">如何防止否认</a></li>
+          <li><a href="#数字签名真的能代替签名吗" id="markdown-toc-数字签名真的能代替签名吗">数字签名真的能代替签名吗</a></li>
+        </ul>
+      </li>
+    </ul>
+  </li>
+</ul>
+<h1 id="图解密码技术第九章">《图解密码技术》第九章</h1>
+
+<ul>
+  <li>数字签名：digital signature，认证符号：authenticator</li>
+</ul>
+
+<h2 id="数字签名">数字签名</h2>
+
+<h3 id="从消息认证码到数字签名">从消息认证码到数字签名</h3>
+
+<ul>
+  <li>消息认证码的局限性：无法防止否认</li>
+  <li>通过数字签名解决问题：Alice和Bob各自使用不同的密钥</li>
+</ul>
+
+<h3 id="签名的生成和验证">签名的生成和验证</h3>
+
+<ul>
+  <li>生成消息签名：由消息的发送者完成，根据消息内容计算数字签名的值，“我认可该消息”</li>
+  <li>验证数字签名：由消息的接收者完成，也可由验证消息的第三方完成.</li>
+</ul>
+
+<p>这两个行为都需要使用各自的密钥来完成，签名密钥由签名的人持有，验证密钥是任何需要验证签名的人都可以持有</p>
+
+<h3 id="公钥密码与数字签名">公钥密码与数字签名</h3>
+
+<p>加密相当于生成签名，解密相当于验证签名</p>
+
+<h2 id="数字签名的方法">数字签名的方法</h2>
+
+<ul>
+  <li>直接对消息签名的方法，实际上不会使用</li>
+  <li>对消息的散列值签名的方法，实际上一般都是用</li>
+</ul>
+
+<h3 id="直接对消息签名">直接对消息签名</h3>
+
+<p><img src="https://wx1.sinaimg.cn/mw690/0066mMjily1g3bkim9rl6j30fm0czdhy.jpg" alt="img" /></p>
+
+<h3 id="对消息的散列值签名">对消息的散列值签名</h3>
+
+<p><img src="https://wx1.sinaimg.cn/mw690/0066mMjily1g3bkim9ibcj30gq0fkju6.jpg" alt="img" /></p>
+
+<h2 id="对数字签名的疑问">对数字签名的疑问</h2>
+
+<h3 id="密文为什么能作为签名使用">密文为什么能作为签名使用</h3>
+
+<p>数字签名利用：没有私钥的人事实上无法生成使用该私钥所生成的密文</p>
+
+<p>这里的密文并非用来保证机密性，而是被用于代表一种只有持有该密钥的人才能够生成的信息，这样的信息一般称为认证符号.</p>
+
+<p>消息认证码也是认证符号的一种，数字签名也是一样.</p>
+
+<h3 id="数字签名不能保证机密性吗">数字签名不能保证机密性吗</h3>
+
+<p>不能，数字签名的作用本来就不是保证机密性.</p>
+
+<h3 id="这种签名可以随意复制吗">这种签名可以随意复制吗</h3>
+
+<p>可以容易地复制，但是签名是不是原件并不重要，真正重要的是特定的签名者与特定的消息绑在了一起这一个事实.复制多少份都无法改变是谁对这条消息进行了签名的事实.</p>
+
+<h3 id="消息内容会不会被任意修改">消息内容会不会被任意修改</h3>
+
+<p>会被修改，但是验证的人能够发现。数字签名所要实现的并不是防止修改，而是识别修改.</p>
+
+<h3 id="签名会不会被重复使用">签名会不会被重复使用</h3>
+
+<p>在数字签名中，签名和消息是有对应关系的，消息不同签名内容也会不同.将一份签名附加在别的消息后面，验证签名会失败</p>
+
+<h3 id="删除签名也无法作废合同吗">删除签名也无法作废合同吗</h3>
+
+<p>作废合同可以通过签署另一份相当于收据的文书，让对方在这份文书上加上数字签名.</p>
+
+<h3 id="如何防止否认">如何防止否认</h3>
+
+<p>防止否认与谁吃有密钥这一问题密切相关</p>
+
+<p>数字签名只有发送者拥有生成签名的密钥.</p>
+
+<h3 id="数字签名真的能代替签名吗">数字签名真的能代替签名吗</h3>
+
+<p>颁布了电子签名及其认证业务的相关法律，提供了法律基础</p>
+
+<p>###</p>
+
+            </article>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+    
+    <footer class="footer" role="contentinfo">
+	<div class="container">
+		<p class="copyright">Copyright &copy; 2014-2026 <a href=""><code>LuLu</code></a>.</p>
+		<p>Powered by <a href="http://jekyllrb.com">Jekyll</a>, themed from <a href="http://lesscss.cn/">Less</a>, refactored by <a href="http://www.hifreud.com/">Freud Kang</a></p>
+	</div>
+</footer>
+
+<script src="/styles/js/jquery.min.js"></script>
+<script src="/styles/js/bootstrap.min.js"></script>
+<script src="/styles/js/holder.min.js"></script>
+<script src="/styles/js/lessismore.js"></script>
+<script src="/styles/js/application.js"></script>
+<script async src="//busuanzi.ibruce.info/busuanzi/2.3/busuanzi.pure.mini.js"></script>
+
+  </body>
+</html>
